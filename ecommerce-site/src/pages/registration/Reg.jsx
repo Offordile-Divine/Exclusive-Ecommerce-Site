@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./reg.css";
 import { CiSquareCheck } from "react-icons/ci";
+import LoginNav from "../../components/navigation/login-nav/LoginNav";
 // import Otp from "../otp/Otp";
 
 const Reg = () => {
@@ -36,6 +37,7 @@ const Reg = () => {
 
   return (
     <div className="Form">
+      <LoginNav />
       {/* <Otp /> */}
       <div className="reg">
         <img src={formImg} />

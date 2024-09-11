@@ -4,10 +4,11 @@ import { FaSearch } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import "../nav.css";
-const Reg_nav = () => {
+
+const LoginNav = () => {
   return (
     <div>
-      <div className="reg_nav">
+      <div className="log_nav">
         <Link to="/" id="logo" style={{ textDecoration: "none" }}>
           {<BiLogoApple />} <h1>Company</h1>
         </Link>
@@ -23,8 +24,8 @@ const Reg_nav = () => {
             Help{" "}
             {<SlArrowDown style={{ marginLeft: "3px", fontSize: "10px" }} />}
           </Link>
-          <Link id="register" to="/registration">
-            Register
+          <Link id="loginNav" to="/login">
+            Login
           </Link>
         </div>
       </div>
@@ -33,4 +34,4 @@ const Reg_nav = () => {
   );
 };
 
-export default Reg_nav;
+export default LoginNav;

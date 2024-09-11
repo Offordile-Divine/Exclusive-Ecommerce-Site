@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
+import { MdAddShoppingCart } from "react-icons/md";
 import "../nav.css";
-const Reg_nav = () => {
+
+const HomeNav = () => {
   return (
     <div>
-      <div className="reg_nav">
+      <div className="home_nav">
         <Link to="/" id="logo" style={{ textDecoration: "none" }}>
           {<BiLogoApple />} <h1>Company</h1>
         </Link>
@@ -20,17 +22,21 @@ const Reg_nav = () => {
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
           <Link id="help" to="/help">
-            Help{" "}
-            {<SlArrowDown style={{ marginLeft: "3px", fontSize: "10px" }} />}
-          </Link>
-          <Link id="register" to="/registration">
-            Register
+            Help {<SlArrowDown style={{ marginLeft: "3px" , }} />}
           </Link>
         </div>
       </div>
-      <hr id="line" />
+      <div className="profcart">
+        <Link to="/profile" className="prof">
+          Profile {<SlArrowDown style={{ marginLeft: "3px" }} />}
+        </Link>
+        <Link to="/cart" className="prof">
+          Carts {<MdAddShoppingCart style={{ marginLeft: "3px" }} />}
+        </Link>
+      </div>
+      <hr id="line"/>
     </div>
   );
 };
 
-export default Reg_nav;
+export default HomeNav;

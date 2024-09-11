@@ -1,13 +1,13 @@
 import React from "react";
 import About_errorNav from "../../components/navigation/about-errorNav/About_errorNav";
 
-const About = () => {
+const Error = () => {
   return (
     <div>
       <About_errorNav />
-      About
+      Error
     </div>
   );
 };
 
-export default About;
+export default Error;
