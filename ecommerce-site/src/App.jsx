@@ -1,12 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+import Footer from "../src/components/footer/Footer"
+const App = () => {
+  return (
+    <div className="App">
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App
