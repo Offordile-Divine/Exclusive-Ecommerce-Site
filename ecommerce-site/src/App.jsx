@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Nav />
-      <Get_started />
-      <Login />
+      {/* <Get_started /> */}
+      {/* <Login /> */}
       {/* <Reg /> */}
       {/* <Otp /> */}
     </>

@@ -4,6 +4,7 @@ import "./login.css";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
 
 const Login = () => {
   const schema = yup.object().shape({
@@ -22,6 +23,7 @@ const Login = () => {
   };
   return (
     <div className="Login">
+      <Reg_nav />
       <div className="login_content">
         <img src={loginImg} />
         <div className="login_form">
@@ -40,7 +42,7 @@ const Login = () => {
               placeholder="#########"
               {...register("password")}
             />
-            <p>{errors.password?.message}</p>
+            <p className="err">{errors.password?.message}</p>
             <div className="log_forget">
               <button onClick={() => handleSubmit(onSubmit)} id="login_btn">
                 Log In
