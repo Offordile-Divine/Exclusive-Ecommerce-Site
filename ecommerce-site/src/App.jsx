@@ -1,5 +1,4 @@
-
-import Footer from "../src/components/footer/Footer"
+<<<<<<<<< Temporary merge branch 1
 import Nav from "./components/navigation/Nav";
 import Get_started from "./pages/get-started/Get_started";
 import Home from "./pages/home/Home";
@@ -16,6 +15,7 @@ function App() {
       {/* <Login /> */}
       {/* <Reg /> */}
       {/* <Otp /> */}
+<Footer />
     </>
   );
 
