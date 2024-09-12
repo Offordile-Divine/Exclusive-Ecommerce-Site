@@ -1,4 +1,4 @@
-<<<<<<<<< Temporary merge branch 1
+git 
 import Nav from "./components/navigation/Nav";
 import Get_started from "./pages/get-started/Get_started";
 import Home from "./pages/home/Home";
