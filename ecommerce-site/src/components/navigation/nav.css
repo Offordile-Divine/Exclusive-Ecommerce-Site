@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+}
+
+.log_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.reg_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(22, 28, 45, 1);
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.input input {
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "montserrate";
+  padding: 5px;
+}
+
+.input svg {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav_dir {
+  display: flex;
+  align-items: center;
+}
+
+.nav_dir a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgba(22, 28, 45, 1);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginNav {
+  margin: 0;
+  border: 2px solid rgba(15, 98, 254, 1);
+  padding: 7px 30px;
+  border-radius: 7px;
+  color: rgba(15, 98, 254, 1);
+}
+
+#loginNav:hover {
+  background-color: rgba(15, 98, 254, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+#register {
+  margin: 0;
+  background-color: rgba(15, 98, 254, 1);
+  padding: 7px 30px;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#register:hover {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(15, 98, 254, 1);
+  border: 2px solid rgba(15, 98, 254, 1);
+}
+
+.profcart {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.prof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgba(22, 28, 45, 1);
+}
+
+#line {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
