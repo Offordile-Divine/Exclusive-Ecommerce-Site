@@ -5,6 +5,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import { MdAddShoppingCart } from "react-icons/md";
 import "../nav.css";
+import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 
 const About_errorNav = () => {
   return (
@@ -21,9 +22,10 @@ const About_errorNav = () => {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
-          <Link id="help" to="/help">
+          {/* <Link id="help" to="/help">
             Help {<SlArrowDown style={{ marginLeft: "3px" , fontSize: "10px" }} />}
-          </Link>
+          </Link> */}
+          <HelpDropdown />
         </div>
       </div>
       <hr id="line" />

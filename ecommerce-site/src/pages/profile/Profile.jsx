@@ -1,13 +1,16 @@
-import React from "react";
-import HomeNav from "../../components/navigation/home-nav/HomeNav";
+import React, { useState } from "react";
 import TpsNav from "../../components/navigation/terms-privacy-support-nav/TpsNav";
+import Profile_inactive from "./Profile_inactive";
 
 const Profile = () => {
-  return (
+  const [activeProfile, setActiveProfile] = useState(false);
+  return activeProfile ? (
     <div>
       <TpsNav />
-      Profile
+      profile
     </div>
+  ) : (
+    <Profile_inactive />
   );
 };
 

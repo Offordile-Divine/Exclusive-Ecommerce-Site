@@ -5,7 +5,6 @@ const Privacy = () => {
   return (
     <div>
       <TpsNav />
-      Privacy
     </div>
   );
 };
