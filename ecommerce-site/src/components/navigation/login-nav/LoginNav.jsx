@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import "../nav.css";
+import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 
 const LoginNav = () => {
   return (
@@ -20,10 +21,12 @@ const LoginNav = () => {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
-          <Link id="help" to="/help">
-            Help{" "}
+          {/* <Link id="help" to="/help">
+            Help
             {<SlArrowDown style={{ marginLeft: "3px", fontSize: "10px" }} />}
-          </Link>
+          </Link> */}
+
+          <HelpDropdown />
           <Link id="loginNav" to="/login">
             Login
           </Link>
