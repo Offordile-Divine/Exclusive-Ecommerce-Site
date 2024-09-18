@@ -16,7 +16,7 @@ import Carts from "../../pages/carts/Carts";
 const Nav = () => {
   return (
     <div>
-      <Router>
+      {/* <Router> */}
         {/* <Reg_nav /> */}
         {/* <LoginNav /> */}
         <Routes>
@@ -30,7 +30,7 @@ const Nav = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/cart" element={<Carts/>} />
         </Routes>
-      </Router>
+      {/* </Router> */}
     </div>
   );
 };
