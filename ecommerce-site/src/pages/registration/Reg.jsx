@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import formImg from "../../assets/images/form-image.png";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,9 +6,11 @@ import * as yup from "yup";
 import "./reg.css";
 import { CiSquareCheck } from "react-icons/ci";
 import LoginNav from "../../components/navigation/login-nav/LoginNav";
+import { AppContext } from "../../App";
 // import Otp from "../otp/Otp";
 
 const Reg = () => {
+  const { setName } = useContext(AppContext);
   const schema = yup.object().shape({
     firstName: yup.string().max(30).required("Your first name is required"),
     lastName: yup.string().max(30).required("Your last name is required"),
@@ -51,6 +53,7 @@ const Reg = () => {
               type="text"
               placeholder="First Name"
               {...register("firstName")}
+              onChange={(e) => setName(e.target.value)}
             />
             <p className="err">{errors.firstName?.message}</p>
             <input

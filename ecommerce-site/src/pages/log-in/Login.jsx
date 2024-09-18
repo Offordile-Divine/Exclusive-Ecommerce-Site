@@ -8,8 +8,8 @@ import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
 
 const Login = () => {
   const schema = yup.object().shape({
-    email: yup.string().email().required("Email is not valid"),
-    password: yup.string().required("Incorrect password"),
+    email: yup.string().email().required("Email is required"),
+    password: yup.string().required("Password is required"),
   });
 
   const {

@@ -5,6 +5,8 @@ import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import { MdAddShoppingCart } from "react-icons/md";
 import "../nav.css";
+import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
+import ProfileDropdown from "../../../utils/dropdown/ProfileDropdown";
 
 const HomeNav = () => {
   return (
@@ -21,20 +23,20 @@ const HomeNav = () => {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
-          <Link id="help" to="/help">
+          {/* <Link id="help" to="/help">
             Help {<SlArrowDown style={{ marginLeft: "3px" , }} />}
-          </Link>
+          </Link> */}
+
+          <HelpDropdown />
         </div>
       </div>
       <div className="profcart">
-        <Link to="/profile" className="prof">
-          Profile {<SlArrowDown style={{ marginLeft: "3px" }} />}
-        </Link>
+        <ProfileDropdown />
         <Link to="/cart" className="prof">
-          Carts {<MdAddShoppingCart style={{ marginLeft: "3px" }} />}
+          Carts {<MdAddShoppingCart style={{ marginLeft: "10px" }} />}
         </Link>
       </div>
-      <hr id="line"/>
+      <hr id="line" />
     </div>
   );
 };

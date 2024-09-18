@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import "../nav.css";
+import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 const Reg_nav = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
   return (
     <div>
       <div className="reg_nav">
@@ -19,10 +25,11 @@ const Reg_nav = () => {
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>
-          <Link id="help" to="/help">
-            Help{" "}
+          {/* <Link id="help" to="/help">
+            Help
             {<SlArrowDown style={{ marginLeft: "3px", fontSize: "10px" }} />}
-          </Link>
+          </Link> */}
+          <HelpDropdown />
           <Link id="register" to="/registration">
             Register
           </Link>
