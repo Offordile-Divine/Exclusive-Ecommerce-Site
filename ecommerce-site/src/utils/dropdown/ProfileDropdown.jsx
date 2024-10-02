@@ -17,7 +17,7 @@ const ProfileDropdown = () => {
     <nav className="ProfileDropDown">
       <div className="tog">
         <div className="prof-icon" onClick={handleClick}>
-          <Link id="tog_prof">Profile</Link>
+          <span id="tog_prof">Profile</span>
           {click ? (
             <SlArrowDown
               style={{

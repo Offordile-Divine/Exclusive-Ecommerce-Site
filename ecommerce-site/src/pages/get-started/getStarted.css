@@ -48,6 +48,12 @@
   color: rgba(22, 28, 45, 1);
 }
 
+.addressFormAddress {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
 #skip {
   padding: 10px 40px;
   font-weight: 400;
@@ -63,4 +69,153 @@
 #skip:hover {
   background: rgba(22, 28, 45, 1);
   color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .getStarted {
+    display: flex;
+  }
+  .getStarted img {
+    display: none;
+  }
+
+  .getStarted_form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .getStarted_form h1 {
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .addressFormAddress input {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  #cont {
+    font-size: 16px;
+    padding: 15px 40px;
+  }
+
+  #skip {
+    font-size: 16px;
+    padding: 15px 45px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .getStarted {
+    display: flex;
+  }
+  .getStarted img {
+    display: none;
+  }
+
+  .getStarted_form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .getStarted_form h1 {
+    font-family: "Inter";
+    font-size: 24.19px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .addressFormAddress input {
+    font-size: 12px;
+  }
+
+  #cont {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  #skip {
+    font-size: 12px;
+    padding: 7px 26px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .getStarted {
+    display: flex;
+  }
+  .getStarted img {
+    display: none;
+  }
+
+  .getStarted_form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .getStarted_form h1 {
+    font-family: "Inter";
+    font-size: 24.19px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .addressFormAddress input {
+    font-size: 12px;
+  }
+
+  #cont {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  #skip {
+    font-size: 12px;
+    padding: 7px 26px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .getStarted {
+    display: flex;
+  }
+  .getStarted img {
+    display: none;
+  }
+
+  .getStarted_form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .getStarted_form h1 {
+    font-family: "Inter";
+    font-size: 24.19px;
+    font-weight: 500;
+    line-height: 20.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .addressFormAddress input {
+    font-size: 12px;
+  }
+
+  #cont {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  #skip {
+    font-size: 12px;
+    padding: 7px 26px;
+  }
 }

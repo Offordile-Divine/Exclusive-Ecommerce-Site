@@ -4,7 +4,7 @@ import TpsNav from '../../components/navigation/terms-privacy-support-nav/TpsNav
 const Checkout = () => {
   return (
     <div>
-      <TpsNav/>
+      {/* <TpsNav/> */}
       <div id='c_background'>
         <div id='c_delivery'>
           Delivery Information

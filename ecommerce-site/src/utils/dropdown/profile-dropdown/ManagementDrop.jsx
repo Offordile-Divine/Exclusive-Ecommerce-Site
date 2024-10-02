@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { CiUser } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link, useParams, Outlet } from "react-router-dom";
 import "./profileDrop.css";
 
-const ManagementDrop = () => {
+const ManagementDrop = (props) => {
   const [click, setClick] = useState(false);
+
+  // const params = useParams();
+  // console.log(params);
 
   const handleClick = () => {
     setClick(!click);
@@ -13,7 +16,7 @@ const ManagementDrop = () => {
     <div className="manage">
       <div className="pi_sidebar">
         <div className="pi_tog">
-          <CiUser className="pi_reactIcon" style={{cursor: "pointer"}}/>
+          <CiUser className="pi_reactIcon" style={{ cursor: "pointer" }} />
           <div className="tog" onClick={handleClick}>
             {click ? (
               <h2
@@ -34,9 +37,23 @@ const ManagementDrop = () => {
         </div>
       </div>
       <div className={click ? "pi_linktarget active" : "pi_linktarget"}>
-        <Link to="/profile">My profile</Link>
-        <Link to="/deliveryAddress">Delivery Address</Link>
-        <Link to="/deleteAccount">Delete Account</Link>
+        <Link
+          className="profP"
+          to={`/profile/myProfile`}
+          // onClick={() => props.setLayout(0)}
+        >
+          My profile
+        </Link>
+        <Link
+          className="profP"
+          to={`/profile/myAdddress`}
+          // onClick={() => props.setLayout(1)}
+        >
+          Delivery Address
+        </Link>
+        <Link className="profP" to={`/profile/delAcct`}>
+          Delete Account
+        </Link>
       </div>
     </div>
   );

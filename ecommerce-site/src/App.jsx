@@ -20,6 +20,7 @@ import Payment_wallet from "./pages/payment-wallet/Payment_wallet";
 import Logout from "./pages/logout/Logout";
 import Profile_inactive from "./pages/profile/Profile_inactive";
 import Profile from "./pages/profile/Profile";
+import Checkout from "./pages/checkout/Checkout";
 
 export const AppContext = createContext("Bruce");
 
@@ -27,8 +28,8 @@ function App() {
   const [name, setName] = useState("Bruce");
   return (
     <>
-      <BrowserRouter>
-        <Routes>
+      {/* <BrowserRouter> */}
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
@@ -46,13 +47,14 @@ function App() {
           <Route path="/track" element={<Track_order />} />
           <Route path="/paymentWallet" element={<Payment_wallet />} />
           <Route path="/logOut" element={<Logout />} />
-        </Routes>
-      </BrowserRouter>
+        </Routes> */}
+      {/* </BrowserRouter> */}
       <AppContext.Provider value={{ name, setName }}>
         {/* <Get_started /> */}
         {/* <Login /> */}
         {/* <Reg /> */}
         {/* <Otp /> */}
+        {/* <Checkout /> */}
       </AppContext.Provider>
     </>
   );

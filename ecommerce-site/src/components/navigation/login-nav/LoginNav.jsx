@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
+import { IoMdArrowBack } from "react-icons/io";
+
 import "../nav.css";
 import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 
@@ -31,6 +33,37 @@ const LoginNav = () => {
             Login
           </Link>
         </div>
+      </div>
+
+      <div className="registrationNav">
+        <div className="mb-regnav">
+          <div className="mb-arrowName">
+            <Link>
+              <IoMdArrowBack id="backArrow" />
+            </Link>
+
+            <Link to="/" id="logo" style={{ textDecoration: "none" }}>
+              {<BiLogoApple />} <h1 id="companyName">Company</h1>
+            </Link>
+          </div>
+          <div className="userBtn">
+            {/* <span onClick={handleClick}>
+            <RxHamburgerMenu id="styleLogo" />
+          </span> */}
+            {/* <Link to="/cart">
+            <MdAddShoppingCart id="styleLogo"/>
+          </Link> */}
+            <Link id="navLogLink" to="/registration">
+              Login
+            </Link>
+          </div>
+        </div>
+        {/* <div className="inputRegDiv">
+          <div className="mbRegInput">
+            <input type="text" placeholder="What are you looking for" />
+            <CiSearch id="search"/>
+          </div>
+        </div> */}
       </div>
       <hr id="line" />
     </div>
