@@ -5,6 +5,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { BiLogoApple } from "react-icons/bi";
 import { MdAddShoppingCart } from "react-icons/md";
 import "../nav.css";
+import CartItem from "../../../pages/carts/Cart-item";
 
 const HomeNav = () => {
   return (

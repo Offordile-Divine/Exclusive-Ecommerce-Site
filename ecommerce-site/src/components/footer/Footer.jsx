@@ -3,6 +3,7 @@ import "./footer.css"
 
 const Footer = () => {
   return (
+    <>
     <div className="footer_content">
       <div className="footer">
       <div className="footer_name">
@@ -32,7 +33,7 @@ const Footer = () => {
 
       <div className="footer_payment">
         <p className="header"><b>Payment</b></p>
-        <p>Verve</p>
+        <p >Verve</p>
         <p>MasterCard</p>
         <p>Visa</p>
         <p>Tracking Order</p>
@@ -54,13 +55,47 @@ const Footer = () => {
           <div className="footer_copyright">
             <p>Copyright Company 202#,All rights reserved</p>
           </div>
-          
-        </div>
+          </div>
      </div>
-    
+      <br />
+      <br />
+     <>
+     <div className="mb_content">
+     <div className="mb_header">
+      <h1>Company</h1>
+     </div>
+      
+      <div>
+       <table>
+        <tbody>
+          <tr>
+            <td className="mb_account">Account</td>
+            <td className="mb_contact">Contact Us</td>
+            <td className="mb_help">Help</td>
+            <td className="mb_terms">Terms & Condition</td>
+          </tr>
 
-  
+          <tr>
+            <td className="mb_faq">Faq</td>
+            <td className="mb_us">Contact Us</td>
+            <td className="mb_return">Return Policy</td>
+            <td className="mb_privacy">Privacy Policy</td>
+          </tr>
+        </tbody>
+       </table>
+      </div>
+
+      <div className="mb_below">
+          <hr></hr>
+        
+          <div className="mb_copyright">
+            <p>Copyright Company 202#,All rights reserved</p>
+          </div>
+      </div>
+      </div>
+     </>
+     </>
   )
 }
 
-export default Footer
+export default Footer;
