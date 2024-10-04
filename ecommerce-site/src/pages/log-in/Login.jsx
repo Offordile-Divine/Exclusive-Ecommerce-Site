@@ -2,14 +2,21 @@ import React from "react";
 import loginImg from "../../assets/images/form-image.png";
 import "./login.css";
 import { useForm } from "react-hook-form";
+import axios from "axios"
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
+import { Link, useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import LoginNav from "../../components/navigation/login-nav/LoginNav";
+
+const APIKEY = import.meta.env.VITE_API_KEY;
 
 const Login = () => {
+  const navigate = useNavigate();
   const schema = yup.object().shape({
-    email: yup.string().email().required("Email is not valid"),
-    password: yup.string().required("Incorrect password"),
+    email: yup.string().email().required("Email is required"),
+    password: yup.string().required("Password is required"),
   });
 
   const {
@@ -18,12 +25,36 @@ const Login = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const loginData = {
+      email: data.email,
+      password: data.password,
+    };
+
+    const opt = {
+      headers: {
+        "x-api-key": APIKEY,
+        "Content-Type": "application/json",
+      },
+    };
+    try {
+      const res = await axios.post(
+        "https://100daysofcoding-production.up.railway.app/auth/v1/login",
+        loginData,
+        opt
+      );
+
+      if (res.data.status === "success") {
+        navigate("/");
+      }
+    } catch (err) {
+      console.error(err);
+      // toast.warning("Please enter the right input");
+    }
   };
   return (
     <div className="Login">
-      <Reg_nav />
+      <LoginNav />
       <div className="login_content">
         <img src={loginImg} />
         <div className="login_form">
@@ -44,12 +75,26 @@ const Login = () => {
             />
             <p className="err">{errors.password?.message}</p>
             <div className="log_forget">
-              <button onClick={() => handleSubmit(onSubmit)} id="login_btn">
+              <button id="login_btn" type="submit">
                 Log In
               </button>
               <a href="">Forget password?</a>
             </div>
+            <p id="or">or</p>
+            <div className="googleSignin">
+              <button>
+                <FcGoogle /> Sign in with Google
+              </button>
+            </div>
           </form>
+          <div className="acctForgetSignIn">
+            <p>
+              Don't have an account?
+              <Link to="/registration">
+                <b>Sign up</b>
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

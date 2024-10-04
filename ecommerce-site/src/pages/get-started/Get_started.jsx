@@ -29,7 +29,7 @@ const Get_started = () => {
         <div className="getStarted_form">
           <h1>Get Started</h1>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} className="addressFormAddress">
             <input
               type="text"
               placeholder="Home Address"

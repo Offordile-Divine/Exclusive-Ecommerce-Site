@@ -10,6 +10,7 @@ import Reg from "./pages/registration/Reg.jsx";
 import Login from "./pages/log-in/Login.jsx";
 import Get_started from "./pages/get-started/Get_started.jsx";
 import Carts from "./pages/carts/Carts.jsx";
+
 import ProfileInactive from "./pages/profile/profileInfo/ProfileInactive.jsx";
 import Order from "./pages/orders/Order.jsx";
 import SavedItems from "./pages/savedItems/SavedItems.jsx";
@@ -27,112 +28,120 @@ import ProfileDelete from "./pages/profile/profileInfo/ProfileDelete.jsx";
 import Otp from "./pages/otp/Otp.jsx";
 import Products from "./pages/products/Product.jsx";
 import Contact from "./pages/contact/Contact.jsx";
+import ShopContextProvider from "./context/Shop-context.jsx";
+import Shop from "./pages/products/Shop.jsx";
+
 
 const router = createBrowserRouter([
- {
- path: "/",
- element: <Home />,
- errorElement: <NofoundPage />,
- },
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <NofoundPage />,
+  },
 
- {
- path: "/profile",
- element: <Profile />,
- children: [
- {
- path: "/profile/",
- element: <ProfileInactive />,
- },
- {
- path: "/profile/myProfile",
- element: <ProfileAccountInfo />,
- },
- {
- path: "/profile/myAdddress",
- element: <ProfileDeliveryDrop />,
- },
- {
- path: "/profile/myAddress/deliveryDrop",
- element: <ProfileSubmitAddress />,
- },
- {
- path: "/profile/delAcct",
- element: <ProfileDelete />,
- },
- ],
- },
+  {
+    path: "/profile",
+    element: <Profile />,
+    children: [
+      {
+        path: "/profile/",
+        element: <ProfileInactive />,
+      },
+      {
+        path: "/profile/myProfile",
+        element: <ProfileAccountInfo />,
+      },
+      {
+        path: "/profile/myAdddress",
+        element: <ProfileDeliveryDrop />,
+      },
+      {
+        path: "/profile/myAddress/deliveryDrop",
+        element: <ProfileSubmitAddress />,
+      },
+      {
+        path: "/profile/delAcct",
+        element: <ProfileDelete />,
+      },
+    ],
+  },
 
- {
- path: "/products",
- element: <Products />,
- },
- {
- path: "/about",
- element: <About />,
- },
- {
- path: "/help",
- element: <Help />,
- },
- {
- path: "/registration",
- element: <Reg />,
- },
+  {
+    path: "/products",
+    element: <Products />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/help",
+    element: <Help />,
+  },
+  {
+    path: "/registration",
+    element: <Reg />,
+  },
 
- {
- path: "/login",
- element: <Login />,
- },
- {
- path: "/getStarted",
- element: <Get_started />,
- },
- {
- path: "/cart",
- element: <Carts />,
- },
- {
- path: "/contact",
- element: <Contact />,
- },
- {
- path: "/inactiveProfile",
- element: <ProfileInactive />,
- },
- {
- path: "/orders",
- element: <Order />,
- },
- {
- path: "/savedItems",
- element: <SavedItems />,
- },
- {
- path: "/inbox",
- element: <Inbox />,
- },
- {
- path: "/track",
- element: <Track_order />,
- },
- {
- path: "/paymentWallet",
- element: <Payment_wallet />,
- },
- {
- path: "/logOut",
- element: <Logout />,
- },
- {
- path: "/otp",
- element: <Otp />,
- },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/getStarted",
+    element: <Get_started />,
+  },
+  {
+    path: "/cart",
+    element: <Carts />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/inactiveProfile",
+    element: <ProfileInactive />,
+  },
+  {
+    path: "/orders",
+    element: <Order />,
+  },
+  {
+    path: "/savedItems",
+    element: <SavedItems />,
+  },
+  {
+    path: "/inbox",
+    element: <Inbox />,
+  },
+  {
+    path: "/track",
+    element: <Track_order />,
+  },
+  {
+    path: "/paymentWallet",
+    element: <Payment_wallet />,
+  },
+  {
+    path: "/logOut",
+    element: <Logout />,
+  },
+  {
+    path: "/otp",
+    element: <Otp />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
- <StrictMode>
- {/* <App /> */}
- <RouterProvider router={router} />
- </StrictMode>
+  <StrictMode>
+    {/* <App /> */}
+    <ShopContextProvider>
+    <RouterProvider router={router} />
+    </ShopContextProvider>
+  </StrictMode>
 );
-
