@@ -2,7 +2,7 @@ import React from "react";
 import loginImg from "../../assets/images/form-image.png";
 import "./login.css";
 import { useForm } from "react-hook-form";
-import axios from "axios";
+import axios from "axios"
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Reg_nav from "../../components/navigation/register-nav/Reg_nav";

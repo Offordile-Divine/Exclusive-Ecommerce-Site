@@ -4,14 +4,13 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Profile from "./pages/profile/Profile.jsx";
-import Products from "./pages/products/Products.jsx";
 import About from "./pages/about/About.jsx";
 import Help from "./pages/help/Help.jsx";
 import Reg from "./pages/registration/Reg.jsx";
 import Login from "./pages/log-in/Login.jsx";
 import Get_started from "./pages/get-started/Get_started.jsx";
 import Carts from "./pages/carts/Carts.jsx";
-import Contact from "./pages/contact/Contact.jsx";
+
 import ProfileInactive from "./pages/profile/profileInfo/ProfileInactive.jsx";
 import Order from "./pages/orders/Order.jsx";
 import SavedItems from "./pages/savedItems/SavedItems.jsx";
@@ -27,6 +26,11 @@ import ProfileSubmitAddress from "./pages/profile/profileInfo/ProfileSubmitAddre
 import ProfileEditDelete from "./pages/profile/profileInfo/ProfileEditDelete.jsx";
 import ProfileDelete from "./pages/profile/profileInfo/ProfileDelete.jsx";
 import Otp from "./pages/otp/Otp.jsx";
+import Products from "./pages/products/Product.jsx";
+import Contact from "./pages/contact/Contact.jsx";
+import ShopContextProvider from "./context/Shop-context.jsx";
+import Shop from "./pages/products/Shop.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -127,11 +131,17 @@ const router = createBrowserRouter([
     path: "/otp",
     element: <Otp />,
   },
+  {
+    path: "/shop",
+    element: <Shop />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
+    <ShopContextProvider>
     <RouterProvider router={router} />
+    </ShopContextProvider>
   </StrictMode>
 );

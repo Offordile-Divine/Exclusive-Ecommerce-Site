@@ -1,30 +1,31 @@
 import { createContext, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Pages
-import Home from "./pages/home/Home";
-// import Reg_nav from "./register-nav/Reg_nav";
-import Products from "./pages/products/Products";
-import About from "./pages/about/About";
-import Help from "./pages/help/Help";
-import Get_started from "./pages/get-started/Get_started";
-import Reg from "./pages/registration/Reg";
-import Login from "./pages/log-in/Login";
-import Carts from "./pages/carts/Carts";
-import Contact from "./pages/contact/Contact";
-import Order from "./pages/orders/Order";
-import SavedItems from "./pages/savedItems/SavedItems";
-import Inbox from "./pages/inbox/Inbox";
-import Track_order from "./pages/track-order/Track_order";
-import Payment_wallet from "./pages/payment-wallet/Payment_wallet";
-import Logout from "./pages/logout/Logout";
-import Profile_inactive from "./pages/profile/Profile_inactive";
-import Profile from "./pages/profile/Profile";
-import Checkout from "./pages/checkout/Checkout";
+// // Pages
+// import Home from "./pages/home/Home";
+// // import Reg_nav from "./register-nav/Reg_nav";
+// import Products from "./pages/products/Products";
+// import About from "./pages/about/About";
+// import Help from "./pages/help/Help";
+// import Get_started from "./pages/get-started/Get_started";
+// import Reg from "./pages/registration/Reg";
+// import Login from "./pages/log-in/Login";
+// import Carts from "./pages/carts/Carts";
+// import Contact from "./pages/contact/Contact";
+// import Order from "./pages/orders/Order";
+// import SavedItems from "./pages/savedItems/SavedItems";
+// import Inbox from "./pages/inbox/Inbox";
+// import Track_order from "./pages/track-order/Track_order";
+// import Payment_wallet from "./pages/payment-wallet/Payment_wallet";
+// import Logout from "./pages/logout/Logout";
+// import Profile_inactive from "./pages/profile/Profile_inactive";
+// import Profile from "./pages/profile/Profile";
+// import Checkout from "./pages/checkout/Checkout";
 
 export const AppContext = createContext("Bruce");
 
 function App() {
+
   const [name, setName] = useState("Bruce");
   return (
     <>
@@ -61,3 +62,4 @@ function App() {
 }
 
 export default App;
+

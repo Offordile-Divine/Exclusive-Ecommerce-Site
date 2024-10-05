@@ -9,9 +9,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import { LuUserSquare2 } from "react-icons/lu";
 import "../nav.css";
+import CartItem from "../../../pages/carts/Cart-item";
 import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 import ProfileDropdown from "../../../utils/dropdown/ProfileDropdown";
 import { AiOutlineHome } from "react-icons/ai";
+
 
 const HomeNav = () => {
   const [click1, setClick1] = useState(false);
