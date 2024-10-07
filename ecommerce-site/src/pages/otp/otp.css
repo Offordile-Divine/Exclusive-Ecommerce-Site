@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+}
+
+.otp {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.otp-area {
+  width: 30%;
+  align-self: center;
+}
+
+.otp-area h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-area input {
+  margin-top: 35px;
+  outline: none;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+
+  /* &:focus {
+    border: 2px solid black;
+  } */
+}
+
+.otp img {
+  position: sticky;
+  top: 20px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+#write-up {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn1-create {
+  margin-top: 30px;
+  height: 50px;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(250, 250, 250, 1);
+  border-radius: 5px;
+  width: 60%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .otp {
+    display: flex;
+  }
+  .otp img {
+    display: none;
+  }
+
+  .otp-area {
+    width: 80%;
+  }
+
+  .otp-area h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #write-up {
+    font-size: 18px;
+  }
+
+  .btn1-create {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .otp {
+    display: flex;
+  }
+  .otp img {
+    display: none;
+  }
+
+  .otp-area {
+    width: 80%;
+  }
+
+  .otp-area h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #write-up {
+    font-size: 14px;
+  }
+
+  .btn1-create {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .otp {
+    display: flex;
+  }
+  .otp img {
+    display: none;
+  }
+
+  .otp-area {
+    width: 80%;
+  }
+
+  .otp-area h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #write-up {
+    font-size: 14px;
+  }
+
+  .btn1-create {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .otp {
+    display: flex;
+  }
+  .otp img {
+    display: none;
+  }
+
+  .otp-area {
+    width: 80%;
+  }
+
+  .otp-area h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #write-up {
+    font-size: 14px;
+  }
+
+  .btn1-create {
+    width: 50%;
+  }
+}

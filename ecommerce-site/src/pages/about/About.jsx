@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./about.css";
 import "./ImageSlider.jsx";
 import ImageSlider from "./ImageSlider.jsx";
@@ -97,8 +98,7 @@ const About = () => {
           </>
          
           
-  );
-};
+
 
 const slides = [
   {
