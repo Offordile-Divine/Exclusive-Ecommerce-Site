@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// // Pages
-// import Home from "./pages/home/Home";
-// // import Reg_nav from "./register-nav/Reg_nav";
+// Pages
+import Home from "./pages/home/Home";
+// import Reg_nav from "./register-nav/Reg_nav";
 // import Products from "./pages/products/Products";
 // import About from "./pages/about/About";
 // import Help from "./pages/help/Help";
@@ -25,7 +25,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export const AppContext = createContext("Bruce");
 
 function App() {
-
   const [name, setName] = useState("Bruce");
   return (
     <>
@@ -62,4 +61,3 @@ function App() {
 }
 
 export default App;
-
