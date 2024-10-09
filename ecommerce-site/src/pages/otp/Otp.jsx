@@ -37,13 +37,15 @@ const Otp = () => {
     }
   };
 
+  // console.log(APIKEY)
+
   // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Basic validation: Check if OTP is 4 digits
     if (otp.length !== 6) {
-      setError("OTP must be 4 digits");
+      setError("OTP must be 6 digits");
       return;
     }
 
@@ -59,7 +61,7 @@ const Otp = () => {
         },
       };
       const responseOtp = await axios.post(
-        "https://100daysofcoding-production.up.railway.app/auth/v1/verify-otp",
+        "https://one00daysofcoding.onrender.com/auth/v1/verify-otp",
         { otp },
         opt
       );
@@ -102,18 +104,15 @@ const Otp = () => {
             maxLength="6"
             value={otp}
             onChange={handleOtpChange}
-            placeholder="4 Digit OTP"
+            placeholder="6 Digit OTP"
           />
-          {/* <div className="btn">
-            <button className="btn1-create">Verify</button>
-          </div> */}
 
           {/* Show error message if validation fails */}
           {successMessage && (
             <div style={{ color: "green" }}>{successMessage}</div>
           )}
           {/* Show error message if validation fails */}
-          {error && <div style={{ color: "red" }}>{setError}</div>}
+          {error && <div style={{ color: "red" }}>{Error}</div>}
 
           {/* Show loading state */}
           {loading ? (

@@ -25,7 +25,7 @@ const ProfileEditDelete = () => {
       </div>
       <div className="userDetail">
         <div className="user_info">
-          <p>Default Delivery Address</p>
+          <p id="defaultDeliveryAddress">Default Delivery Address</p>
           <div className="delEdit">
             <Link id="user_del">Delete</Link>
             <Link to={`/profile/myAddress/deliveryDrop`} id="user_edit">

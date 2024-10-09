@@ -62,7 +62,7 @@ const Reg = () => {
     };
     try {
       const response = await axios.post(
-        "https://100daysofcoding-production.up.railway.app/auth/v1/register",
+        "https://one00daysofcoding.onrender.com/auth/v1/register",
         formData,
         opt
       );

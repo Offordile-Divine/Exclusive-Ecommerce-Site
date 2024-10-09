@@ -157,7 +157,7 @@
   .mb_UserHomeNav {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 40px;
   }
 
   #UserHomeNavIcon {
@@ -167,32 +167,28 @@
 
   #mb_InputHomeNav {
     margin: 0;
-    border: 2px solid rgba(22, 28, 45, 1);
+    border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 0 60px;
+    padding: 2px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    width: 55%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
-    font-size: 16px;
-  }
-
-  .mb_UserHomeNav {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 0;
   }
 
   .mbHamburger_tog {
     display: flex;
     align-items: center;
-    gap: 120px;
-    padding-left: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -249,7 +245,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 20px;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -306,7 +301,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 20px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -335,7 +329,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 20px;
   }
 
   #UserHomeNavIcon {
@@ -345,19 +338,19 @@
 
   #mb_InputHomeNav {
     margin: 0;
-    border: 2px solid rgba(22, 28, 45, 1);
+    border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 0 10px;
+    padding: 2px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    width: 60%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

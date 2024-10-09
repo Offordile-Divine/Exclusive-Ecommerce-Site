@@ -39,7 +39,7 @@ const Login = () => {
     };
     try {
       const res = await axios.post(
-        "https://100daysofcoding-production.up.railway.app/auth/v1/login",
+        "https://one00daysofcoding.onrender.com/auth/v1/login",
         loginData,
         opt
       );

@@ -48,7 +48,6 @@
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
   text-align: left;
 }
 
@@ -130,7 +129,7 @@
   background: rgba(245, 245, 245, 1);
   padding: 15px;
   border-radius: 7px;
-  width: 400px;
+  width: 450px;
   font-size: 16px;
 }
 
@@ -226,6 +225,7 @@
 }
 
 .submitAddress {
+  /* height: 50vh; */
   box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -384,4 +384,725 @@ select option {
   color: rgba(255, 255, 255, 1);
   padding: 5px 50px;
   border-radius: 10px;
+}
+
+.wrapConfirmDelete {
+  display: flex;
+  justify-content: center;
+}
+
+.delMyAcct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.yesNo {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+#yes {
+  padding: 7px 60px;
+  border-radius: 10px;
+  background: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+#no {
+  padding: 7px 60px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+}
+
+.checkDel {
+  display: flex;
+  justify-content: center;
+}
+
+.delCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.delCheck h5 {
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#check {
+  font-size: 40px;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 1420px) {
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+  }
+
+  .pi_inputFieldContent {
+    gap: 30px;
+  }
+
+  #inputRm {
+    width: 300px;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 16px;
+    padding: 7px;
+    width: 90%;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  .btn_ProfileAdddress {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1042px) {
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+  }
+
+  .pi_inputFieldContent {
+    gap: 30px;
+  }
+
+  #inputRm {
+    width: 100%;
+    font-size: 16px;
+    padding: 4px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 16px;
+    padding: 7px;
+    width: 90%;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  .btn_ProfileAdddress {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile_inactive {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #pi_icon {
+    padding: 5px;
+  }
+
+  .pi_nav a {
+    font-size: 10px;
+  }
+
+  .pi_reactIcon {
+    padding: 3px 5px;
+    font-size: 16px;
+  }
+
+  .pi_sidebar h2 {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_image {
+    width: 100%;
+    background-size: contain;
+    height: 350px;
+  }
+
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+  }
+
+  .pi_inputFieldContent {
+    gap: 30px;
+  }
+
+  #inputRm {
+    width: 100%;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 16px;
+    padding: 7px;
+    width: 90%;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  .btn_ProfileAdddress {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .profile_inactive {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #pi_icon {
+    padding: 5px;
+  }
+
+  .pi_nav a {
+    font-size: 10px;
+  }
+
+  .pi_reactIcon {
+    padding: 3px 5px;
+    font-size: 16px;
+  }
+
+  .pi_sidebar h2 {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_image {
+    width: 100%;
+    background-size: contain;
+    height: 350px;
+  }
+
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .pi_inputFieldContent {
+    flex-direction: column;
+  }
+
+  #inputRm {
+    width: 210px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 12px;
+    padding: 3px;
+    width: 210px;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+
+  .btn_ProfileAdddress {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .profile_inactive {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #pi_icon {
+    padding: 5px;
+  }
+
+  .pi_nav a {
+    font-size: 10px;
+  }
+
+  .pi_reactIcon {
+    padding: 3px 5px;
+    font-size: 16px;
+  }
+
+  .pi_sidebar h2 {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_image {
+    width: 100%;
+    background-size: contain;
+    height: 350px;
+  }
+
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .pi_inputFieldContent {
+    flex-direction: column;
+  }
+
+  #inputRm {
+    width: 185px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 12px;
+    padding: 3px;
+    width: 185px;
+    margin-top: 0;
+    margin-top: 10px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .btn_ProfileAdddress {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .profile_inactive {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #pi_icon {
+    padding: 5px;
+  }
+
+  .pi_nav a {
+    font-size: 10px;
+  }
+
+  .pi_reactIcon {
+    padding: 3px 5px;
+    font-size: 16px;
+  }
+
+  .pi_sidebar h2 {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_image {
+    width: 100%;
+    background-size: contain;
+    height: 350px;
+  }
+
+  /* Account Info Address */
+  .account_infoAddressContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #arrowBack {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .editProfile {
+    font-size: 16px;
+  }
+
+  .pi_InputName {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .pi_inputFieldContent {
+    flex-direction: column;
+  }
+
+  #inputRm {
+    width: 155px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .pi_inputField {
+    align-items: center;
+  }
+
+  #passWordChange {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #inputPass {
+    font-size: 12px;
+    padding: 3px;
+    width: 155px;
+    margin-top: 0;
+    margin-top: 10px;
+    border: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  .btn_ProfileAdddress {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  #btn_cancel {
+    padding: 5px 35px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  #btn_change {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  /* submitAddress */
+
+  .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  #btn_newAddress {
+    padding: 2px 5px;
+    font-size: 8px;
+    line-height: normal;
+    border-radius: 4px;
+  }
+
+  #addressId {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .user_info {
+    padding: 2px;
+  }
+
+  #defaultDeliveryAddress {
+    font-size: 8px;
+  }
+
+  #user_del {
+    font-size: 8px;
+  }
+
+  .delEdit {
+    gap: 10px;
+  }
+
+  #user_edit {
+    font-size: 8px;
+  }
+
+  .userDetail {
+    margin: 10px;
+    width: 70%;
+  }
+
+  .userDataDetail {
+    padding: 5px;
+    gap: 20px;
+  }
+
+  #iconPersonal {
+    font-size: 12px;
+  }
+
+  #personalUserInfo {
+    font-size: 8px;
+  }
+
+  .userData {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
