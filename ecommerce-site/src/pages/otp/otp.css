@@ -58,6 +58,7 @@
 .btn {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .btn1-create {
   margin-top: 30px;

@@ -73,7 +73,7 @@ const ProfileAccountInfo = () => {
                 <p className="err">{errors.email?.message}</p>
               </div>
             </div>
-            <label>Password Change</label>
+            <label id="passWordChange">Password Change</label>
             <input
               type="password"
               placeholder="Current password"

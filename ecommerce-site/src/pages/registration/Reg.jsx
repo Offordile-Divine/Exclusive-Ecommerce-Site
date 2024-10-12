@@ -9,13 +9,14 @@ import LoginNav from "../../components/navigation/login-nav/LoginNav";
 import { json, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AppContext } from "../../App";
-import axios from "axios"
+import axios from "axios";
 import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
 
-const APIKEY = import.meta.env.VITE_API_KEY;
+// const APIKEY = import.meta.env.VITE_API_KEY;
 
 const Reg = () => {
-  const { setName } = useContext(AppContext);
+  const { name } = useContext(AppContext);
+
   const navigate = useNavigate();
 
   const schema = yup.object().shape({
@@ -53,16 +54,15 @@ const Reg = () => {
     };
     console.log(data, formData);
 
-    console.log(APIKEY);
+    // console.log(APIKEY);
     const opt = {
       headers: {
-        "x-api-key": APIKEY,
         "Content-Type": "application/json",
       },
     };
     try {
       const response = await axios.post(
-        "https://100daysofcoding-production.up.railway.app/auth/v1/register",
+        "https://one00daysofcoding.onrender.com/auth/v1/register",
         formData,
         opt
       );
@@ -103,7 +103,7 @@ const Reg = () => {
 
   return (
     <div className="Form">
-      <Reg_nav />
+      <LoginNav />
       {/* <Otp /> */}
       <div className="reg">
         <img src={formImg} />

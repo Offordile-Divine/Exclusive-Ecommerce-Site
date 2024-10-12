@@ -154,6 +154,7 @@ input {
   .btn-create {
     font-size: 12px;
     padding: 20px;
+    width: 50%;
   }
 }
 
@@ -212,6 +213,7 @@ input {
   .btn-create {
     font-size: 12px;
     padding: 10px;
+    width: 50%;
   }
 }
 
@@ -269,6 +271,7 @@ input {
   .btn-create {
     font-size: 12px;
     padding: 10px;
+    width: 100%;
   }
 }
 
@@ -327,5 +330,6 @@ input {
   .btn-create {
     font-size: 12px;
     padding: 10px;
+    width: 100%;
   }
 }

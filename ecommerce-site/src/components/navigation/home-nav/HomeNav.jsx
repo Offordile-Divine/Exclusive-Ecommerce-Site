@@ -14,10 +14,10 @@ import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 import ProfileDropdown from "../../../utils/dropdown/ProfileDropdown";
 import { AiOutlineHome } from "react-icons/ai";
 
-
 const HomeNav = () => {
   const [click1, setClick1] = useState(false);
   const [click2, setClick2] = useState(false);
+  
 
   const handleClick1 = () => {
     setClick1(!click1);
@@ -30,24 +30,31 @@ const HomeNav = () => {
     <>
       <div className="HomeNav">
         <div className="home_nav">
-          <Link to="/" id="logo" style={{ textDecoration: "none" }}>
-            {<BiLogoApple />} <h1>Company</h1>
-          </Link>
           <div className="nav_dir">
-            <div className="input">
-              <input type="text" placeholder="What are you looking for" />
-              <FaSearch />
-            </div>
+            <Link to="/" id="logo" style={{ textDecoration: "none" }}>
+              {<BiLogoApple />} <h1>Company</h1>
+            </Link>
             <Link to="/">Home</Link>
             <Link to="/products">Products</Link>
             <Link to="/about">About</Link>
-            {/* <Link id="help" to="/help">
-            Help {<SlArrowDown style={{ marginLeft: "3px" , }} />}
-          </Link> */}
-
             <HelpDropdown />
           </div>
         </div>
+        <div className="loginRgInput">
+          <div className="input">
+            <input type="text" placeholder="What are you looking for" />
+            <FaSearch />
+          </div>
+          <div className="logReg2">
+            <Link id="navLogLink2" to="/registration">
+              Login
+            </Link>
+            <Link id="register2" to="/registration">
+              Register
+            </Link>
+          </div>
+        </div>
+
         <div className="profcart">
           <ProfileDropdown />
           <Link to="/cart" className="prof">

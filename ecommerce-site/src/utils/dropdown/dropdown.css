@@ -5,7 +5,8 @@
 .prof_toggle.active {
   display: block;
   right: 0;
-  top: 100px;
+  top: 157px;
+  z-index: 1;
 }
 
 .mbNavHome_toggle.active {
@@ -21,8 +22,9 @@
 
 .help_toggle.active {
   display: block;
-  right: 0;
-  top: 70px;
+  right: 281px;
+  top: 59px;
+  z-index: 1;
 }
 
 .help_toggle {
@@ -174,12 +176,16 @@ ul a {
     display: block;
     right: 0;
     top: 80px;
+    z-index: 1;
+    height: 100vh;
   }
 
   .mbHamburger_toggle.active {
     display: block;
     left: 0;
     top: 130px;
+    z-index: 1;
+    height: 100vh;
   }
 
   .mbNavHome_toggle {
@@ -188,11 +194,11 @@ ul a {
 
   .mbNavHome_tog {
     padding: 30px;
-    width: 200px;
+    width: 300px;
   }
 
   .homeNavRm {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
@@ -316,7 +322,7 @@ ul a {
 
   .mbNavHome_tog {
     padding: 20px;
-    width: 200px;
+    width: 250px;
   }
 
   .homeNavRm {

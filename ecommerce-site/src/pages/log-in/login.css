@@ -82,6 +82,7 @@
 }
 
 .googleSignin {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +91,6 @@
 }
 
 .googleSignin button {
-  width: 100%;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
@@ -177,6 +177,10 @@
     font-size: 16px;
   }
 
+  .googleSignin {
+    width: 50%;
+  }
+
   .googleSignin button {
     font-size: 16px;
     padding: 20px;
@@ -234,6 +238,10 @@
 
   .log_forget a {
     font-size: 12px;
+  }
+
+  .googleSignin {
+    width: 50%;
   }
 
   .googleSignin button {
@@ -295,6 +303,10 @@
     font-size: 12px;
   }
 
+  .googleSignin {
+    width: 100%;
+  }
+
   .googleSignin button {
     font-size: 12px;
     padding: 10px;
@@ -334,7 +346,6 @@
 
   .login_form input {
     font-size: 14px;
-    
   }
 
   .login_form p {
@@ -353,6 +364,10 @@
 
   .log_forget a {
     font-size: 12px;
+  }
+
+  .googleSignin {
+    width: 100%;
   }
 
   .googleSignin button {
