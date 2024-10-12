@@ -4,24 +4,9 @@ import "./otp.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const APIKEY = import.meta.env.VITE_API_KEY;
+// const APIKEY = import.meta.env.VITE_API_KEY;
 
 const Otp = () => {
-  // const [otp, setOtp] = useState(new Array(1).fill(""));
-  // const handleChange = (e, index) => {
-  //   if (isNaN(e.target.value)) return false;
-
-  //   setOtp([
-  //     ...otp.map((data, ix) => {
-  //       return ix === index ? e.target.value : data;
-  //     }),
-  //   ]);
-
-  //   if (e.target.value && e.target.nextSibling) {
-  //     e.target.nextSibling.focus();
-  //   }
-  // };
-
   const [otp, setOtp] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -54,16 +39,21 @@ const Otp = () => {
     setLoading(true);
 
     try {
-      const opt = {
-        header: {
-          "x-api-key": APIKEY,
-          "Content-Type": "application/json",
-        },
-      };
+      // const opt = {
+      //   withCredentials: true,
+      //   headers: {
+      //     // "x-api-key": APIKEY,
+      //     "Content-Type": "application/json",
+      //   },
+      // };
       const responseOtp = await axios.post(
         "https://one00daysofcoding.onrender.com/auth/v1/verify-otp",
         { otp },
-        opt
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
       );
       console.log(responseOtp.data);
       if (responseOtp.data.status === "success") {
@@ -73,12 +63,20 @@ const Otp = () => {
         setError("Invalid OTP, Please try again");
       }
     } catch (err) {
-      setError("Something went wrong, please try again");
-    } finally {
-      setLoading(false);
-    }
-  };
+      //  catch (err) {
+      //   setError("Something went wrong, please try again", err);
+      // } finally {
 
+      if (err.response) {
+        console.error(err.response.data, "Error response message");
+      } else if (err.request) {
+        console.error(err.request, "Error request message....");
+      } else {
+        console.error(err.message, "Error message");
+      }
+    }
+    setLoading(false);
+  };
   return (
     <div className="otp">
       <img src={otpImg} />
@@ -86,25 +84,14 @@ const Otp = () => {
       <div className="otp-area">
         <h1>Verify Email Adress</h1>
         <p id="write-up">Enter code sent to your Email</p>
-        {/* <form className="input-field">
-          {otp.map((data, i) => {
-            return (
-              <input
-                key={i}
-                type="number"
-                onChange={(e) => handleChange(e, i)}
-                maxLength="4"
-              />
-            );
-          })}
-        </form> */}
+
         <form className="input-field" onSubmit={handleSubmit}>
           <input
             type="text"
             maxLength="6"
             value={otp}
             onChange={handleOtpChange}
-            placeholder="6 Digit OTP"
+            placeholder="Enter 6 Digit OTP"
           />
 
           {/* Show error message if validation fails */}
@@ -112,7 +99,7 @@ const Otp = () => {
             <div style={{ color: "green" }}>{successMessage}</div>
           )}
           {/* Show error message if validation fails */}
-          {error && <div style={{ color: "red" }}>{Error}</div>}
+          {error && <div style={{ color: "red" }}>{error}</div>}
 
           {/* Show loading state */}
           {loading ? (
@@ -131,3 +118,18 @@ const Otp = () => {
 };
 
 export default Otp;
+
+// const [otp, setOtp] = useState(new Array(1).fill(""));
+// const handleChange = (e, index) => {
+//   if (isNaN(e.target.value)) return false;
+
+//   setOtp([
+//     ...otp.map((data, ix) => {
+//       return ix === index ? e.target.value : data;
+//     }),
+//   ]);
+
+//   if (e.target.value && e.target.nextSibling) {
+//     e.target.nextSibling.focus();
+//   }
+// };

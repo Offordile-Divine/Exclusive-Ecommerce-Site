@@ -2,7 +2,7 @@ import React from "react";
 import loginImg from "../../assets/images/form-image.png";
 import "./login.css";
 import { useForm } from "react-hook-form";
-import axios from "axios";
+import axios from "axios"
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
@@ -10,9 +10,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import LoginNav from "../../components/navigation/login-nav/LoginNav";
 
-const APIKEY = import.meta.env.VITE_API_KEY;
+// const APIKEY = import.meta.env.VITE_API_KEY;
 
 const Login = () => {
+  const {loggedIn} = useContext()
   const navigate = useNavigate();
   const schema = yup.object().shape({
     email: yup.string().email().required("Email is required"),
@@ -33,7 +34,7 @@ const Login = () => {
 
     const opt = {
       headers: {
-        "x-api-key": APIKEY,
+        // "x-api-key": APIKEY,
         "Content-Type": "application/json",
       },
     };
@@ -54,7 +55,7 @@ const Login = () => {
   };
   return (
     <div className="Login">
-      <LoginNav />
+      <Reg_nav />
       <div className="login_content">
         <img src={loginImg} />
         <div className="login_form">

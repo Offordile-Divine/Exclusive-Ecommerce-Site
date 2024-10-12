@@ -225,7 +225,7 @@
 }
 
 .submitAddress {
-  /* height: 50vh; */
+  height: 100%;
   box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
   border: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -261,7 +261,7 @@
 }
 
 .userDetail {
-  width: 40%;
+  width: 60%;
   margin: 20px;
   border: 2px solid rgba(0, 0, 0, 0.25);
   border-radius: 7px;
@@ -270,6 +270,7 @@
 .user_info {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 20px;
 }
@@ -524,6 +525,24 @@ select option {
   form {
     align-items: center;
   }
+
+    /* Form Address Detail */
+  .addressVal {
+    width: 80%;
+  }
+  .phoneNum {
+    width: 90%;
+  }
+
+  .lga {
+    width: 90%;
+    padding-right: 0;
+  }
+
+  select {
+    padding: 7px;
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 1042px) {
@@ -592,6 +611,84 @@ select option {
 
   form {
     align-items: center;
+  }
+
+  /* Form Address Detail */
+  .addressVal {
+    width: 80%;
+  }
+  .phoneNum {
+    width: 90%;
+  }
+
+  .lga {
+    width: 90%;
+    padding-right: 0;
+  }
+
+  select {
+    padding: 7px;
+    width: 90%;
+  }
+
+  /* Delete Account */
+
+  .detailDel {
+    padding: 10px;
+  }
+
+  .detailDel p {
+    font-size: 12px;
+  }
+
+  .delBtn {
+    padding-left: 0;
+    padding-right: 10px;
+    
+  }
+
+  .delBtn button {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  /* Delete account pop up */
+
+  .delMyAcct {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .delMyAcct p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #yes {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  #no {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  /* Delete pop */
+
+  .delCheck {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .delCheck h5 {
+    font-size: 16px;
+  }
+
+  #check {
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 0;
   }
 }
 
@@ -706,6 +803,83 @@ select option {
   form {
     align-items: center;
   }
+
+  /* submitAddress */
+
+  .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  #btn_newAddress {
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: normal;
+    border-radius: 4px;
+  }
+
+  #addressId {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .user_info {
+    padding: 2px;
+  }
+
+  #defaultDeliveryAddress {
+    font-size: 16px;
+  }
+
+  #user_del {
+    font-size: 12px;
+  }
+
+  .delEdit {
+    gap: 10px;
+  }
+
+  #user_edit {
+    font-size: 12px;
+  }
+
+  .userDetail {
+    margin: 10px;
+    width: 70%;
+  }
+
+  .userDataDetail {
+    gap: 20px;
+  }
+
+  #iconPersonal {
+    font-size: 16px;
+  }
+
+  #personalUserInfo {
+    font-size: 12px;
+  }
+
+  .userData {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Form Address Detail */
+
+  .phoneNum {
+    width: 90%;
+  }
+
+  .lga {
+    width: 90%;
+  }
+
+  select {
+    padding: 7px;
+    width: 90%;
+  }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -820,6 +994,174 @@ select option {
 
   form {
     align-items: center;
+  }
+
+  /* submitAddress */
+
+  .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  #btn_newAddress {
+    padding: 2px 5px;
+    font-size: 8px;
+    line-height: normal;
+    border-radius: 4px;
+  }
+
+  #addressId {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .user_info {
+    padding: 2px;
+  }
+
+  #defaultDeliveryAddress {
+    font-size: 10px;
+  }
+
+  #user_del {
+    font-size: 10px;
+  }
+
+  .delEdit {
+    gap: 10px;
+  }
+
+  #user_edit {
+    font-size: 10px;
+  }
+
+  .userDetail {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .userDataDetail {
+    padding: 5px;
+    gap: 20px;
+  }
+
+  #iconPersonal {
+    font-size: 12px;
+  }
+
+  #personalUserInfo {
+    font-size: 10px;
+  }
+
+  .userData {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+   /* Form Address Detail */
+
+   .addressVal {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .form-name  {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .phoneNum {
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .lga  {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  select {
+    padding: 7px;
+    margin-top: 10px;
+    width: 210px;
+    font-size: 12px;
+  }
+
+  .btnCont button  {
+    font-size: 12px;
+    line-height: normal;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  /* Delete Account */
+
+  .detailDel {
+    padding: 10px;
+  }
+
+  .detailDel p {
+    font-size: 10px;
+  }
+
+  .delBtn {
+    padding-left: 0;
+    padding-right: 10px;
+    
+  }
+
+  .delBtn button {
+    padding: 7px;
+    font-size: 10px;
+  }
+
+  /* Delete account pop up */
+
+  .delMyAcct {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .delMyAcct p {
+    font-size: 7px;
+    text-align: center;
+  }
+
+  #yes {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  #no {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  /* Delete pop */
+
+  .delCheck {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .delCheck h5 {
+    font-size: 12px;
+  }
+
+  #check {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 0;
   }
 }
 
@@ -936,6 +1278,168 @@ select option {
 
   form {
     align-items: center;
+  }
+
+  /* submitAddress */
+
+  .linkbtn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  #btn_newAddress {
+    padding: 2px 5px;
+    font-size: 8px;
+    line-height: normal;
+    border-radius: 4px;
+  }
+
+  #addressId {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  .user_info {
+    padding: 2px;
+  }
+
+  #defaultDeliveryAddress {
+    font-size: 10px;
+  }
+
+  #user_del {
+    font-size: 10px;
+  }
+
+  .delEdit {
+    gap: 10px;
+  }
+
+  #user_edit {
+    font-size: 10px;
+  }
+
+  .userDetail {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .userDataDetail {
+    padding: 5px;
+    gap: 20px;
+  }
+
+  #iconPersonal {
+    font-size: 12px;
+  }
+
+  #personalUserInfo {
+    font-size: 10px;
+  }
+
+  .userData {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+   /* Form Address Detail */
+
+   .addressVal {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .form-name  {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .phoneNum {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .lga  {
+    justify-content: center;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  select {
+    padding: 5px;
+    margin-top: 10px;
+    width: 191px;
+    font-size: 12px;
+  }
+
+  .btnCont button  {
+    font-size: 12px;
+    line-height: normal;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+
+  /* Delete Account */
+
+  .detailDel {
+    padding: 10px;
+  }
+
+  .detailDel p {
+    font-size: 10px;
+  }
+
+  .delBtn {
+    padding-left: 0;
+    padding-right: 10px;
+    
+  }
+
+  .delBtn button {
+    padding: 7px;
+    font-size: 10px;
+  }
+
+  /* Delete account pop up */
+
+  .delMyAcct {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .delMyAcct p {
+    font-size: 7px;
+    text-align: center;
+  }
+
+  #yes {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  #no {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  /* Delete pop */
+
+  .delCheck {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .delCheck h5 {
+    font-size: 12px;
+  }
+
+  #check {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 0;
   }
 }
 
@@ -1059,7 +1563,7 @@ select option {
   }
 
   #addressId {
-    font-size: 8px;
+    font-size: 12px;
     line-height: normal;
   }
 
@@ -1068,11 +1572,11 @@ select option {
   }
 
   #defaultDeliveryAddress {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   #user_del {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .delEdit {
@@ -1080,12 +1584,12 @@ select option {
   }
 
   #user_edit {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .userDetail {
     margin: 10px;
-    width: 70%;
+    width: 90%;
   }
 
   .userDataDetail {
@@ -1098,11 +1602,110 @@ select option {
   }
 
   #personalUserInfo {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .userData {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  /* Form Address Detail */
+
+  .addressVal {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .form-name  {
+    width: auto;
+    font-size: 10px;
+  }
+
+  .phoneNum {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .lga  {
+    justify-content: center;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  select {
+    padding: 5px;
+    margin-top: 10px;
+    width: 160px;
+    font-size: 12px;
+  }
+
+  .btnCont button  {
+    font-size: 12px;
+    line-height: normal;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  /* Delete Account */
+
+  .detailDel {
+    padding: 10px;
+  }
+
+  .detailDel p {
+    font-size: 10px;
+  }
+
+  .delBtn {
+    padding-left: 0;
+    padding-right: 10px;
+    
+  }
+
+  .delBtn button {
+    padding: 7px;
+    font-size: 10px;
+  }
+
+  /* Delete account pop up */
+
+  .delMyAcct {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .delMyAcct p {
+    font-size: 7px;
+    text-align: center;
+  }
+
+  #yes {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  #no {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+
+  /* Delete pop */
+
+  .delCheck {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .delCheck h5 {
+    font-size: 12px;
+  }
+
+  #check {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 0;
   }
 }

@@ -1,0 +1,263 @@
+.ct_header h1{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.ct_content {
+    padding-bottom: 80px;
+}
+
+.ct_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct_product {
+    padding-top: 10px;
+    padding-right: 200px;
+    padding-left: 10px;
+}
+
+/* .ct_Remove {
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.ct_Size {
+    padding-right: 300px;
+    padding-top: 5px;
+}
+
+.ct_Quality {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+
+.ct_Price {
+    padding-right: 100px;
+    padding-top: 5px;
+} */
+
+.ct_body {
+    margin-right: 100px;
+}
+
+
+.ct_table {
+    background: #F8F8F8; 
+}
+
+.ct_general {
+    background: #F8F8F8;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.ct_image {
+    padding: 10px;
+    /* padding-right: 150px; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+
+.ct_image p{
+    padding-left: 60px;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 2px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    width: 145px;
+    height: 27px;
+    top: 154px;
+    left: 191px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.ct_size {
+    padding: 10px;
+    padding-right: 150px;
+    width: 70px;
+    height: 60px;
+    top: 140px;
+    left: 410px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    /* padding-bottom: 50px; */
+
+}
+
+.ct_size button{
+    padding: 8px;
+    border: 1px solid #D8D3D3;
+    width: 70px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.ct_quality {
+    padding: 10px;
+    padding-right: 150px;
+} 
+
+.ct_countHandler {
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct_countHandler button{
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* .ct_countHandler input {
+    height: 35px;
+    color: #FFFFFF;
+    width: 40px;
+    padding-top: 50px;
+} */
+
+.ct_positive {
+    background: #161C2D;
+    border: 1.2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.ct_negative{
+    background: #F8F8F8;
+    border: 1px solid #D8D3D3
+}
+
+.ct_remove {
+    padding: 8px;
+    padding-right: 150px;
+    background-color: #F8F8F8;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 130px;
+    
+}
+
+.ct_remove button{
+    padding: 8px;
+    border: 1px solid #D8D3D3;
+    width: 50px;
+    height: 50px; 
+}
+
+.ct_price {
+    color: #000000;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    padding-right: 10px; 
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    /* text-align: center; */
+    /* width: 48px; */
+    height: 24px;
+    top: 158px;
+    /* left: 928px; */
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.ct_form {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ct_head p{
+    border-bottom: 2px;
+    border-color: #000000;
+}
+
+.ct_first {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* .ct_paragrph {
+    padding-bottom: 5px;
+} */
+
+.ct_fbutton {
+    padding: 6px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.ct_fbutton button{
+    background: #161C2D;
+    border: 1px solid #D8D3D3;
+
+}
+
+.ct_discount {
+    padding-top: 5px;
+}
+
+.ct_discount input{
+    padding-right: 80px;
+    padding-left: 20px;
+}
+
+.ct_sbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_sbutton button{
+    padding: 6px;
+    padding-left: 50px;
+    padding-right: 70px;
+    
+}
+
+.ct_tbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_tbutton button{
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 55px;
+}
+
+.ct_lbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_lbutton button{
+    padding: 6px;
+    padding-left: 35px;
+    padding-right: 38px;
+}

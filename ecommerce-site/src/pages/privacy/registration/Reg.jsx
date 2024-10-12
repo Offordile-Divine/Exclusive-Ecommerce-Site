@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import formImg from "../../assets/images/form-image.png";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,19 +6,9 @@ import * as yup from "yup";
 import "./reg.css";
 import { CiSquareCheck } from "react-icons/ci";
 import LoginNav from "../../components/navigation/login-nav/LoginNav";
-import { json, useNavigate } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
-import { AppContext } from "../../App";
-import axios from "axios";
-import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
-
-// const APIKEY = import.meta.env.VITE_API_KEY;
+// import Otp from "../otp/Otp";
 
 const Reg = () => {
-  const { name } = useContext(AppContext);
-
-  const navigate = useNavigate();
-
   const schema = yup.object().shape({
     firstName: yup.string().max(30).required("Your first name is required"),
     lastName: yup.string().max(30).required("Your last name is required"),
@@ -41,64 +31,8 @@ const Reg = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const onSubmit = async (data) => {
-    // console.log(data);
-
-    const formData = {
-      firstname: data.firstName,
-      lastname: data.lastName,
-      email: data.email,
-      state: data.state,
-      password: data.passWord,
-      confirmPassword: data.confirmPassword,
-    };
-    console.log(data, formData);
-
-    // console.log(APIKEY);
-    const opt = {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-    try {
-      const response = await axios.post(
-        "https://one00daysofcoding.onrender.com/auth/v1/register",
-        formData,
-        opt
-      );
-      // const response = await axios.get(
-      //   "https://100daysofcoding-production.up.railway.app/api/v1/states"
-      // );
-      console.log("Response...", response.data);
-      if (response.data.status === "success") {
-        navigate("/otp");
-      }
-    } catch (err) {
-      if (err.response) {
-        console.error(err.response.data, "Error response message");
-      } else if (err.request) {
-        console.error(err.request, "Error request message....");
-      } else {
-        console.error(err.message, "Error message");
-      }
-    }
-
-    // try {
-    //   const res = fetch(
-    //     "https://100daysofcoding-production.up.railway.app/auth/v1/register",
-    //     {
-    //       method: "POST",
-    //       headers: {
-    //         "x-api-key":
-    //           "a4f5c6d7e8a9b10c11d12e13f14b15c16d17e18f19a20b21c22d23e24f25g26",
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(formData),
-    //     }
-    //   );
-    // } catch (err) {
-    //   console.error(err);
-    // }
+  const onSubmit = (data) => {
+    console.log(data);
   };
 
   return (
@@ -117,7 +51,6 @@ const Reg = () => {
               type="text"
               placeholder="First Name"
               {...register("firstName")}
-              // onChange={(e) => setName(e.target.value)}
             />
             <p className="err">{errors.firstName?.message}</p>
             <input
@@ -145,14 +78,12 @@ const Reg = () => {
             <p className="err">{errors.confirmPassword?.message}</p>
             {/* <input type="submit" className="submit-btn" /> */}
 
-            <button className="btn-create" type="submit">
+            <button
+              className="btn-create"
+              onClick={() => handleSubmit(onSubmit)}
+            >
               Create an account
             </button>
-            <div className="googleSignin">
-              <button>
-                <FcGoogle /> Sign in with Google
-              </button>
-            </div>
           </form>
           <div className="exist_log">
             <p>Already have an account?</p>

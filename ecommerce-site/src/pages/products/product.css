@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.pd_content{
+    border: 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.pd_header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #161C2D;
+    border-radius: 10px;
+}
+
+.pd_image {
+    padding: 20px;
+}
+
+.pd_description p{
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.pd_addToCart {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.pd_addToCart button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}

@@ -5,7 +5,8 @@
 .prof_toggle.active {
   display: block;
   right: 0;
-  top: 100px;
+  top: 157px;
+  z-index: 1;
 }
 
 .mbNavHome_toggle.active {
@@ -21,8 +22,9 @@
 
 .help_toggle.active {
   display: block;
-  right: 0;
-  top: 70px;
+  right: 281px;
+  top: 59px;
+  z-index: 1;
 }
 
 .help_toggle {

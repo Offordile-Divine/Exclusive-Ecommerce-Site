@@ -12,23 +12,22 @@ const LoginNav = () => {
   return (
     <div>
       <div className="log_nav">
-        <Link to="/" id="logo" style={{ textDecoration: "none" }}>
-          {<BiLogoApple />} <h1>Company</h1>
-        </Link>
         <div className="nav_dir">
+          <Link to="/" id="logo" style={{ textDecoration: "none" }}>
+            {<BiLogoApple />} <h1>Company</h1>
+          </Link>
+          <Link to="/">Home</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/about">About</Link>
+
+          <HelpDropdown />
+        </div>
+        <div className="logInput2">
           <div className="input">
             <input type="text" placeholder="What are you looking for" />
             <FaSearch />
           </div>
-          <Link to="/">Home</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/about">About</Link>
-          {/* <Link id="help" to="/help">
-            Help
-            {<SlArrowDown style={{ marginLeft: "3px", fontSize: "10px" }} />}
-          </Link> */}
 
-          <HelpDropdown />
           <Link id="loginNav" to="/login">
             Login
           </Link>
