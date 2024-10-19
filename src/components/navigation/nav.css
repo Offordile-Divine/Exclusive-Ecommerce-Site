@@ -75,7 +75,7 @@
   border: none;
   outline: none;
   font-size: 17px;
-  font-family: "montserrate",sans-serif;
+  font-family: "montserrate", sans-serif;
   padding: 5px;
 }
 
@@ -83,7 +83,6 @@
   padding: 5px;
   cursor: pointer;
   color: rgba(22, 28, 45, 1);
-  ;
 }
 
 .nav_dir {
@@ -129,7 +128,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.inputCenter{
+.inputCenter {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -199,6 +198,8 @@
     display: none;
   }
 
+  
+
   .log_nav {
     display: none;
   }
@@ -229,19 +230,19 @@
     margin: 0;
     border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 2px 100px;
+    padding: 2px 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 55%;
+    justify-content: space-between;
+    width: 90%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
-    font-size: 18px;
-    padding-right: 20px;
+    padding-right: 0;
     padding-left: 0;
+    font-size: 18px;
   }
 
   .mbHamburger_tog {
@@ -280,19 +281,21 @@
 
   #mb_InputHomeNav {
     margin: 0;
-    border: 2px solid rgba(22, 28, 45, 1);
+    border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 0 30px;
+    padding: 2px 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    width: 80%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
-    font-size: 14px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 12px;
   }
 
   .mb_UserHomeNav {
@@ -336,18 +339,20 @@
 
   #mb_InputHomeNav {
     margin: 0;
-    border: 2px solid rgba(22, 28, 45, 1);
+    border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 0 20px;
+    padding: 2px 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    width: 80%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
+    padding-right: 0;
+    padding-left: 0;
     font-size: 12px;
   }
 
@@ -400,17 +405,19 @@
     margin: 0;
     border: 0.1px solid rgba(22, 28, 45, 1);
     border-radius: 7px;
-    padding: 2px 50px;
+    padding: 2px 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60%;
+    justify-content: space-between;
+    width: 80%;
   }
 
   #mb_InputHomeNav input {
     margin: 0;
     border: none;
+    padding-right: 0;
     font-size: 12px;
+    width: 100%;
   }
 }
 
@@ -482,7 +489,7 @@
   }
 
   #search {
-    font-size: 14px;
+    font-size: 22px;
   }
 
   .registrationNav {
@@ -570,7 +577,7 @@
   }
 
   #search {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .registrationNav {
@@ -658,7 +665,7 @@
   }
 
   #search {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .registrationNav {
@@ -765,6 +772,6 @@
   }
 
   #search {
-    font-size: 10px;
+    font-size: 15px;
   }
 }

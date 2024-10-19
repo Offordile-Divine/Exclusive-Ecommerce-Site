@@ -16,10 +16,24 @@ import { AiOutlineHome } from "react-icons/ai";
 import ManagementDrop from "../../../utils/dropdown/profile-dropdown/ManagementDrop";
 import OrderProfileDrop from "../../../utils/dropdown/profile-dropdown/OrderProfileDrop";
 import WalletProfileDrop from "../../../utils/dropdown/profile-dropdown/WalletProfileDrop";
+import { CgProfile } from "react-icons/cg";
+import { CiHome } from "react-icons/ci";
+import { MdOutlineForwardToInbox } from "react-icons/md";
+import { MdProductionQuantityLimits } from "react-icons/md";
+import { MdOutlineTrackChanges } from "react-icons/md";
+import { MdOutlineSaveAlt } from "react-icons/md";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { MdOutlinePolicy } from "react-icons/md";
+import { MdContactMail } from "react-icons/md";
+import { FaQuestion } from "react-icons/fa";
+import { FaPersonCircleQuestion } from "react-icons/fa6";
+import { IoMdLogOut } from "react-icons/io";
+import { LiaTimesSolid } from "react-icons/lia";
 
 const HomeNav = () => {
   const [click1, setClick1] = useState(false);
   const [click2, setClick2] = useState(false);
+  const [cancel, setCancel] = useState(true);
 
   const handleClick1 = () => {
     setClick1(!click1);
@@ -27,6 +41,10 @@ const HomeNav = () => {
 
   const handleClick2 = () => {
     setClick2(!click2);
+  };
+
+  const handleCancel = () => {
+    setCancel(!cancel);
   };
   return (
     <>
@@ -121,7 +139,11 @@ const HomeNav = () => {
             <Link>Edit Profile</Link>
           </div>
         </div> */}
-
+        <div className="cancelClick">
+          <button onClick={handleClick2}>
+            <LiaTimesSolid />
+          </button>
+        </div>
         <div className="wrapRegLog">
           <div className="logINUserDetail">
             <Link to="/login">Login</Link>
@@ -131,78 +153,88 @@ const HomeNav = () => {
           </div>
         </div>
         <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/" className="homeNavRm">
-            Home {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/profile" className="homeNavRm">
-            Profile {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/inbox" className="homeNavRm">
-            Inbox {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/shop" className="homeNavRm">
-            Product/Categories {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/track" className="homeNavRm">
-            Track My Orders {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/savedItems" className="homeNavRm">
-            Saved Items/Favourites {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/paymentWallet" className="homeNavRm">
-            Payment/Wallet Setting {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/returnPolicy" className="homeNavRm">
-            Return Policy{<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/contact" className="homeNavRm">
-            Contact Us {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/faq" className="homeNavRm">
-            Faq {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/about" className="homeNavRm">
-            About {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
-        <li className="mbNavHome_tog">
-          <Link to="/logOut" className="homeNavRm">
-            LogOut {<LiaGreaterThanSolid />}
-          </Link>
-        </li>
-        <hr />
+        <div className="homeLinkNavWrap">
+          <li className="mbNavHome_tog">
+            <Link to="/" className="homeNavRm" onClick={handleClick2}>
+              Home {<CiHome id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/profile" className="homeNavRm" onClick={handleClick2}>
+              Profile {<CgProfile id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/inbox" className="homeNavRm" onClick={handleClick2}>
+              Inbox {<MdOutlineForwardToInbox id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/shop" className="homeNavRm" onClick={handleClick2}>
+              Product/Categories
+              {<MdProductionQuantityLimits id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/track" className="homeNavRm" onClick={handleClick2}>
+              Track My Orders {<MdOutlineTrackChanges id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/savedItems" className="homeNavRm" onClick={handleClick2}>
+              Saved Items/Favourites {<MdOutlineSaveAlt id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link
+              to="/paymentWallet"
+              className="homeNavRm"
+              onClick={handleClick2}
+            >
+              Payment/Wallet Setting {<RiSecurePaymentLine id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link
+              to="/returnPolicy"
+              className="homeNavRm"
+              onClick={handleClick2}
+            >
+              Return Policy{<MdOutlinePolicy id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/contact" className="homeNavRm" onClick={handleClick2}>
+              Contact Us {<MdContactMail id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/faq" className="homeNavRm" onClick={handleClick2}>
+              Faq {<FaQuestion id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/about" className="homeNavRm" onClick={handleClick2}>
+              About {<FaPersonCircleQuestion id="iconHomeNav" />}
+            </Link>
+          </li>
+          <hr />
+          <li className="mbNavHome_tog">
+            <Link to="/logOut" className="homeNavRm" onClick={handleClick2}>
+              LogOut {<IoMdLogOut id="iconHomeNav" />}
+            </Link>
+          </li>
+        </div>
       </ul>
     </>
   );

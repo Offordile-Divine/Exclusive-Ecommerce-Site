@@ -9,6 +9,7 @@ import Reg_nav from "../../components/navigation/register-nav/Reg_nav";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import LoginNav from "../../components/navigation/login-nav/LoginNav";
+import api from "../googleauth/Axiosconfig";
 
 // const APIKEY = import.meta.env.VITE_API_KEY;
 
@@ -53,6 +54,16 @@ const Login = () => {
       // toast.warning("Please enter the right input");
     }
   };
+
+  const handleGoogleLogin = async () => {
+    try {
+      const responseGoogleLogin = await api.get("/api/v1/google");
+      console.log(responseGoogleLogin);
+      window.location.href = responseGoogleLogin.request.responseURL;
+    } catch {
+      console.error("Google login error");
+    }
+  };
   return (
     <div className="Login">
       <Reg_nav />
@@ -76,14 +87,18 @@ const Login = () => {
             />
             <p className="err">{errors.password?.message}</p>
             <div className="log_forget">
-              <button id="login_btn" type="submit">
-                Log In
-              </button>
-              <a href="">Forget password?</a>
+              <div>
+                <button id="login_btn" type="submit">
+                  Log In
+                </button>
+              </div>
+              <div>
+                <a href="">Forget password?</a>
+              </div>
             </div>
             <p id="or">or</p>
             <div className="googleSignin">
-              <button>
+              <button onClick={handleGoogleLogin}>
                 <FcGoogle /> Sign in with Google
               </button>
             </div>

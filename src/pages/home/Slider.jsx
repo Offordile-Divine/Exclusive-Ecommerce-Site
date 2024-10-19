@@ -37,9 +37,12 @@ const Slider = () => {
         <SectionA />
         <SectionA />
       </Carousel>
-      <div className="explore">
-        <Link id="exploreLink">Our Categories</Link>
+      <div className="dealsWrap">
+        <div className="explore">
+          <Link id="exploreLink">Our Categories</Link>
+        </div>
       </div>
+
       <div className="wrapSectonDescription3">
         {Goods.map((product, ix) => (
           <SectionImgDescription
@@ -50,15 +53,16 @@ const Slider = () => {
           />
         ))}
       </div>
+      <div className="dealsWrap">
+        <div className="deals">
+          <div>
+            <p id="todayDeal">Today's Deals</p>
+          </div>
 
-      <div className="deals">
-        <div>
-          <p id="todayDeal">Today's Deals</p>
-        </div>
-
-        <div className="itemDeal">
-          <p id="todayOff">##% Off</p>
-          <Link id="seeAllItem">See all items</Link>
+          <div className="itemDeal">
+            <p id="todayOff">##% Off</p>
+            <Link id="seeAllItem">See all items</Link>
+          </div>
         </div>
       </div>
 
@@ -74,8 +78,10 @@ const Slider = () => {
         ))}
       </div>
 
-      <div className="explore">
-        <Link id="exploreLink">Explore</Link>
+      <div className="dealsWrap">
+        <div className="explore">
+          <Link id="exploreLink">Explore</Link>
+        </div>
       </div>
 
       <div className="wrapSectionB">
