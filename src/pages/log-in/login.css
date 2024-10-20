@@ -45,12 +45,14 @@
   color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid grey;
   font-size: 20px;
+  width: 100%;
 }
 
 .log_forget {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 #login_btn {
@@ -142,7 +144,7 @@
   }
 
   .login_form {
-    padding: 30px;
+    padding: 0;
     width: 80%;
   }
 
@@ -157,6 +159,7 @@
 
   .login_form input {
     font-size: 20px;
+    width: 100%;
   }
 
   .login_form p {
@@ -178,12 +181,13 @@
   }
 
   .googleSignin {
-    width: 50%;
+    width: 80%;
   }
 
   .googleSignin button {
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
+    width: 100%;
   }
 
   .acctForgetSignIn p {
@@ -205,7 +209,7 @@
   }
 
   .login_form {
-    padding: 30px;
+    padding: 0;
     width: 80%;
   }
 
@@ -241,12 +245,13 @@
   }
 
   .googleSignin {
-    width: 50%;
+    width: 100%;
   }
 
   .googleSignin button {
     font-size: 12px;
     padding: 10px;
+    width: 100%;
   }
 
   .acctForgetSignIn p {
@@ -268,7 +273,7 @@
   }
 
   .login_form {
-    padding: 30px;
+    padding: 0;
     width: 80%;
   }
 
@@ -331,7 +336,7 @@
   }
 
   .login_form {
-    padding: 30px;
+    padding: 0;
     width: 80%;
   }
 

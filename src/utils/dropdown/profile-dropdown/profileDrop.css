@@ -56,14 +56,22 @@
 
   .pi_linktarget.active {
     padding: 10px;
+    align-items: center;
+    background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    color: wheat;
   }
 
-  .profDrop{
+  .profDrop {
     gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
   }
 }
 
@@ -74,14 +82,22 @@
 
   .pi_linktarget.active {
     padding: 10px;
+    align-items: center;
+    background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
+    font-weight: 700;
+    color: wheat;
   }
 
-  .profDrop{
+  .profDrop {
     gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
   }
 }
 
@@ -92,14 +108,22 @@
 
   .pi_linktarget.active {
     padding: 10px;
+    align-items: center;
+    background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
+    font-weight: 700;
+    color: wheat;
   }
 
-  .profDrop{
+  .profDrop {
     gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
   }
 }
 
@@ -110,13 +134,21 @@
 
   .pi_linktarget.active {
     padding: 10px;
+    align-items: center;
+    background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
+    font-weight: 700;
+    color: wheat;
   }
 
-  .profDrop{
+  .profDrop {
     gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
   }
 }

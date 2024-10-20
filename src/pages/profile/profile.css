@@ -7,7 +7,6 @@
   overflow-x: hidden;
 }
 
-
 .pi_nav {
   display: flex;
   align-items: center;
@@ -527,7 +526,7 @@ select option {
     align-items: center;
   }
 
-    /* Form Address Detail */
+  /* Form Address Detail */
   .addressVal {
     width: 80%;
   }
@@ -645,7 +644,6 @@ select option {
   .delBtn {
     padding-left: 0;
     padding-right: 10px;
-    
   }
 
   .delBtn button {
@@ -719,6 +717,8 @@ select option {
   .pi_reactIcon {
     padding: 3px 5px;
     font-size: 16px;
+    background: rgba(22, 28, 45, 1);
+    color: wheat;
   }
 
   .pi_sidebar h2 {
@@ -888,7 +888,6 @@ select option {
     padding: 7px;
     width: 90%;
   }
-
 }
 
 @media only screen and (max-width: 425px) {
@@ -909,6 +908,8 @@ select option {
   .pi_reactIcon {
     padding: 3px 5px;
     font-size: 16px;
+    background: rgba(22, 28, 45, 1);
+    color: wheat;
   }
 
   .pi_sidebar h2 {
@@ -1067,16 +1068,16 @@ select option {
     padding-bottom: 10px;
   }
 
-   /* Form Address Detail */
+  /* Form Address Detail */
 
-   .addressVal {
+  .addressVal {
     flex-direction: column;
     align-items: center;
     padding: 5px;
     text-align: center;
   }
 
-  .form-name  {
+  .form-name {
     width: auto;
     font-size: 12px;
   }
@@ -1090,7 +1091,7 @@ select option {
     text-align: left;
   }
 
-  .lga  {
+  .lga {
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -1104,7 +1105,7 @@ select option {
     font-size: 12px;
   }
 
-  .btnCont button  {
+  .btnCont button {
     font-size: 12px;
     line-height: normal;
     padding: 3px 20px;
@@ -1126,7 +1127,6 @@ select option {
   .delBtn {
     padding-left: 0;
     padding-right: 10px;
-    
   }
 
   .delBtn button {
@@ -1192,6 +1192,8 @@ select option {
   .pi_reactIcon {
     padding: 3px 5px;
     font-size: 16px;
+    background: rgba(22, 28, 45, 1);
+    color: wheat;
   }
 
   .pi_sidebar h2 {
@@ -1351,14 +1353,14 @@ select option {
     padding-bottom: 10px;
   }
 
-   /* Form Address Detail */
+  /* Form Address Detail */
 
-   .addressVal {
+  .addressVal {
     flex-direction: column;
     padding: 5px;
   }
 
-  .form-name  {
+  .form-name {
     width: auto;
     font-size: 12px;
   }
@@ -1368,7 +1370,7 @@ select option {
     font-size: 12px;
   }
 
-  .lga  {
+  .lga {
     justify-content: center;
     padding: 5px;
     font-size: 12px;
@@ -1381,7 +1383,7 @@ select option {
     font-size: 12px;
   }
 
-  .btnCont button  {
+  .btnCont button {
     font-size: 12px;
     line-height: normal;
     padding: 3px 20px;
@@ -1389,7 +1391,6 @@ select option {
     margin-top: 10px;
     border-radius: 4px;
   }
-
 
   /* Delete Account */
 
@@ -1404,7 +1405,6 @@ select option {
   .delBtn {
     padding-left: 0;
     padding-right: 10px;
-    
   }
 
   .delBtn button {
@@ -1470,6 +1470,8 @@ select option {
   .pi_reactIcon {
     padding: 3px 5px;
     font-size: 16px;
+    background: rgba(22, 28, 45, 1);
+    color: wheat;
   }
 
   .pi_sidebar h2 {
@@ -1626,7 +1628,7 @@ select option {
     padding: 5px;
   }
 
-  .form-name  {
+  .form-name {
     width: auto;
     font-size: 10px;
   }
@@ -1636,7 +1638,7 @@ select option {
     font-size: 10px;
   }
 
-  .lga  {
+  .lga {
     justify-content: center;
     padding: 5px;
     font-size: 10px;
@@ -1649,7 +1651,7 @@ select option {
     font-size: 12px;
   }
 
-  .btnCont button  {
+  .btnCont button {
     font-size: 12px;
     line-height: normal;
     padding: 3px 20px;
@@ -1671,7 +1673,6 @@ select option {
   .delBtn {
     padding-left: 0;
     padding-right: 10px;
-    
   }
 
   .delBtn button {

@@ -5,14 +5,14 @@ import "./profileDrop.css";
 
 const ManagementDrop = (props) => {
   const [click, setClick] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // const params = useParams();
   // console.log(params);
 
   const handleClick = (path) => {
     setClick(!click);
-    navigate(path)
+    navigate(path);
   };
   return (
     <div className="manage">
