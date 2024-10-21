@@ -150,9 +150,12 @@ const Reg = () => {
             <p className="err">{errors.confirmPassword?.message}</p>
             {/* <input type="submit" className="submit-btn" /> */}
 
-            <button className="btn-create" type="submit">
-              Create an account
-            </button>
+            <div className="createAnAcct">
+              <button className="btn-create" type="submit">
+                Create an account
+              </button>
+            </div>
+
             <div className="googleSignin">
               <button>
                 <FcGoogle /> Sign in with Google

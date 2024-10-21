@@ -19,6 +19,12 @@
   font-family: sans-serif;
 }
 
+.createAnAcct {
+  width: 100%;
+}
+
+
+
 .reg img {
   position: sticky;
   top: 20px;
@@ -44,6 +50,7 @@ input {
   color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid grey;
   font-size: 20px;
+  width: 100%;
 }
 
 .err {
@@ -58,6 +65,7 @@ input {
   align-self: center;
   width: 100%;
   cursor: pointer;
+  border: none;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -98,6 +106,8 @@ input {
 #check {
   color: rgba(0, 0, 0, 1);
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .reg {
@@ -151,10 +161,14 @@ input {
     font-size: 10px;
   }
 
+  .createAnAcct{
+    width: 80%;
+  }
+
   .btn-create {
     font-size: 12px;
     padding: 20px;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -210,10 +224,14 @@ input {
     font-size: 10px;
   }
 
+  .createAnAcct{
+    width: 100%;
+  }
+
   .btn-create {
     font-size: 12px;
     padding: 10px;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -268,6 +286,11 @@ input {
   #check {
     font-size: 10px;
   }
+
+  .createAnAcct{
+    width: 100%;
+  }
+
   .btn-create {
     font-size: 12px;
     padding: 10px;
@@ -325,6 +348,10 @@ input {
 
   #check {
     font-size: 10px;
+  }
+
+  .createAnAcct{
+    width: 100%;
   }
 
   .btn-create {

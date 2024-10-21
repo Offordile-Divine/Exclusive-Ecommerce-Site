@@ -78,10 +78,9 @@ const HomeNav = () => {
         <div className="profcart">
           <ProfileDropdown />
           <Link to="/cart" className="prof">
-            Carts {<MdAddShoppingCart style={{ marginLeft: "10px" }} />}
+            Carts {<MdAddShoppingCart />}
           </Link>
         </div>
-        <hr id="line" />
       </div>
 
       <div className="mbHome_nav">
@@ -114,7 +113,6 @@ const HomeNav = () => {
           </div>
         </div>
       </div>
-      <hr id="line" />
 
       <ul className={click1 ? "mbNavHome_toggle active" : "mbNavHome_toggle"}>
         <ManagementDrop />

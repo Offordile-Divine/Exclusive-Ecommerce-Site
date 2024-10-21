@@ -56,14 +56,14 @@
 
   .pi_linktarget.active {
     padding: 10px;
-    align-items: center;
+    align-items: normal;
     background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    color: wheat;
+    color: white;
   }
 
   .profDrop {
@@ -82,14 +82,14 @@
 
   .pi_linktarget.active {
     padding: 10px;
-    align-items: center;
+    align-items: normal;
     background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
     font-weight: 700;
-    color: wheat;
+    color: white;
   }
 
   .profDrop {
@@ -108,14 +108,14 @@
 
   .pi_linktarget.active {
     padding: 10px;
-    align-items: center;
+    align-items: normal;
     background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
     font-weight: 700;
-    color: wheat;
+    color: white;
   }
 
   .profDrop {
@@ -134,14 +134,14 @@
 
   .pi_linktarget.active {
     padding: 10px;
-    align-items: center;
+    align-items: normal;
     background: rgba(22, 28, 45, 1);
   }
 
   .pi_linktarget.active a {
     font-size: 10px;
     font-weight: 700;
-    color: wheat;
+    color: white;
   }
 
   .profDrop {
