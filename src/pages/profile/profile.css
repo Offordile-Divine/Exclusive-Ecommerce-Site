@@ -119,7 +119,8 @@
 
 .pi_inputFieldContent {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
   margin-top: 15px;
 }
 
@@ -127,10 +128,10 @@
   margin: 0;
   border: 4px solid rgba(245, 245, 245, 1);
   background: rgba(245, 245, 245, 1);
-  padding: 15px;
+  padding: 7px 20px;
   border-radius: 7px;
-  width: 450px;
-  font-size: 16px;
+  width: 100%;
+  font-size: 20px;
 }
 
 .pi_inputField {
@@ -152,9 +153,9 @@
   margin-top: 20px;
   border: 4px solid rgba(245, 245, 245, 1);
   background: rgba(245, 245, 245, 1);
-  padding: 20px;
-  border-radius: 7px;
-  font-size: 16px;
+  padding: 10px;
+  border-radius: inherit;
+  font-size: 20px;
 }
 
 .btn_ProfileAdddress {
@@ -483,10 +484,11 @@ select option {
   }
 
   #inputRm {
-    width: 300px;
-    font-size: 16px;
-    padding: 7px;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .pi_inputField {
@@ -504,6 +506,7 @@ select option {
     width: 90%;
     margin-top: 0;
     margin-top: 10px;
+    border-radius: inherit;
   }
 
   .btn_ProfileAdddress {
@@ -958,14 +961,15 @@ select option {
   }
 
   .pi_inputFieldContent {
-    flex-direction: column;
+    gap: 20px;
   }
 
   #inputRm {
-    width: 210px;
+    width: 100%;
     font-size: 12px;
     padding: 3px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .pi_inputField {
@@ -980,9 +984,10 @@ select option {
   #inputPass {
     font-size: 12px;
     padding: 3px;
-    width: 210px;
+    width: 90%;
     margin-top: 0;
     margin-top: 10px;
+    border-radius: inherit;
   }
 
   .btn_ProfileAdddress {
@@ -1071,10 +1076,9 @@ select option {
   /* Form Address Detail */
 
   .addressVal {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    gap: 20px;
     padding: 5px;
-    text-align: center;
   }
 
   .form-name {
@@ -1087,13 +1091,10 @@ select option {
     font-size: 12px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: left;
   }
 
   .lga {
     justify-content: center;
-    align-items: center;
     padding: 5px;
     font-size: 12px;
   }
@@ -1101,7 +1102,7 @@ select option {
   select {
     padding: 7px;
     margin-top: 10px;
-    width: 210px;
+    width: 100%;
     font-size: 12px;
   }
 
@@ -1242,14 +1243,15 @@ select option {
   }
 
   .pi_inputFieldContent {
-    flex-direction: column;
+    gap: 20px;
   }
 
   #inputRm {
-    width: 185px;
+    width: 100%;
     font-size: 12px;
     padding: 3px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .pi_inputField {
@@ -1264,10 +1266,11 @@ select option {
   #inputPass {
     font-size: 12px;
     padding: 3px;
-    width: 185px;
+    width: 100%;
     margin-top: 0;
     margin-top: 10px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .btn_ProfileAdddress {
@@ -1356,8 +1359,8 @@ select option {
   /* Form Address Detail */
 
   .addressVal {
-    flex-direction: column;
     padding: 5px;
+    gap: 20px;
   }
 
   .form-name {
@@ -1379,7 +1382,7 @@ select option {
   select {
     padding: 5px;
     margin-top: 10px;
-    width: 191px;
+    width: 100%;
     font-size: 12px;
   }
 
@@ -1510,14 +1513,15 @@ select option {
   }
 
   .pi_inputFieldContent {
-    flex-direction: column;
+    gap: 20px;
   }
 
   #inputRm {
-    width: 155px;
+    width: 100%;
     font-size: 12px;
     padding: 3px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .pi_inputField {
@@ -1532,10 +1536,11 @@ select option {
   #inputPass {
     font-size: 12px;
     padding: 3px;
-    width: 155px;
+    width: 100%;
     margin-top: 0;
     margin-top: 10px;
     border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: inherit;
   }
 
   .btn_ProfileAdddress {
@@ -1624,7 +1629,7 @@ select option {
   /* Form Address Detail */
 
   .addressVal {
-    flex-direction: column;
+  gap: 20px;
     padding: 5px;
   }
 
@@ -1647,7 +1652,7 @@ select option {
   select {
     padding: 5px;
     margin-top: 10px;
-    width: 160px;
+    width: 100%;
     font-size: 12px;
   }
 

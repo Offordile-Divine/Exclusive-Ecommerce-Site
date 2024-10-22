@@ -36,16 +36,17 @@ const ProfileDropdown = () => {
             <SlArrowDown
               style={{
                 cursor: "pointer",
-                marginLeft: "5px",
                 textAlign: "center",
+                fontSize: "10px",
+                marginLeft: "6px"
               }}
             />
           ) : (
             <IoIosArrowUp
               style={{
                 cursor: "pointer",
-                marginLeft: "10px",
                 textAlign: "center",
+                marginLeft: "6px"
               }}
             />
           )}

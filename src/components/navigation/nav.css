@@ -4,6 +4,10 @@
   font-family: "montserrat";
 } */
 
+.HomeNav {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .log_nav {
   /* display: flex;
   justify-content: space-between; */
@@ -156,21 +160,22 @@
 .profcart {
   display: flex;
   justify-content: end;
-  padding-right: 20px;
+  gap: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
 }
+
 
 .prof {
   display: flex;
   align-items: center;
+  gap: 5px;
   justify-content: center;
-  margin-right: 15px;
   text-decoration: none;
   color: rgba(22, 28, 45, 1);
 }
 
-#line {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+
 
 /* .mb-regnav {
   display: none;

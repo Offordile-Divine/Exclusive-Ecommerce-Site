@@ -96,7 +96,12 @@ const Login = () => {
                 <a href="">Forget password?</a>
               </div>
             </div>
-            <p id="or">or</p>
+            <div className="baseline">
+              <hr id="hrBaseLine"/>
+              <p id="or">or</p>
+              <hr id="hrBaseLine"/>
+            </div>
+
             <div className="googleSignin">
               <button onClick={handleGoogleLogin}>
                 <FcGoogle /> Sign in with Google
