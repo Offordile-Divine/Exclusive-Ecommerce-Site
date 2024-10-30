@@ -236,6 +236,53 @@ ul a {
     font-size: 12px;
   }
 
+  /* USERACCOUNTDETAIL */
+  .userAcctDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .firstLetterDiv {
+    background: rgba(22, 28, 45, 1);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  .firstLetter {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .userDetailDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .userDetailDescription h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(22, 28, 45, 1);
+  }
+
+  .userDetailDescription p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 400;
+  }
+
+  .userDetailDescription a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(15, 98, 254, 1);
+  }
+
   /* RegLogHOMENAV */
 
   .wrapRegLog {
@@ -325,6 +372,53 @@ ul a {
     font-size: 12px;
   }
 
+  /* USERACCOUNTDETAIL */
+  .userAcctDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .firstLetterDiv {
+    background: rgba(22, 28, 45, 1);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  .firstLetter {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .userDetailDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .userDetailDescription h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(22, 28, 45, 1);
+  }
+
+  .userDetailDescription p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 400;
+  }
+
+  .userDetailDescription a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(15, 98, 254, 1);
+  }
+
   /* RegLogHOMENAV */
 
   .wrapRegLog {
@@ -407,6 +501,53 @@ ul a {
   }
   .homeNavRm {
     font-size: 12px;
+  }
+
+  /* USERACCOUNTDETAIL */
+  .userAcctDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .firstLetterDiv {
+    background: rgba(22, 28, 45, 1);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  .firstLetter {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .userDetailDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .userDetailDescription h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(22, 28, 45, 1);
+  }
+
+  .userDetailDescription p {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: 400;
+  }
+
+  .userDetailDescription a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(15, 98, 254, 1);
   }
 
   /* RegLogHOMENAV */

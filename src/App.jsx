@@ -10,7 +10,6 @@ import Reg from "./pages/registration/Reg.jsx";
 import Login from "./pages/log-in/Login.jsx";
 import Get_started from "./pages/get-started/Get_started.jsx";
 import Carts from "./pages/carts/Carts.jsx";
-
 import ProfileInactive from "./pages/profile/profileInfo/ProfileInactive.jsx";
 import Order from "./pages/orders/Order.jsx";
 import SavedItems from "./pages/savedItems/SavedItems.jsx";
@@ -32,7 +31,12 @@ import ShopContextProvider from "./context/Shop-context.jsx";
 import Shop from "./pages/products/Shop.jsx";
 import ReturnPolicy from "./pages/returnPolicy/ReturnPolicy.jsx";
 import Faq from "./pages/faq/Faq.jsx";
+import Terms from "./pages/terms/Terms.jsx";
 import { EmailProvider } from "./context/EmailContext.jsx";
+import Privacy from "./pages/privacy/Privacy.jsx";
+import { AuthProvider } from "./context/AuthProvider.jsx";
+import GoogleAuthSuccess from "./pages/googleauth/GoogleAuthSuccess.jsx";
+import GoogleAuthFailure from "./pages/googleauth/GoogleAuthFailure.jsx";
 
 export const AppContext = createContext("Bruce");
 
@@ -68,11 +72,6 @@ const router = createBrowserRouter([
         element: <ProfileDelete />,
       },
     ],
-  },
-
-  {
-    path: "/products",
-    element: <Products />,
   },
   {
     path: "/about",
@@ -147,6 +146,26 @@ const router = createBrowserRouter([
     path: "/faq",
     element: <Faq />,
   },
+  {
+    path: "/terms",
+    element: <Terms />,
+  },
+  {
+    path: "/privacy",
+    element: <Privacy />,
+  },
+  {
+    path: "googleSuccess",
+    element: <GoogleAuthSuccess />,
+  },
+  {
+    path: "/googleFailure",
+    element: <GoogleAuthFailure />,
+  },
+  {
+    path: "/products",
+    element: <Products/>
+  }
 ]);
 
 function App() {
@@ -162,7 +181,9 @@ function App() {
       >
         <EmailProvider>
           <ShopContextProvider>
-            <RouterProvider router={router} />
+            <AuthProvider>
+              <RouterProvider router={router} />
+            </AuthProvider>
           </ShopContextProvider>
         </EmailProvider>
       </AppContext.Provider>

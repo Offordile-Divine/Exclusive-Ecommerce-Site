@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import loginImg from "../../assets/images/form-image.png";
 import "./login.css";
 import { useForm } from "react-hook-form";
@@ -10,11 +10,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import LoginNav from "../../components/navigation/login-nav/LoginNav";
 import api from "../googleauth/Axiosconfig";
+import { AuthContext } from "../../context/AuthProvider";
 
 // const APIKEY = import.meta.env.VITE_API_KEY;
 
 const Login = () => {
-  // const {loggedIn} = useContext()
+  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
   const schema = yup.object().shape({
     email: yup.string().email().required("Email is required"),
@@ -47,7 +48,15 @@ const Login = () => {
       );
 
       if (res.status === 200) {
-        navigate("/");
+        const { accessToken, user } = res.data.data;
+
+        // Store the access token in localStorage
+        localStorage.setItem("accessToken", accessToken);
+
+        // Optional: Store user info if needed
+        localStorage.setItem("user", JSON.stringify(user));
+
+        setTimeout(() => navigate("/"), 2000);
       }
     } catch (err) {
       console.error(err);
@@ -55,15 +64,15 @@ const Login = () => {
     }
   };
 
-  const handleGoogleLogin = async () => {
+  const handleGoogleLogin = () => {
     try {
-      const responseGoogleLogin = await api.get("/api/v1/google");
-      console.log(responseGoogleLogin);
-      window.location.href = responseGoogleLogin.request.responseURL;
+      window.location.href =
+        "https://one00daysofcoding.onrender.com/auth/v1/google";
     } catch {
       console.error("Google login error");
     }
   };
+
   return (
     <div className="Login">
       <Reg_nav />
@@ -88,7 +97,7 @@ const Login = () => {
             <p className="err">{errors.password?.message}</p>
             <div className="log_forget">
               <div>
-                <button id="login_btn" type="submit">
+                <button id="login_btn" type="submit" onClick={login}>
                   Log In
                 </button>
               </div>
@@ -97,17 +106,16 @@ const Login = () => {
               </div>
             </div>
             <div className="baseline">
-              <hr id="hrBaseLine"/>
+              <hr id="hrBaseLine" />
               <p id="or">or</p>
-              <hr id="hrBaseLine"/>
-            </div>
-
-            <div className="googleSignin">
-              <button onClick={handleGoogleLogin}>
-                <FcGoogle /> Sign in with Google
-              </button>
+              <hr id="hrBaseLine" />
             </div>
           </form>
+          <div className="googleSignin">
+            <button onClick={handleGoogleLogin}>
+              <FcGoogle /> Sign in with Google
+            </button>
+          </div>
           <div className="acctForgetSignIn">
             <p>
               Don't have an account?

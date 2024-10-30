@@ -6,7 +6,7 @@ import { BsCCircle } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-    <hr/>
+      <hr />
       <div className="footer_content">
         <div className="footer_name">
           <h1>Company</h1>
@@ -55,9 +55,9 @@ const Footer = () => {
             <p className="header">
               <b>Legal</b>
             </p>
-            <Link>Privacy Policy</Link>
-            <Link>Terms of Use</Link>
-            <Link>Return Policy</Link>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms of Use</Link>
+            <Link to="/returnPolicy">Return Policy</Link>
           </div>
         </div>
 
@@ -72,13 +72,13 @@ const Footer = () => {
           <div className="sec2">
             <Link>Faq</Link>
             <Link>Contact Us</Link>
-            <Link>Return Policy</Link>
-            <Link>Privacy Policy </Link>
+            <Link to="/returnPolicy">Return Policy</Link>
+            <Link to="/privacy">Privacy Policy </Link>
           </div>
         </div>
 
         <div className="footer_below">
-          <hr id="footerHr"/>
+          <hr id="footerHr" />
 
           <div className="footer_copyright">
             <p>

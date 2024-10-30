@@ -144,7 +144,7 @@
 }
 
 #hrBaseLine {
-  width: 40%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -193,9 +193,6 @@
     font-size: 16px;
   }
 
-  .googleSignin {
-    width: 80%;
-  }
 
   .googleSignin button {
     font-size: 18px;
@@ -257,9 +254,6 @@
     font-size: 12px;
   }
 
-  .googleSignin {
-    width: 100%;
-  }
 
   .googleSignin button {
     font-size: 12px;
@@ -321,9 +315,7 @@
     font-size: 12px;
   }
 
-  .googleSignin {
-    width: 100%;
-  }
+  
 
   .googleSignin button {
     font-size: 12px;
