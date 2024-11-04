@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
@@ -29,11 +29,20 @@ import { FaQuestion } from "react-icons/fa";
 import { FaPersonCircleQuestion } from "react-icons/fa6";
 import { IoMdLogOut } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
+import { AuthContext } from "../../../context/AuthProvider";
+import axios from "axios";
 
 const HomeNav = () => {
   const [click1, setClick1] = useState(false);
   const [click2, setClick2] = useState(false);
   const [cancel, setCancel] = useState(true);
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+
+  const navigate = useNavigate();
+
+  const { isAuthenticated } = useContext(AuthContext);
 
   const handleClick1 = () => {
     setClick1(!click1);
@@ -46,6 +55,41 @@ const HomeNav = () => {
   const handleCancel = () => {
     setCancel(!cancel);
   };
+
+  useEffect(() => {
+    const userId = JSON.parse(localStorage.getItem("user"));
+    const token = localStorage.getItem("accessToken");
+    console.log("Token", token, "UserId", userId);
+
+    if (!token) {
+      navigate("/login");
+    }
+
+    const fetchUserDetail = async () => {
+      const authLogin = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      };
+      try {
+        const response = await axios.get(
+          `https://one00daysofcoding.onrender.com/user/v1/profile`,
+          authLogin
+        );
+
+        if (response.status === 200) {
+          const { firstname, lastname, email } = response.data.data;
+          setFirstname(firstname);
+          setLastname(lastname);
+          setEmail(email);
+        }
+        console.log(response);
+      } catch {}
+    };
+
+    fetchUserDetail();
+  }, [navigate]);
   return (
     <>
       <div className="HomeNav">
@@ -65,14 +109,18 @@ const HomeNav = () => {
             <input type="text" placeholder="What are you looking for" />
             <FaSearch />
           </div>
-          <div className="logReg2">
-            <Link id="navLogLink2" to="/registration">
-              Login
-            </Link>
-            <Link id="register2" to="/registration">
-              Register
-            </Link>
-          </div>
+          {isAuthenticated ? (
+            <></>
+          ) : (
+            <div className="logReg2">
+              <Link id="navLogLink2" to="/registration">
+                Login
+              </Link>
+              <Link id="register2" to="/registration">
+                Register
+              </Link>
+            </div>
+          )}
         </div>
 
         <div className="profcart">
@@ -123,33 +171,38 @@ const HomeNav = () => {
       <ul
         className={click2 ? "mbHamburger_toggle active" : "mbHamburger_toggle"}
       >
-        {/* <h1 id="customerName">Hi, {name ?? "user"}</h1> */}
-
         {/* !Important */}
 
-        {/* <div className="userAcctDetail">
-          <div className="firstLetterDiv">
-            <h1 className="firstLetter">C</h1>
-          </div>
-          <div className="userDetailDescription">
-            <h3>Customer Name</h3>
-            <p>Customer Email</p>
-            <Link>Edit Profile</Link>
-          </div>
-        </div> */}
         <div className="cancelClick">
           <button onClick={handleClick2}>
             <LiaTimesSolid />
           </button>
         </div>
-        <div className="wrapRegLog">
-          <div className="logINUserDetail">
-            <Link to="/login">Login</Link>
+
+        {isAuthenticated ? (
+          <div className="userAcctDetail">
+            <div className="firstLetterDiv">
+              <h1 className="firstLetter">{firstname.charAt(0)}</h1>
+            </div>
+            <div className="userDetailDescription">
+              <h3>
+                {firstname} {lastname}
+              </h3>
+              <p>{email}</p>
+              <Link>Edit Profile</Link>
+            </div>
           </div>
-          <div className="registerUserDetail">
-            <Link to="/registration">Register</Link>
+        ) : (
+          <div className="wrapRegLog">
+            <div className="logINUserDetail">
+              <Link to="/login">Login</Link>
+            </div>
+            <div className="registerUserDetail">
+              <Link to="/registration">Register</Link>
+            </div>
           </div>
-        </div>
+        )}
+
         <hr />
         <div className="homeLinkNavWrap">
           <li className="mbNavHome_tog">

@@ -67,24 +67,32 @@ const Otp = () => {
       );
       console.log(responseOtp);
       if (responseOtp.status === 200) {
-        navigate("/");
+        const { accessToken, user } = responseOtp.data.data;
+
+        // Store the access token in localStorage
+        localStorage.setItem("accessToken", accessToken);
+
+        // Optional: Store user info if needed
+        localStorage.setItem("user", JSON.stringify(user));
+
+        setTimeout(() => navigate("/"), 2000);
         setSuccessMessage("OTP verified successfully");
       } else {
         setError("Invalid OTP, Please try again");
       }
     } catch (err) {
-      //  catch (err) {
-      //   setError("Something went wrong, please try again", err);
-      // } finally {
-
       if (err.response) {
-        console.error(err.response.data, "Error response message");
+        console.error("Error response:", err.response);
+        setError(err.response.data.message || "Failed to verify OTP");
       } else if (err.request) {
-        console.error(err.request, "Error request message....");
+        console.error("Error request:", err.request);
+        setError("Network error. Please try again.");
       } else {
-        console.error(err.message, "Error message");
+        console.error("Error message:", err.message);
+        setError("An error occurred. Please try again.");
       }
     }
+    console.log(error);
     setLoading(false);
   };
 
