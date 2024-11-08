@@ -1,0 +1,25 @@
+#reg  {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 7px 30px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#reg:hover {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(15, 98, 254, 1);
+    border: 2px solid rgba(15, 98, 254, 1);
+  }
+
+#log {
+    border: 2px solid rgba(15, 98, 254, 1);
+    padding: 7px 30px;
+    border-radius: 7px;
+    color: rgba(15, 98, 254, 1);
+}
+
+#log:hover {
+    background-color: rgba(15, 98, 254, 1);
+    color: rgba(255, 255, 255, 1);
+  }

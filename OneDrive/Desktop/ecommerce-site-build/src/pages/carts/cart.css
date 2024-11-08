@@ -1,0 +1,983 @@
+.ctm_content {
+    display: none;
+}
+
+.ctm_details {
+    display: none;
+}
+
+.ct_header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-family: Inter;
+}
+
+.ct_main {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    padding-bottom: 50px;
+    background-color: #F8F8F8;
+}
+
+.ct_general {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 18px;
+}
+
+.hr {
+    background-color: #D9D9D9;
+}
+
+.ct_details {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ct_image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ct_imgGotten {
+    width: 45%;
+}
+
+.ct_imgGotten img {
+    width: 100%;
+}
+
+
+.ct_image p{
+    font-weight: 10px;
+    font-family: Inter;
+    font-size: 15px;
+} 
+
+.ct_size {
+}
+
+.ct_size button{
+    padding: 12px;
+    border: 1px solid #D8D3D3;
+}
+
+.ct_remove {
+}
+
+.ct_remove button{
+    padding: 10px;
+    border: 1px solid #D8D3D3
+}
+
+.ct_price {
+}
+
+.ct_countHandler {
+    display: flex;
+    align-items: center;
+}
+
+.ct_countHandler button{
+    padding: 10px;
+}
+
+.ct_countHandler input{
+    height: 35px;
+    text-align: center;
+    border: none;
+    padding-bottom: 5px;
+    margin-top: 0 !important;
+}
+
+.ct_positive {
+    background-color: #161C2D;
+    border: 1px solid #D8D3D3;
+    color: #FFFFFF;
+}
+
+.ct_negative {
+    border: 1.2px solid #51526C
+}
+
+.ct_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.ct_form button {
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ct_discount {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.ct_discount input{
+    border: none;
+    font-size: 20px;
+    font-family: Inter;
+    padding: 5px;
+    margin: 0;
+}
+
+.ct_discount button{
+    padding: 7px;
+}
+
+.ct_checkbox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.ct_checkbox button{
+    text-align: center;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ct_promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .ct_content {
+        display: none;
+    }
+
+    .ct_details {
+        display: none;
+    }
+
+    .ctm_header {
+        text-align: center;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .ctm_main {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #F8F8F8;
+    }
+    
+    .ctm_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+    }
+
+    .ctm_content {
+        display: block;
+    }
+
+    
+    .hr {
+        background-color: #D9D9D9;
+    }
+    
+    .ctm_details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .ctm_image {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 45px;
+    }
+    
+    .ctm_image img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ctm_image p{
+        padding-top: 10px;
+        font-weight: 10px;
+        font-family: Inter;
+        font-size: 10px;
+    } 
+    
+    .ctm_size {
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+    
+    .ctm_size button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_remove {
+        padding-top: 50px;
+        padding-right: 30px;
+    }
+    
+    .ctm_remove button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_price {
+        padding-top: 55px;
+        font-size: 10px;
+    }
+    
+    .ctm_countHandler {
+        padding-right: 23px;
+    }
+    
+    .ctm_countHandler button{
+        padding: 5px;
+    }
+    
+    .ctm_countHandler input{
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        border: none;
+        padding-bottom: 5px;
+    }
+
+    .ctm_Remove {
+        padding-left: 20px;
+    }
+
+    .ctm_Quality {
+        padding-left: 20px;
+    }
+
+    .ctm_Size {
+        padding-left: 20px;
+    }
+    
+    .ctm_positive {
+        background-color: #161C2D;
+        border: 1px solid #D8D3D3;
+        color: #FFFFFF;
+    }
+    
+    .ctm_negative {
+        border: 1.2px solid #51526C
+    }
+    
+    .ctm_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    
+    .ctm_form button {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_paragraph {
+        font-size: 12px;
+    }
+    
+    .ctm_discount {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        padding-bottom: 60px;
+    }
+    
+    .ctm_discount input{
+        border: none;
+        font-size: 10px;
+        font-family: Inter;
+        margin: 0;
+    }
+
+    .ctm_discount button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_sbutton {
+        padding-bottom: 5px;
+    }
+
+    .ctm_tbutton {
+        padding-bottom: 5px;
+    }
+    
+    .ctm_checkbox {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+    
+    .ctm_checkbox button{
+        text-align: center;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+    
+    .ctm_promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    } 
+}
+
+@media (max-width: 425px) {
+    .ct_content {
+        display: none;
+    }
+
+    .ct_details {
+        display: none;
+    }
+
+    .ctm_header {
+        text-align: center;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .ctm_main {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #F8F8F8;
+    }
+    
+    .ctm_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+    }
+
+    .ctm_content {
+        display: block;
+    }
+
+    
+    .hr {
+        background-color: #D9D9D9;
+    }
+    
+    .ctm_details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .ctm_image {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 45px;
+    }
+    
+    .ctm_image img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ctm_image p{
+        padding-top: 10px;
+        font-weight: 10px;
+        font-family: Inter;
+        font-size: 10px;
+    } 
+    
+    .ctm_size {
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+    
+    .ctm_size button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_remove {
+        padding-top: 50px;
+        padding-right: 30px;
+    }
+    
+    .ctm_remove button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_price {
+        padding-top: 55px;
+        font-size: 10px;
+    }
+    
+    .ctm_countHandler {
+        padding-right: 23px;
+    }
+    
+    .ctm_countHandler button{
+        padding: 5px;
+    }
+    
+    .ctm_countHandler input{
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        border: none;
+        padding-bottom: 5px;
+    }
+
+    .ctm_Remove {
+        padding-left: 20px;
+    }
+
+    .ctm_Quality {
+        padding-left: 20px;
+    }
+
+    .ctm_Size {
+        padding-left: 20px;
+    }
+    
+    .ctm_positive {
+        background-color: #161C2D;
+        border: 1px solid #D8D3D3;
+        color: #FFFFFF;
+    }
+    
+    .ctm_negative {
+        border: 1.2px solid #51526C
+    }
+    
+    .ctm_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    
+    .ctm_form button {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_paragraph {
+        font-size: 12px;
+    }
+    
+    .ctm_discount {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        padding-bottom: 60px;
+    }
+    
+    .ctm_discount input{
+        border: none;
+        font-size: 10px;
+        font-family: Inter;
+        margin: 0;
+    }
+
+    .ctm_discount button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_sbutton {
+        padding-bottom: 5px;
+    }
+
+    .ctm_tbutton {
+        padding-bottom: 5px;
+    }
+    
+    .ctm_checkbox {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+    
+    .ctm_checkbox button{
+        text-align: center;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+    
+    .ctm_promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    } 
+}
+
+
+@media (max-width: 375px) {
+    .ct_content {
+        display: none;
+    }
+
+    .ct_details {
+        display: none;
+    }
+   
+    .ctm_header {
+        text-align: center;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .ctm_main {
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #F8F8F8;
+    }
+    
+    .ctm_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+    }
+
+    .ctm_content {
+        display: block;
+    }
+
+    
+    .hr {
+        background-color: #D9D9D9;
+    }
+    
+    .ctm_details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .ctm_image {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 45px;
+    }
+    
+    .ctm_image img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ctm_image p{
+        padding-top: 10px;
+        font-weight: 10px;
+        font-family: Inter;
+        font-size: 10px;
+    } 
+    
+    .ctm_size {
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+    
+    .ctm_size button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_remove {
+        padding-top: 50px;
+        padding-right: 30px;
+    }
+    
+    .ctm_remove button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_price {
+        padding-top: 55px;
+        font-size: 10px;
+    }
+    
+    .ctm_countHandler {
+        padding-right: 23px;
+    }
+    
+    .ctm_countHandler button{
+        padding: 5px;
+    }
+    
+    .ctm_countHandler input{
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        border: none;
+        padding-bottom: 5px;
+    }
+
+    .ctm_Remove {
+        padding-left: 20px;
+    }
+
+    .ctm_Quality {
+        padding-left: 20px;
+    }
+
+    .ctm_Size {
+        padding-left: 20px;
+    }
+    
+    .ctm_positive {
+        background-color: #161C2D;
+        border: 1px solid #D8D3D3;
+        color: #FFFFFF;
+    }
+    
+    .ctm_negative {
+        border: 1.2px solid #51526C
+    }
+    
+    .ctm_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    
+    .ctm_form button {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_paragraph {
+        font-size: 12px;
+    }
+    
+    .ctm_discount {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        padding-bottom: 60px;
+    }
+    
+    .ctm_discount input{
+        border: none;
+        font-size: 10px;
+        font-family: Inter;
+        margin: 0;
+    }
+
+    .ctm_discount button{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_sbutton {
+        padding-bottom: 5px;
+    }
+
+    .ctm_tbutton {
+        padding-bottom: 5px;
+    }
+    
+    .ctm_checkbox {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+    
+    .ctm_checkbox button{
+        text-align: center;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+    
+    .ctm_promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    } 
+}
+
+
+@media (max-width: 320px) {
+    .ct_content {
+        display: none;
+    }
+
+    .ct_details {
+        display: none;
+    }
+
+    .ctm_header {
+        text-align: center;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .ctm_main {
+        margin-left: 10px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #F8F8F8;
+    }
+    
+    .ctm_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-family: Inter;
+        font-size: 10px;
+    }
+
+    .ctm_content {
+        display: block;
+    }
+
+    
+    .hr {
+        background-color: #D9D9D9;
+    }
+    
+    .ctm_details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .ctm_image {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 45px;
+    }
+    
+    .ctm_image img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ctm_image p{
+        padding-top: 10px;
+        font-weight: 10px;
+        font-family: Inter;
+        font-size: 10px;
+    } 
+    
+    .ctm_size {
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+    
+    .ctm_size button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_remove {
+        padding-top: 50px;
+        padding-right: 30px;
+    }
+    
+    .ctm_remove button{
+        border: 1px solid #D8D3D3;
+        padding: 5px;
+    }
+    
+    .ctm_price {
+        padding-top: 55px;
+        font-size: 10px;
+    }
+    
+    .ctm_countHandler {
+        padding-right: 23px;
+    }
+    
+    .ctm_countHandler button{
+        padding: 5px;
+    }
+    
+    .ctm_countHandler input{
+        width: 25px;
+        height: 20px;
+        text-align: center;
+        border: none;
+        padding-bottom: 5px;
+    }
+
+    .ctm_Remove {
+        padding-left: 20px;
+    }
+
+    .ctm_Quality {
+        padding-left: 20px;
+    }
+
+    .ctm_Size {
+        padding-left: 20px;
+    }
+    
+    .ctm_positive {
+        background-color: #161C2D;
+        border: 1px solid #D8D3D3;
+        color: #FFFFFF;
+    }
+    
+    .ctm_negative {
+        border: 1.2px solid #51526C
+    }
+    
+    .ctm_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    
+    .ctm_form button {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .ctm_paragraph {
+        font-size: 12px;
+    }
+    
+    .ctm_discount {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        padding-bottom: 60px;
+        width: 70%;
+    }
+    
+    .ctm_discount input{
+        border: none;
+        font-size: 10px;
+        font-family: Inter;
+        margin: 0;
+        width: 100%;
+    }
+
+    .ctm_discount button{
+        padding: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .ctm_sbutton {
+        padding-bottom: 5px;
+    }
+
+    .ctm_tbutton {
+        padding-bottom: 5px;
+    }
+    
+    .ctm_checkbox {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 30px;
+        width: 20%;
+    }
+    
+    .ctm_checkbox button{
+        text-align: center;
+        padding: 2px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 10px;
+    }
+    
+    .ctm_promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        width: 100%;
+    } 
+}

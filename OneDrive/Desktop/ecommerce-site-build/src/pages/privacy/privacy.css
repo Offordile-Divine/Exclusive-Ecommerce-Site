@@ -1,0 +1,22 @@
+#pp_body{
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Calibri';
+  padding: 40px;
+  color: rgba(65, 65, 65, 1);
+  ;
+}
+#pp_heading_1{
+  margin-bottom: 3%;
+  font-size: 54px;
+  font-family: 'Calibri';
+  line-height: 68.19px;
+  font-weight: 700;
+  color: rgba(45, 45, 45, 1);
+}
+#pp_heading{
+  font-weight: lighter;
+} 
+/* ul{
+  margin-left: 2%;
+} */
