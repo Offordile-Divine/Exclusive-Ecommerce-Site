@@ -34,7 +34,7 @@ const OrderProfileDrop = () => {
         </div>
       </div>
       <div className={click ? "pi_linktarget active" : "pi_linktarget"}>
-        <Link to="/orderHistory">Order History</Link>
+        <Link to="/profile/orderHistory">Order History</Link>
         <Link to="/orderReview">Order Review</Link>
       </div>
     </div>

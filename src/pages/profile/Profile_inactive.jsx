@@ -12,6 +12,7 @@ import ProfileInactive from "./profileInfo/ProfileInactive";
 import ProfileAccountInfo from "./profileInfo/ProfileAccountInfo";
 import ProfileDeliveryDrop from "./profileInfo/ProfileDeliveryDrop";
 import ProfileSubmitAddress from "./profileInfo/ProfileSubmitAddress";
+import Footer from "../../components/footer/Footer";
 
 const Profile_inactive = (props) => {
   const [profileLayout, setProfileLayout] = useState(0);
