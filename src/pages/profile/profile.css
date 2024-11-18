@@ -459,6 +459,125 @@ select option {
   padding: 30px;
 }
 
+/* Profile Order History */
+
+.orderHistoryNAv {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.orderWrap {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  align-items: center;
+  gap: 40px;
+}
+
+.profileOrder {
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+#orderHistoryTitle {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(15, 98, 254, 1);
+  text-decoration: none;
+}
+
+.titleHeadOrder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 40vh;
+}
+
+#noOrder {
+  padding-bottom: 20px;
+  color: rgba(22, 28, 45, 1);
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.orderDetailWrap {
+  padding: 20px 20px 0 20px;
+}
+
+.orderPrice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#orderDate {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(22, 28, 45, 1);
+}
+
+.orderQuantity {
+  margin-top: 10px;
+}
+
+#proQuantity {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgOrderProf {
+  width: 30%;
+}
+
+.imgOrderProf img {
+  width: 50%;
+}
+
+.cancelOrderBtn {
+  width: 15%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cancelOrderBtn button {
+  padding: 5px 10px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0.61px solid rgba(22, 28, 45, 1);
+  box-shadow: 0px 2.45px 2.45px 0px rgba(0, 0, 0, 0.25);
+}
+
+.viewOrderDetailBtn {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+.viewOrderDetailBtn button {
+  padding: 5px 10px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  background: rgba(22, 28, 45, 1);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  border: 0.61px solid rgba(22, 28, 45, 1);
+}
+
+#totalPriceOrder {
+  font-family: sans-serif;
+}
+
+.paymentOrderMethod {
+  display: flex;
+  gap: 5px;
+}
+
 @media only screen and (max-width: 1420px) {
   /* Account Info Address */
   .account_infoAddressContent {
@@ -1173,6 +1292,60 @@ select option {
     font-size: 20px;
     margin-top: 0;
   }
+
+
+  /* Order History */
+
+  .orderDetailWrap {
+    padding: 10px 10px 0 10px;
+  }
+
+  .orderWrap {
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  #orderHistoryTitle {
+    font-size: 16px;
+  }
+
+  #orderDate {
+    font-size: 12px;
+  }
+
+  #totalPriceOrder {
+    font-size: 11px;
+  }
+
+  .orderPrice p {
+    font-size: 10px;
+  }
+
+  #proQuantity {
+    font-size: 11px;
+  }
+
+  .imgOrderProf img {
+    width: 100%;
+  }
+
+  .cancelOrderBtn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cancelOrderBtn button {
+    padding: 2px;
+    font-size: 10px;
+    display: flex;
+  }
+
+  .viewOrderDetailBtn button {
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1453,6 +1626,59 @@ select option {
     font-size: 20px;
     margin-top: 0;
   }
+
+  /* Order History */
+
+  .orderDetailWrap {
+    padding: 10px 10px 0 10px;
+  }
+
+  .orderWrap {
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  #orderHistoryTitle {
+    font-size: 16px;
+  }
+
+  #orderDate {
+    font-size: 12px;
+  }
+
+  #totalPriceOrder {
+    font-size: 11px;
+  }
+
+  .orderPrice p {
+    font-size: 10px;
+  }
+
+  #proQuantity {
+    font-size: 11px;
+  }
+
+  .imgOrderProf img {
+    width: 100%;
+  }
+
+  .cancelOrderBtn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cancelOrderBtn button {
+    padding: 2px;
+    font-size: 10px;
+    display: flex;
+  }
+
+  .viewOrderDetailBtn button {
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1629,7 +1855,7 @@ select option {
   /* Form Address Detail */
 
   .addressVal {
-  gap: 20px;
+    gap: 20px;
     padding: 5px;
   }
 
@@ -1722,5 +1948,58 @@ select option {
     padding: 10px;
     font-size: 20px;
     margin-top: 0;
+  }
+
+  /* Order History */
+
+  .orderDetailWrap {
+    padding: 10px 10px 0 10px;
+  }
+
+  .orderWrap {
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  #orderHistoryTitle {
+    font-size: 16px;
+  }
+
+  #orderDate {
+    font-size: 12px;
+  }
+
+  #totalPriceOrder {
+    font-size: 10px;
+  }
+
+  .orderPrice p {
+    font-size: 10px;
+  }
+
+  #proQuantity {
+    font-size: 10px;
+  }
+
+  .imgOrderProf img {
+    width: 100%;
+  }
+
+  .cancelOrderBtn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cancelOrderBtn button {
+    padding: 2px;
+    font-size: 10px;
+    display: flex;
+  }
+
+  .viewOrderDetailBtn button {
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
   }
 }

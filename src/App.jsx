@@ -37,6 +37,8 @@ import Privacy from "./pages/privacy/Privacy.jsx";
 import { AuthProvider } from "./context/AuthProvider.jsx";
 import GoogleAuthSuccess from "./pages/googleauth/GoogleAuthSuccess.jsx";
 import GoogleAuthFailure from "./pages/googleauth/GoogleAuthFailure.jsx";
+import ProfileOrderHistory from "./pages/profile/profileInfo/ProfileOrderHistory.jsx";
+import ProfileOrder2 from "./pages/profile/profileInfo/ProfileOrder2.jsx";
 
 export const AppContext = createContext("Bruce");
 
@@ -70,6 +72,14 @@ const router = createBrowserRouter([
       {
         path: "/profile/delAcct",
         element: <ProfileDelete />,
+      },
+      {
+        path: "/profile/orderHistory",
+        element: <ProfileOrderHistory />,
+      },
+      {
+        path: "/profile/orderHistory2",
+        element: <ProfileOrder2 />,
       },
     ],
   },
@@ -164,8 +174,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/products",
-    element: <Products/>
-  }
+    element: <Products />,
+  },
 ]);
 
 function App() {
