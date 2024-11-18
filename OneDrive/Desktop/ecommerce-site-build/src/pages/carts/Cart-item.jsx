@@ -13,41 +13,44 @@ const CartItem = (props) => {
 
    return (
     <>
-    
-    <div className="ct_details">
-     
-      <div className="ct_image">
-        <div className='ct_imgGotten'>
-        <img src={productImage}/>
+    <div className="ct_real">
+      {/* <div className="ct_general">
+            <p className="ct_Product"><b>Product</b></p>
+            <p className="ct_Size"><b>Size</b></p>
+            <p className="ct_Quality"><b>Quality</b></p>
+            <p className="ct_Remove"><b>Remove</b></p>
+            <p className="ct_Price"><b>Price</b></p>
+          </div>
+          <hr /> */}
+
+      <div className="ct_detail">
+        <div className="ct_image">
+          {/* <div className='ct_imgGotten'><img src={productImage}/></div> */}
+          <div className="ct_imgGotten"><img src="src/assets/images/bag.png" alt="Bag" /></div>
+          {/* <p><b> {productName} </b></p> */}
+          <p><b>Gucci Bag</b></p>
         </div>
-        
-        <p><b> {productName} </b></p>
+
+        <div className="ct_size"><button>5</button></div>
+
+        <div className="ct_countHandler">
+          <button onClick={() => addToCart(id)} className="ct_positive"><b>+</b></button>
+          <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}  className="ct_item"/>
+          <button onClick={() => removeFromCart(id)} className="ct_negative"><b>-</b></button>
+        </div>
+
+        <div className="ct_remove"><button  onClick={() => handleRemove(id)}>X</button></div>
+
+        <div className="ct_price">
+          <p><b> {price} </b></p>
+        </div>
       </div>
-      <div className="ct_size"><button>5</button></div>
-
-      <div className="ct_countHandler">
-     
-      <div>
-      <button onClick={() => addToCart(id)} className="ct_positive"><b>+</b></button>
-        <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}  className="ct_item"/>
-        <button onClick={() => removeFromCart(id)} className="ct_negative"><b>-</b></button>
       </div>
-
-
-        
-      </div>
-
-      <div className="ct_remove"><button  onClick={() => handleRemove(id)}>X</button></div>
-
-      <div className="ct_price">
-        <p><b> ${price} </b></p>
-      </div>
-
-    </div>
+    
    
 
 
-    <div className="ctm_details">
+      <div className="ctm_data">
   
       <div className="ctm_image">
         <img src={productImage}/>
