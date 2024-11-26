@@ -39,6 +39,8 @@ import GoogleAuthSuccess from "./pages/googleauth/GoogleAuthSuccess.jsx";
 import GoogleAuthFailure from "./pages/googleauth/GoogleAuthFailure.jsx";
 import ProfileOrderHistory from "./pages/profile/profileInfo/ProfileOrderHistory.jsx";
 import ProfileOrder2 from "./pages/profile/profileInfo/ProfileOrder2.jsx";
+import ProfileOrderDetail from "./pages/profile/profileInfo/ProfileOrderDetail.jsx";
+import ProfileCancelOrder from "./pages/profile/profileInfo/ProfileCancelOrder.jsx";
 
 export const AppContext = createContext("Bruce");
 
@@ -81,6 +83,17 @@ const router = createBrowserRouter([
         path: "/profile/orderHistory2",
         element: <ProfileOrder2 />,
       },
+      {
+        path: "/profile/orderDetail",
+        element: <ProfileOrderDetail />,
+      },
+      {
+        path: "/profile/cancelOrder",
+        element: <ProfileCancelOrder />,
+      },
+      {
+        path: "/profile/e"
+      }
     ],
   },
   {
