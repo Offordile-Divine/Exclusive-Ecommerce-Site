@@ -47,10 +47,10 @@ const ProfileOrder2 = () => {
           </div>
 
           <div className="cancelOrderBtn">
-            <button>Cancel Order</button>
+            <Link to="/profile/cancelOrder">Cancel Order</Link>
           </div>
           <div className="viewOrderDetailBtn">
-            <button>View Details</button>
+            <Link to={`/profile/orderDetail`}>View Details</Link>
           </div>
         </div>
       </div>

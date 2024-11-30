@@ -543,13 +543,15 @@ select option {
   margin-top: 10px;
 }
 
-.cancelOrderBtn button {
+.cancelOrderBtn a {
   padding: 5px 10px 5px 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
   border: 0.61px solid rgba(22, 28, 45, 1);
   box-shadow: 0px 2.45px 2.45px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: rgba(22, 28, 45, 1);
 }
 
 .viewOrderDetailBtn {
@@ -558,7 +560,7 @@ select option {
   padding-bottom: 10px;
 }
 
-.viewOrderDetailBtn button {
+.viewOrderDetailBtn a {
   padding: 5px 10px 5px 10px;
   font-family: "Montserrat", sans-serif;
   background: rgba(22, 28, 45, 1);
@@ -567,6 +569,7 @@ select option {
   text-align: center;
   color: rgba(255, 255, 255, 1);
   border: 0.61px solid rgba(22, 28, 45, 1);
+  text-decoration: none;
 }
 
 #totalPriceOrder {
@@ -576,6 +579,311 @@ select option {
 .paymentOrderMethod {
   display: flex;
   gap: 5px;
+}
+
+/* Order Detail */
+
+.orderDetail {
+  box-shadow: 0px 2.45px 2.45px 0px rgba(0, 0, 0, 0.25);
+}
+
+.orderDetailForm {
+  display: flex;
+}
+
+.inputOrderDetail {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.inputOrderDetailSub {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#postCode {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  padding: 10px 7px 10px 7px;
+  width: 100%;
+  font-size: 16px;
+}
+
+#addressOrderDetail {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  padding: 10px 7px 10px 7px;
+  width: 100%;
+  font-size: 16px;
+}
+
+#nameInputDetail {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.addressDivOrder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.addressDiv2Order {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+#hrAddressDetail {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#addressOrderDetailTextArea {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 0 75px 20px;
+  background: rgba(245, 245, 245, 1);
+}
+
+.infoOrderDetail {
+  width: 87%;
+  margin-bottom: 20px;
+}
+
+.infoOrderDetail h5 {
+  color: rgba(15, 98, 254, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.orderDetailProdPrice {
+  width: 40%;
+}
+
+#inputProductPrice {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border-bottom: none;
+  padding: 10px 7px 10px 7px;
+  font-size: 16px;
+}
+
+.btnRequestReorder {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#btnRequest {
+  border: 1px solid rgba(22, 28, 45, 1);
+  background: rgba(255, 255, 255, 1);
+  padding: 5px 15px 5px 15px;
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+#btnReturnOrder {
+  padding: 5px 40px 5px 40px;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Order Detail Pop */
+
+/* .popOrderDetail {
+  margin: auto;
+  position: relative;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  width: 60%;
+  bottom: 100px;
+  z-index: 2000;
+  background: rgba(255, 255, 255, 1);
+} */
+
+.popOrderDetail h5 {
+  text-align: center;
+  padding: 30px 20px 50px 20px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btnOrderDetailYesNo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#btnDetailYes {
+  padding: 5px 60px 5px 60px;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnDetailNo {
+  padding: 5px 60px 5px 60px;
+  border: 1px solid rgba(22, 28, 45, 1);
+  border-radius: 5px;
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Modal overlay: covers the entire screen */
+.popOrderDetail {
+  position: fixed; /* Sticks to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 100vh; /* Full screen height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+/* Modal content */
+.popOrderDetail2 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 90%; /* Adjust as needed */
+  max-width: 500px; /* Maximum width */
+}
+
+/* Cancel Order */
+
+#hrOrderCancel {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.orderCancelInput {
+  padding: 20px;
+}
+
+.cancelOrderForm {
+  display: block;
+}
+
+#deleteOrderP {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+  padding-bottom: 20px;
+}
+.deleteOrderphoneNo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+#labelDeleteOrder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+#deletePhoneNo {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  padding: 10px 7px 10px 7px;
+}
+
+.deleteOrderReason {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+#deleteReason {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  outline: none;
+  padding: 10px 7px 10px 7px;
+}
+
+.deleteOrderInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  margin-bottom: 70px;
+}
+
+#textareaInfo {
+  border: none;
+  background: rgba(245, 245, 245, 1);
+  padding: 10px 0 75px 10px;
+  width: 100%;
+  outline: none;
+}
+
+.deleteNext {
+  display: flex;
+  justify-content: end;
+}
+
+.deleteNext a {
+  text-decoration: none;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 30px 5px 30px;
+  border-radius: 6px;
+}
+
+/* Cancel Pop Up  */
+
+#checkpopCancel {
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 1420px) {
@@ -1010,6 +1318,17 @@ select option {
     padding: 7px;
     width: 90%;
   }
+
+  /* Cancel Order */
+  .deleteOrderInfo {
+    width: 62%;
+  }
+
+  /* Cancel Pop Up  */
+
+  #checkpopCancel {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1293,7 +1612,6 @@ select option {
     margin-top: 0;
   }
 
-
   /* Order History */
 
   .orderDetailWrap {
@@ -1336,15 +1654,152 @@ select option {
     justify-content: center;
   }
 
-  .cancelOrderBtn button {
+  .cancelOrderBtn a {
     padding: 2px;
     font-size: 10px;
     display: flex;
+    text-decoration: none;
   }
 
-  .viewOrderDetailBtn button {
+  .viewOrderDetailBtn a {
     padding: 5px 10px 5px 10px;
     font-size: 10px;
+  }
+
+  /* Order Detail */
+
+  .inputOrderDetail {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .inputOrderDetailSub {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #postCode {
+    width: 90%;
+    padding: 7px 5px 7px 5px;
+    font-size: 14px;
+  }
+
+  .addressDiv2Order {
+    width: 90%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #nameInputDetail {
+    font-size: 14px;
+  }
+
+  .infoOrderDetail h5 {
+    font-size: 16px;
+  }
+
+  #addressOrderDetailTextArea {
+    font-size: 14px;
+  }
+
+  #inputProductPrice {
+    padding: 7px 5px 7px 5px;
+    font-size: 14px;
+  }
+
+  .orderDetailProdPrice {
+    width: 50%;
+  }
+
+  .btnRequestReorder {
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 60%;
+  }
+
+  #btnReturnOrder {
+    font-size: 14px;
+  }
+
+  #btnRequest {
+    font-size: 14px;
+  }
+
+  /* Order Detail Pop */
+
+  /* .popOrderDetail {
+    bottom: 0;
+    top: 200px;
+    width: 80%;
+  } */
+
+  .popOrderDetail2 {
+    width: 80%;
+  }
+
+  .popOrderDetail h5 {
+    font-size: 16px;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .btnOrderDetailYesNo {
+    padding-bottom: 20px;
+  }
+
+  #btnDetailYes {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  #btnDetailNo {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  /* Cancel Order */
+
+  .orderCancelInput {
+    padding: 10px;
+  }
+
+  #deleteOrderP {
+    font-size: 12px;
+  }
+
+  #labelDeleteOrder {
+    font-size: 12px;
+  }
+
+  .deleteOrderphoneNo {
+    width: 95%;
+  }
+
+  #deletePhoneNo {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderReason {
+    width: 99%;
+  }
+
+  #deleteReason {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderInfo {
+    width: 96%;
+  }
+
+  #textareaInfo {
+    font-size: 12px;
+  }
+
+  .deleteNext a {
+    padding: 5px 15px 5px 15px;
   }
 }
 
@@ -1669,15 +2124,152 @@ select option {
     justify-content: center;
   }
 
-  .cancelOrderBtn button {
+  .cancelOrderBtn a {
     padding: 2px;
     font-size: 10px;
     display: flex;
+    text-decoration: none;
   }
 
-  .viewOrderDetailBtn button {
+  .viewOrderDetailBtn a {
     padding: 5px 10px 5px 10px;
     font-size: 10px;
+  }
+
+  /* Order Detail */
+
+  .inputOrderDetail {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .inputOrderDetailSub {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #postCode {
+    width: 90%;
+    padding: 7px 5px 7px 5px;
+    font-size: 12px;
+  }
+
+  .addressDiv2Order {
+    width: 90%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #nameInputDetail {
+    font-size: 12px;
+  }
+
+  .infoOrderDetail h5 {
+    font-size: 16px;
+  }
+
+  #addressOrderDetailTextArea {
+    font-size: 12px;
+  }
+
+  #inputProductPrice {
+    padding: 7px 5px 7px 5px;
+    font-size: 12px;
+  }
+
+  .orderDetailProdPrice {
+    width: 50%;
+  }
+
+  .btnRequestReorder {
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 60%;
+  }
+
+  #btnReturnOrder {
+    font-size: 12px;
+  }
+
+  #btnRequest {
+    font-size: 12px;
+  }
+
+  /* Order Detail Pop */
+
+  /* .popOrderDetail {
+    bottom: 0;
+    top: 200px;
+    width: 80%;
+  } */
+
+  .popOrderDetail2 {
+    width: 80%;
+  }
+
+  .popOrderDetail h5 {
+    font-size: 16px;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .btnOrderDetailYesNo {
+    padding-bottom: 20px;
+  }
+
+  #btnDetailYes {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  #btnDetailNo {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  /* Cancel Order */
+
+  .orderCancelInput {
+    padding: 10px;
+  }
+
+  #deleteOrderP {
+    font-size: 14px;
+  }
+
+  #labelDeleteOrder {
+    font-size: 12px;
+  }
+
+  .deleteOrderphoneNo {
+    width: 95%;
+  }
+
+  #deletePhoneNo {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderReason {
+    width: 99%;
+  }
+
+  #deleteReason {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderInfo {
+    width: 96%;
+  }
+
+  #textareaInfo {
+    font-size: 12px;
+  }
+
+  .deleteNext a {
+    padding: 5px 15px 5px 15px;
   }
 }
 
@@ -1992,14 +2584,151 @@ select option {
     justify-content: center;
   }
 
-  .cancelOrderBtn button {
+  .cancelOrderBtn a {
     padding: 2px;
     font-size: 10px;
     display: flex;
+    text-decoration: none;
   }
 
-  .viewOrderDetailBtn button {
+  .viewOrderDetailBtn a {
     padding: 5px 10px 5px 10px;
     font-size: 10px;
+  }
+
+  /* Order Detail */
+
+  .inputOrderDetail {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .inputOrderDetailSub {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #postCode {
+    width: 90%;
+    padding: 7px 5px 7px 5px;
+    font-size: 12px;
+  }
+
+  .addressDiv2Order {
+    width: 90%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #nameInputDetail {
+    font-size: 12px;
+  }
+
+  .infoOrderDetail h5 {
+    font-size: 16px;
+  }
+
+  #addressOrderDetailTextArea {
+    font-size: 12px;
+  }
+
+  #inputProductPrice {
+    padding: 7px 5px 7px 5px;
+    font-size: 12px;
+  }
+
+  .orderDetailProdPrice {
+    width: 50%;
+  }
+
+  .btnRequestReorder {
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 60%;
+  }
+
+  #btnReturnOrder {
+    font-size: 12px;
+  }
+
+  #btnRequest {
+    font-size: 12px;
+  }
+
+  /* Order Detail Pop */
+
+  /* .popOrderDetail {
+    bottom: 0;
+    top: 200px;
+    width: 80%;
+  } */
+
+  .popOrderDetail2 {
+    width: 80%;
+  }
+
+  .popOrderDetail h5 {
+    font-size: 16px;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .btnOrderDetailYesNo {
+    padding-bottom: 20px;
+  }
+
+  #btnDetailYes {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  #btnDetailNo {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+  }
+
+  /* Cancel Order */
+
+  .orderCancelInput {
+    padding: 10px;
+  }
+
+  #deleteOrderP {
+    font-size: 12px;
+  }
+
+  #labelDeleteOrder {
+    font-size: 12px;
+  }
+
+  .deleteOrderphoneNo {
+    width: 95%;
+  }
+
+  #deletePhoneNo {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderReason {
+    width: 100%;
+  }
+
+  #deleteReason {
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+  }
+
+  .deleteOrderInfo {
+    width: 96%;
+  }
+
+  #textareaInfo {
+    font-size: 12px;
+  }
+
+  .deleteNext a {
+    padding: 5px 15px 5px 15px;
   }
 }
