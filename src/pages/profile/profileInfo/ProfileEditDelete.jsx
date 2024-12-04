@@ -15,7 +15,7 @@ const ProfileEditDelete = () => {
         <div className="linkbtn">
           <Link id="addressId">Delivery Address</Link>
           <Link
-            to={`/profile/myAddress/deliveryDrop`}
+            to="/profile/myAdddress/deliveryDrop"
             id="btn_newAddress"
             onClick={() => setSummitLayout(1)}
           >

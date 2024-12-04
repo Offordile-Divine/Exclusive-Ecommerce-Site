@@ -22,7 +22,7 @@ const ProfileDeliveryDrop = (props) => {
           <div className="linkbtn">
             <Link id="addressId">Delivery Address</Link>
             <Link
-              to={`/profile/myAddress/deliveryDrop`}
+              to={`myAdddress/deliveryDrop`}
               id="btn_newAddress"
               onClick={() => setSummitLayout(1)}
             >
