@@ -41,19 +41,19 @@ const ManagementDrop = (props) => {
       <div className={click ? "pi_linktarget active" : "pi_linktarget"}>
         <Link
           className="profP"
-          to={`/profile/myProfile`}
+          to={`myProfile`}
           // onClick={() => props.setLayout(0)}
         >
           My profile
         </Link>
         <Link
           className="profP"
-          to={`/profile/myAdddress`}
+          to={`myAdddress`}
           // onClick={() => props.setLayout(1)}
         >
           Delivery Address
         </Link>
-        <Link className="profP" to={`/profile/delAcct`}>
+        <Link className="profP" to={`delAcct`}>
           Delete Account
         </Link>
       </div>
