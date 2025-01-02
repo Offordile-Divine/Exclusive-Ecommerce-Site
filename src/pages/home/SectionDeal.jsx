@@ -6,7 +6,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../context/Shop-context";
 
-const SectionDeal = ({ id, img, price }) => {
+const SectionDeal = ({ id, img, price, name }) => {
   const { addToCart, cartItems } = useContext(ShopContext);
 
   const cartItemAmount = cartItems[id];
@@ -20,10 +20,10 @@ const SectionDeal = ({ id, img, price }) => {
           </div>
           <div className="sectionBDescription">
             <h5 className="priceSec">
-              <p id="checkedPrice">{price}</p>
+              <p id="checkedPrice">${price}</p>
               <p id="unCheckedPrice">$270</p>
             </h5>
-            <p id="productName">Bag</p>
+            <p id="productName">{name}</p>
             <div className="star">
               <IoIosStarOutline id="itemStar" />
               <IoIosStarOutline />
@@ -34,7 +34,7 @@ const SectionDeal = ({ id, img, price }) => {
           </div>
         </div>
         <div className="btnHome">
-          <Link id="addToCartDeal" onClick={() => addToCart(id)}>
+          <Link to={``} id="addToCartDeal" onClick={() => addToCart(id)}>
             Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
           </Link>
         </div>

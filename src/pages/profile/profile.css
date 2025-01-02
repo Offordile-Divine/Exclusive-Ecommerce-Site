@@ -419,6 +419,7 @@ select option {
   font-weight: 500;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 #no {
@@ -429,6 +430,7 @@ select option {
   font-weight: 500;
   text-align: center;
   background: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 .checkDel {
@@ -701,6 +703,7 @@ select option {
   font-size: 16px;
   font-weight: 500;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 #btnReturnOrder {
@@ -886,6 +889,525 @@ select option {
   font-size: 30px;
 }
 
+/* Refund Method Cancel */
+#bankDepo {
+  margin-left: 100px;
+  margin-top: 20px;
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.refundMethodCancel {
+  display: block;
+  margin-left: 50px;
+}
+
+#inputRefundCancel {
+  margin-top: 0;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  outline: none;
+  padding: 10px 7px 10px 7px;
+  font-size: 14px;
+  color: rgba(22, 28, 45, 1);
+}
+
+.div1RefundCancel {
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#textRefundCancel {
+  margin-top: 20px;
+}
+
+.submitRefundCancel {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.submitRefundCancel a {
+  text-decoration: none;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 30px 5px 30px;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.profDisclaimer {
+  margin-top: 20px;
+  margin-right: 10px;
+  display: flex;
+}
+
+#disclaimer {
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+#textDisclaimer {
+  color: rgba(22, 28, 45, 0.6);
+}
+
+/* Profile PickUp Location */
+
+.titleSelectPickUp {
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#selectPickUp {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+#returnItemText {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#checkLocation {
+  width: fit-content;
+  margin-top: 0;
+  color: red;
+}
+
+#selectPickUp2 {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapLocationCheck {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.divDropItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divDropItem p {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapLocationCheck2 {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+/* Verify your detail */
+.wrapDetail1 {
+  border: 0.48px solid rgba(0, 0, 0, 1);
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.requestReturnChange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 0.48px solid rgba(0, 0, 0, 1);
+}
+
+#requestAReturnText {
+  font-family: Montserrat;
+  font-size: 19.22px;
+  font-weight: 500;
+  color: rgba(15, 98, 254, 1);
+}
+
+.linkRequestDetail {
+  margin-right: 40px;
+}
+
+.linkRequestDetail a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: rgba(22, 28, 45, 1);
+}
+
+.bankDepositRequestDetail {
+  padding: 20px;
+}
+
+#textBankDeposit {
+  font-family: Montserrat;
+  font-size: 19.22px;
+  font-weight: 600;
+  color: rgba(22, 28, 45, 1);
+  margin-bottom: 10px;
+}
+
+#writeUpBankDeposit {
+  font-family: Montserrat;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+/* Order Review */
+.wrapReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewDetailWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 70%;
+}
+
+#productAvailable {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(22, 28, 45, 1);
+  text-align: center;
+}
+
+#writeUpReview {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+/* Profile Order Review 2 */
+.wrapAllOrderReview2Detail {
+  padding: 30px;
+}
+
+#noOrderReview {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(22, 28, 45, 1);
+  padding-bottom: 10px;
+}
+
+.wrapDescriptionOrderReview2 {
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.imgOrderReview2 {
+  width: 40%;
+}
+
+.imgOrderReview2 img {
+  width: 70%;
+}
+
+.starRateOrderReview2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.description2 {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#productNameReview {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(22, 28, 45, 1);
+}
+
+#priceOfProductReview {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+#descriptionOnProductNameReview {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+#noReview {
+  font-size: 10px;
+  color: rgba(22, 28, 45, 1);
+}
+
+.btnReviewOrder a {
+  width: 100%;
+  background: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 10px 40px 10px 40px;
+}
+
+/* Review Rating */
+
+.writeUpReview {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  gap: 10px;
+  width: 90%;
+}
+
+#h5Reviews {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(22, 28, 45, 1);
+}
+
+.writeUpReview textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  outline: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.submitReviewBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.submitReviewBtn button {
+  padding: 10px 30px 10px 30px;
+  background: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+}
+
+/* Profile/Wallet */
+#addNewCard {
+  background: rgba(22, 28, 45, 1);
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+}
+
+/* Profile AddNewCard */
+
+.formAddNewCard {
+  margin-top: 50px;
+  display: flex;
+  margin: 10%;
+  gap: 40px;
+}
+
+.inputWrapAddNewCard {
+  display: flex;
+  gap: 50px;
+}
+
+.inputAddNewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+#inputAddNewCard1 {
+  margin-top: 0;
+  border: none;
+  background: rgba(245, 245, 245, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.selectAddNewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+#selectAddNewCard1 {
+  margin-top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  width: 105%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.inputAddNewCard label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+.linkVerifyOTP {
+  padding-top: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+/* ProfileVerifyPaymentOTP */
+.wrapVerifyPaymentOtp {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+#verifyCode {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 1);
+}
+
+#codeSentTo {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.wrapInputVerifyPayment {
+  width: 20%;
+  margin-top: 20px;
+}
+
+#inputVerifyPayment {
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.wrapSubmitVerifyPaymnet {
+  width: 100%;
+  text-align: center;
+}
+
+#submitVerifyPayment {
+  background: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px 20px 5px 20px;
+  width: 20%;
+  cursor: pointer;
+}
+
+/* ProfileLogOut */
+.wrapLogOutProfile {
+  text-align: center;
+  margin: 10%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logOutDetailProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#certainText {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 400;
+  color: rgba(22, 28, 45, 1);
+}
+
+.btnLogOut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 @media only screen and (max-width: 1420px) {
   /* Account Info Address */
   .account_infoAddressContent {
@@ -973,6 +1495,11 @@ select option {
     padding: 7px;
     width: 90%;
   }
+
+  /* Profile AddNewCard */
+  .formAddNewCard {
+    align-items: normal;
+  }
 }
 
 @media only screen and (max-width: 1042px) {
@@ -994,7 +1521,6 @@ select option {
   .pi_InputName {
     margin-bottom: 0;
   }
-
   .pi_inputFieldContent {
     gap: 30px;
   }
@@ -1118,6 +1644,45 @@ select option {
     padding: 10px;
     font-size: 25px;
     margin-top: 0;
+  }
+
+  /* Profile Order Review 2 */
+  .starRateOrderReview2 {
+    width: 100%;
+  }
+
+  /* Profile AddNewCard */
+  .formAddNewCard {
+    align-items: normal;
+  }
+
+  #selectAddNewCard1 {
+    width: 107%;
+    font-size: 20px;
+  }
+
+  /* btn */
+  #yes {
+    padding: 7px 60px;
+    border-radius: 10px;
+    background: rgba(22, 28, 45, 1);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  #no {
+    padding: 7px 60px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
   }
 }
 
@@ -1328,6 +1893,128 @@ select option {
 
   #checkpopCancel {
     font-size: 28px;
+  }
+
+  /* Refund Method Cancel */
+
+  .refundMethodCancel {
+    margin-left: 0;
+    margin-left: 20px;
+  }
+
+  #textRefundCancel {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #nameRefundCancel {
+    font-size: 14px;
+  }
+
+  .div1RefundCancel {
+    width: 70%;
+  }
+
+  #inputRefundCancel {
+    font-size: 12px;
+  }
+
+  .submitRefundCancel a {
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile Order Review 2 */
+
+  .wrapDescriptionOrderReview2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .imgOrderReview2 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .imgOrderReview2 img {
+    width: 60%;
+  }
+
+  #productNameReview {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #priceOfProductReview {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #descriptionOnProductNameReview {
+    font-size: 16px;
+  }
+
+  .btnReviewOrder a {
+    font-size: 12px;
+    padding: 10px 40px 10px 40px;
+  }
+
+  /* Review Rating */
+
+  .writeUpReview {
+    margin-left: 0;
+  }
+
+  #h5Reviews {
+    font-size: 14px;
+  }
+
+  .writeUpReview textarea {
+    font-size: 12px;
+  }
+
+  .submitReviewBtn button {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile AddNewCard */
+
+  #inputAddNewCard1 {
+    line-height: normal;
+  }
+  #selectAddNewCard1 {
+    width: 107%;
+    font-size: 18px;
+  }
+
+  /* ProfileVerifyPaymentOTP */
+
+  #verifyCode {
+    font-size: 30px;
+  }
+
+  #codeSentTo {
+    font-size: 12px;
+  }
+
+  .wrapInputVerifyPayment {
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  #inputVerifyPayment {
+    font-size: 20px;
+  }
+
+  #submitVerifyPayment {
+    width: 30%;
+    font-size: 16px;
+  }
+
+  /* ProfileLogOut */
+  #certainText {
+    font-size: 20px;
   }
 }
 
@@ -1801,6 +2488,275 @@ select option {
   .deleteNext a {
     padding: 5px 15px 5px 15px;
   }
+
+  /* Refund Method Cancel */
+  #bankDepo {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .refundMethodCancel {
+    margin-left: 0;
+    margin-left: 20px;
+  }
+
+  #textRefundCancel {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  #nameRefundCancel {
+    font-size: 14px;
+  }
+
+  .div1RefundCancel {
+    width: 70%;
+  }
+
+  #inputRefundCancel {
+    font-size: 12px;
+  }
+
+  .submitRefundCancel a {
+    padding: 5px 20px 5px 20px;
+  }
+
+  #textDisclaimer {
+    font-size: 10px;
+  }
+
+  /* Profile PickUp Location */
+  .titleSelectPickUp {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 15px;
+  }
+
+  #selectPickUp {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #returnItemText {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  #selectPickUp2 {
+    font-size: 14px;
+  }
+
+  .divDropItem p {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck2 {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  /* Verify your detail */
+
+  .requestReturnChange {
+    padding: 5px;
+  }
+
+  #requestAReturnText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .linkRequestDetail {
+    margin-right: 0;
+  }
+
+  .linkRequestDetail a {
+    gap: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  #textBankDeposit {
+    font-size: 14px;
+  }
+
+  #writeUpBankDeposit {
+    font-size: 12px;
+  }
+
+  /* Order Review */
+  .reviewDetailWrap {
+    width: fit-content;
+    padding-top: 30px;
+    gap: 5px;
+    padding-bottom: 20px;
+  }
+
+  #productAvailable {
+    font-size: 14px;
+  }
+
+  #writeUpReview {
+    font-size: 12px;
+  }
+
+  /* Profile Order Review 2 */
+
+  .wrapDescriptionOrderReview2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .imgOrderReview2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgOrderReview2 img {
+    width: 60%;
+  }
+
+  #productNameReview {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #priceOfProductReview {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #descriptionOnProductNameReview {
+    font-size: 12px;
+  }
+
+  .btnReviewOrder a {
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  /* Review Rating */
+
+  .writeUpReview {
+    margin-left: 0;
+  }
+
+  #h5Reviews {
+    font-size: 14px;
+  }
+
+  .writeUpReview textarea {
+    font-size: 12px;
+  }
+
+  .submitReviewBtn button {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile/Wallet */
+  #addNewCard {
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Profile AddNewCard */
+
+  .formAddNewCard {
+    gap: 10px;
+    margin: 5%;
+  }
+
+  .inputWrapAddNewCard {
+    gap: 10px;
+  }
+  .inputWrapAddNewCard {
+    flex-direction: column;
+  }
+
+  .inputAddNewCard {
+    margin: auto;
+    gap: 10px;
+  }
+
+  #inputAddNewCard1 {
+    width: 93%;
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+
+  #selectAddNewCard1 {
+    width: 98%;
+    font-size: 18px;
+    font-size: 14px;
+  }
+
+  /* ProfileVerifyPaymentOTP */
+
+  #verifyCode {
+    font-size: 24px;
+  }
+
+  #codeSentTo {
+    font-size: 12px;
+  }
+
+  .wrapInputVerifyPayment {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  #inputVerifyPayment {
+    font-size: 14px;
+  }
+
+  #submitVerifyPayment {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  /* btn */
+
+  #yes {
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: rgba(22, 28, 45, 1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  #no {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  /* ProfileLogOut */
+  #certainText {
+    font-size: 16px;
+  }
+
+  .logOutDetailProfile {
+    gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2271,6 +3227,271 @@ select option {
   .deleteNext a {
     padding: 5px 15px 5px 15px;
   }
+
+  /* Refund Method Cancel */
+  #bankDepo {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .refundMethodCancel {
+    margin-left: 0;
+    margin-left: 20px;
+  }
+
+  #textRefundCancel {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  #nameRefundCancel {
+    font-size: 14px;
+  }
+
+  .div1RefundCancel {
+    width: 70%;
+  }
+
+  #inputRefundCancel {
+    font-size: 12px;
+  }
+
+  .submitRefundCancel a {
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile PickUp Location */
+  .titleSelectPickUp {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 15px;
+  }
+
+  #selectPickUp {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #returnItemText {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  #selectPickUp2 {
+    font-size: 14px;
+  }
+
+  .divDropItem p {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck2 {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  /* Verify your detail */
+
+  .requestReturnChange {
+    padding: 5px;
+  }
+
+  #requestAReturnText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .linkRequestDetail {
+    margin-right: 0;
+  }
+
+  .linkRequestDetail a {
+    gap: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  #textBankDeposit {
+    font-size: 14px;
+  }
+
+  #writeUpBankDeposit {
+    font-size: 12px;
+  }
+
+  /* Order Review */
+  .reviewDetailWrap {
+    width: fit-content;
+    padding-top: 30px;
+    gap: 5px;
+    padding-bottom: 20px;
+  }
+
+  #productAvailable {
+    font-size: 14px;
+  }
+
+  #writeUpReview {
+    font-size: 12px;
+  }
+
+  /* Profile Order Review 2 */
+
+  .wrapDescriptionOrderReview2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .imgOrderReview2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgOrderReview2 img {
+    width: 60%;
+  }
+
+  #productNameReview {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #priceOfProductReview {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #descriptionOnProductNameReview {
+    font-size: 12px;
+  }
+
+  .btnReviewOrder a {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Review Rating */
+
+  .writeUpReview {
+    margin-left: 0;
+  }
+
+  #h5Reviews {
+    font-size: 14px;
+  }
+
+  .writeUpReview textarea {
+    font-size: 12px;
+  }
+
+  .submitReviewBtn button {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile/Wallet */
+  #addNewCard {
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Profile AddNewCard */
+
+  .formAddNewCard {
+    gap: 10px;
+    margin: 5%;
+  }
+
+  .inputWrapAddNewCard {
+    gap: 10px;
+  }
+  .inputWrapAddNewCard {
+    flex-direction: column;
+  }
+
+  .inputAddNewCard {
+    margin: auto;
+    gap: 10px;
+  }
+
+  #inputAddNewCard1 {
+    width: 93%;
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+
+  #selectAddNewCard1 {
+    width: 100%;
+    font-size: 18px;
+    font-size: 14px;
+  }
+
+  /* ProfileVerifyPaymentOTP */
+
+  #verifyCode {
+    font-size: 24px;
+  }
+
+  #codeSentTo {
+    font-size: 12px;
+  }
+
+  .wrapInputVerifyPayment {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  #inputVerifyPayment {
+    font-size: 14px;
+  }
+
+  #submitVerifyPayment {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  /* btn */
+
+  #yes {
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: rgba(22, 28, 45, 1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  #no {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  /* ProfileLogOut */
+  #certainText {
+    font-size: 16px;
+  }
+
+  .logOutDetailProfile {
+    gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -2730,5 +3951,270 @@ select option {
 
   .deleteNext a {
     padding: 5px 15px 5px 15px;
+  }
+
+  /* Refund Method Cancel */
+  #bankDepo {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .refundMethodCancel {
+    margin-left: 0;
+    margin-left: 20px;
+  }
+
+  #textRefundCancel {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  #nameRefundCancel {
+    font-size: 14px;
+  }
+
+  .div1RefundCancel {
+    width: 70%;
+  }
+
+  #inputRefundCancel {
+    font-size: 12px;
+  }
+
+  .submitRefundCancel a {
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile PickUp Location */
+  .titleSelectPickUp {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 15px;
+  }
+
+  #selectPickUp {
+    margin-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #returnItemText {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  #selectPickUp2 {
+    font-size: 14px;
+  }
+
+  .divDropItem p {
+    font-size: 12px;
+  }
+
+  .wrapLocationCheck2 {
+    margin-left: 20px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  /* Verify your detail */
+
+  .requestReturnChange {
+    padding: 5px;
+  }
+
+  #requestAReturnText {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .linkRequestDetail {
+    margin-right: 0;
+  }
+
+  .linkRequestDetail a {
+    gap: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  #textBankDeposit {
+    font-size: 14px;
+  }
+
+  #writeUpBankDeposit {
+    font-size: 12px;
+  }
+
+  /* Order Review */
+  .reviewDetailWrap {
+    width: fit-content;
+    padding-top: 30px;
+    gap: 5px;
+    padding-bottom: 20px;
+  }
+
+  #productAvailable {
+    font-size: 14px;
+  }
+
+  #writeUpReview {
+    font-size: 12px;
+  }
+
+  /* Profile Order Review 2 */
+
+  .wrapDescriptionOrderReview2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .imgOrderReview2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgOrderReview2 img {
+    width: 60%;
+  }
+
+  #productNameReview {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #priceOfProductReview {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #descriptionOnProductNameReview {
+    font-size: 12px;
+  }
+
+  .btnReviewOrder a {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Review Rating */
+
+  .writeUpReview {
+    margin-left: 0;
+  }
+
+  #h5Reviews {
+    font-size: 14px;
+  }
+
+  .writeUpReview textarea {
+    font-size: 12px;
+  }
+
+  .submitReviewBtn button {
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+
+  /* Profile/Wallet */
+  #addNewCard {
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Profile AddNewCard */
+
+  .formAddNewCard {
+    gap: 10px;
+    margin: 5%;
+  }
+
+  .inputWrapAddNewCard {
+    gap: 10px;
+  }
+  .inputWrapAddNewCard {
+    flex-direction: column;
+  }
+
+  .inputAddNewCard {
+    margin: auto;
+    gap: 10px;
+  }
+
+  #inputAddNewCard1 {
+    width: 93%;
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+
+  #selectAddNewCard1 {
+    width: 100%;
+    font-size: 18px;
+    font-size: 14px;
+  }
+
+  /* ProfileVerifyPaymentOTP */
+
+  #verifyCode {
+    font-size: 24px;
+  }
+
+  #codeSentTo {
+    font-size: 12px;
+  }
+
+  .wrapInputVerifyPayment {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  #inputVerifyPayment {
+    font-size: 14px;
+  }
+
+  #submitVerifyPayment {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  /* btn */
+
+  #yes {
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: rgba(22, 28, 45, 1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  #no {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+
+  /* ProfileLogOut */
+  #certainText {
+    font-size: 16px;
+  }
+
+  .logOutDetailProfile {
+    gap: 30px;
   }
 }

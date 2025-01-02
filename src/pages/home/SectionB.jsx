@@ -1,16 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Goods } from "../../db";
 import bag from "../../assets/images/bag.png";
 import { IoIosStarOutline } from "react-icons/io";
 import "./home.css";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../context/Shop-context";
+import axios from "axios";
 
 const SectionB = ({ id, img, price, name }) => {
+  
+
   const { addToCart, cartItems } = useContext(ShopContext);
   console.log(id);
   const addCart = () => addToCart(cartItems, id);
   const cartItemAmount = cartItems[id];
+
+  
 
   return (
     <div className="WrapHome">
@@ -23,7 +28,7 @@ const SectionB = ({ id, img, price, name }) => {
             <p id="checkedPrice">{price}</p>
             <p id="unCheckedPrice">$270</p>
           </h5>
-          <p id="productName">Bag</p>
+          <p id="productName">{name}</p>
           <div className="star">
             <IoIosStarOutline id="itemStar" />
             <IoIosStarOutline />

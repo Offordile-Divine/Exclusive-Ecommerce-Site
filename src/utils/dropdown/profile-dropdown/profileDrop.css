@@ -13,6 +13,7 @@
   text-align: left;
   text-decoration: none;
   color: grey;
+  width: 80%;
 }
 
 .pi_linktarget.active a:focus {

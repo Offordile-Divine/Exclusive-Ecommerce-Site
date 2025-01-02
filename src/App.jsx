@@ -41,6 +41,18 @@ import ProfileOrderHistory from "./pages/profile/profileInfo/ProfileOrderHistory
 import ProfileOrder2 from "./pages/profile/profileInfo/ProfileOrder2.jsx";
 import ProfileOrderDetail from "./pages/profile/profileInfo/ProfileOrderDetail.jsx";
 import ProfileCancelOrder from "./pages/profile/profileInfo/ProfileCancelOrder.jsx";
+import ProfileRefundCancel from "./pages/profile/profileInfo/ProfileRefundCancel.jsx";
+import ProfileRefundRequestMethod from "./pages/profile/profileInfo/ProfileRefundRequestMethod.jsx";
+import ProfilePickUp from "./pages/profile/profileInfo/ProfilePickUp.jsx";
+import ProfileVerifyDetails from "./pages/profile/profileInfo/ProfileVerifyDetails.jsx";
+import ProductDetail from "./pages/products/ProductDetail.jsx";
+import ProfileOrderReview from "./pages/profile/profileInfo/profileOrderReview.jsx";
+import ProfileOrderReview2 from "./pages/profile/profileInfo/ProfileOrderReview2.jsx";
+import ProfileOrderReview3 from "./pages/profile/profileInfo/ProfileOrderReview3.jsx";
+import ProfilePaymentOption from "./pages/profile/profileInfo/ProfilePaymentOption.jsx";
+import ProfileAddNewCard from "./pages/profile/profileInfo/ProfileAddNewCard.jsx";
+import ProfileVerifyPaymentOTP from "./pages/profile/profileInfo/ProfileVerifyPaymentOTP.jsx";
+import ProfileLogOut from "./pages/profile/profileInfo/ProfileLogOut.jsx";
 
 export const AppContext = createContext("Bruce");
 
@@ -52,11 +64,11 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/profile",
+    path: "/profile/",
     element: <Profile />,
     children: [
       {
-        path: "/profile/",
+        path: "",
         element: <ProfileInactive />,
       },
       {
@@ -68,7 +80,7 @@ const router = createBrowserRouter([
         element: <ProfileDeliveryDrop />,
       },
       {
-        path: "/profile/myAddress/deliveryDrop",
+        path: "/profile/myAdddress/deliveryDrop",
         element: <ProfileSubmitAddress />,
       },
       {
@@ -78,6 +90,18 @@ const router = createBrowserRouter([
       {
         path: "/profile/orderHistory",
         element: <ProfileOrderHistory />,
+      },
+      {
+        path: "/profile/orderReview",
+        element: <ProfileOrderReview />,
+      },
+      {
+        path: "/profile/orderReview2",
+        element: <ProfileOrderReview2 />,
+      },
+      {
+        path: "/profile/orderReview3",
+        element: <ProfileOrderReview3 />,
       },
       {
         path: "/profile/orderHistory2",
@@ -92,8 +116,37 @@ const router = createBrowserRouter([
         element: <ProfileCancelOrder />,
       },
       {
-        path: "/profile/e"
-      }
+        path: "/profile/a",
+        element: <ProfileRefundCancel />,
+      },
+      {
+        path: "/profile/b",
+        element: <ProfileRefundRequestMethod />,
+      },
+      {
+        path: "/profile/pickUp",
+        element: <ProfilePickUp />,
+      },
+      {
+        path: "/profile/verifyDetails",
+        element: <ProfileVerifyDetails />,
+      },
+      {
+        path: "/profile/paymentOption",
+        element: <ProfilePaymentOption />,
+      },
+      {
+        path: "/profile/addNewCard",
+        element: <ProfileAddNewCard />,
+      },
+      {
+        path: "/profile/verifyPaymentOTP",
+        element: <ProfileVerifyPaymentOTP />,
+      },
+      {
+        path: "/profile/profileLogOut",
+        element: <ProfileLogOut />,
+      },
     ],
   },
   {
@@ -188,6 +241,12 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Products />,
+    children: [
+      {
+        path: ":id",
+        element: <ProductDetail />,
+      },
+    ],
   },
 ]);
 

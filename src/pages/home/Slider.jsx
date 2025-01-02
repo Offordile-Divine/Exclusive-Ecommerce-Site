@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SectionA from "./SectionA";
@@ -9,8 +9,22 @@ import SectionImgDescription from "./SectionImgDescription";
 import SectionDeal from "./SectionDeal";
 import { BsArrowRight } from "react-icons/bs";
 import AdvertDisplay from "./AdvertDisplay";
+import axios from "axios";
+import Products from "../products/Product";
 
 const Slider = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [newProduct, setNewProducts] = useState({
+    name: "Sample Product",
+    description: "This is a sample product.",
+    price: 100,
+    category: "Electronics",
+    images: [],
+    unit: 50,
+  });
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -30,6 +44,78 @@ const Slider = () => {
       items: 1,
     },
   };
+
+  const productInfo = async (filters = {}) => {
+    const token = localStorage.getItem("accessToken");
+
+    try {
+      const params = {};
+      if (filters.category) params.category = filters.category;
+      if (filters.minPrice) params.minPrice = filters.minPrice;
+      if (filters.maxPrice) params.maxPrice = filters.maxPrice;
+      if (filters.sort) params.sort = filters.sort;
+
+      const res = await axios.get(
+        "https://one00daysofcoding.onrender.com/v1/products",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          params,
+        }
+      );
+
+      setProducts(res.data);
+      setLoading(false);
+    } catch (err) {
+      setError(err.response ? err.response.data : "An error occurred");
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    productInfo();
+  }, []);
+
+  const createNewProduct = async () => {
+    const token = localStorage.getItem("accessToken");
+
+    try {
+      const res = await axios.post(
+        "https://one00daysofcoding.onrender.com/v1/products",
+        newProduct,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log(newProduct);
+
+      setProducts([...products, res.data]);
+      setNewProducts({
+        name: "",
+        description: "",
+        price: "",
+        category: "",
+        images: [
+          "https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600",
+        ],
+        unit: "",
+      });
+    } catch (err) {
+      setError(err.response ? err.response.data : "An error occurred");
+    }
+  };
+
+  useEffect(() => {
+    createNewProduct();
+  }, []);
+
   return (
     <div>
       <Carousel swipeable={true} draggable={true} responsive={responsive}>
@@ -44,12 +130,12 @@ const Slider = () => {
       </div>
 
       <div className="wrapSectonDescription3">
-        {Goods.map((product, ix) => (
+        {products.map((product, ix) => (
           <SectionImgDescription
-            id={product.id}
-            key={product.id}
-            img={product.img}
-            name={product.name}
+          key={product.id || product._id || ix} // Fallback to index if `id` is missing
+          id={product.id || product._id}       // Use `id` or `_id`
+          img={product.images && product.images[0]} // Handle `images` as array
+          name={product.name || "Unnamed Product"}  // Fallback for missing name
           />
         ))}
       </div>
@@ -67,13 +153,13 @@ const Slider = () => {
       </div>
 
       <div className="wrapSectionB">
-        {Goods.map((name, ix) => (
+        {products.map((product, ix) => (
           <SectionDeal
-            key={name.id}
-            id={name.id}
-            img={name.img}
-            price={name.price}
-            name={name.name}
+            key={product.id}
+            id={product.id}
+            img={product.images}
+            price={product.price}
+            name={product.name}
           />
         ))}
       </div>
@@ -85,13 +171,13 @@ const Slider = () => {
       </div>
 
       <div className="wrapSectionB">
-        {Goods.map((name, ix) => (
+        {products.map((product, ix) => (
           <SectionB
             key={ix}
-            id={name.id}
-            img={name.img}
-            price={name.price}
-            name={name.name}
+            id={product.id}
+            img={product.images}
+            price={product.price}
+            name={product.name}
           />
         ))}
       </div>
