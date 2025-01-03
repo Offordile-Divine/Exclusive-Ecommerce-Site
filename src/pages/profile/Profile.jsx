@@ -9,6 +9,7 @@ import "./profile.css";
 import ManagementDrop from "../../utils/dropdown/profile-dropdown/ManagementDrop";
 import OrderProfileDrop from "../../utils/dropdown/profile-dropdown/OrderProfileDrop";
 import WalletProfileDrop from "../../utils/dropdown/profile-dropdown/WalletProfileDrop";
+import LogOutDrop from "../../utils/dropdown/profile-dropdown/LogOutDrop";
 
 const Profile = () => {
   const [activeProfile, setActiveProfile] = useState(true);
@@ -32,6 +33,7 @@ const Profile = () => {
               <ManagementDrop />
               <OrderProfileDrop />
               <WalletProfileDrop />
+              <LogOutDrop />
             </div>
             <div className="wrap-layout">
               <Outlet />

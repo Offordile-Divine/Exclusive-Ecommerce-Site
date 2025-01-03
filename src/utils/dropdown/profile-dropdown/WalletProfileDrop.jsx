@@ -33,7 +33,7 @@ const WalletProfileDrop = () => {
         </div>
       </div>
       <div className={click ? "pi_linktarget active" : "pi_linktarget"}>
-        <Link to="/paymentOption">My Payment Option</Link>
+        <Link to="/profile/paymentOption">My Payment Option</Link>
       </div>
     </div>
   );

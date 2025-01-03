@@ -89,7 +89,7 @@ const ProfileCancelOrder = () => {
 
             <div className="deleteNext">
               {/* <Link to="/profile/cancelOrder">Cancel Order</Link> */}
-              <Link to="/profile/RefundMethodCancel">Next</Link>
+              <Link to="/profile/a">Next</Link>
             </div>
           </form>
         </div>

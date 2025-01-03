@@ -118,7 +118,7 @@ const ProfileOrderDetail = () => {
             </div>
           </div>
           <div className="btnRequestReorder">
-            <button id="btnRequest">Request a return</button>
+            <Link to={`/profile/b`} id="btnRequest">Request a return</Link>
             <button id="btnReturnOrder" onClick={handleOpen}>
               Re-order
             </button>
@@ -131,7 +131,7 @@ const ProfileOrderDetail = () => {
               <h5>Proceed to Checkout</h5>
 
               <div className="btnOrderDetailYesNo">
-                <button id="btnDetailYes" onClick={handleOpen2}>
+                <button id="btnDetailYes">
                   YES
                 </button>
                 <button id="btnDetailNo" onClick={handleClose}>
@@ -142,7 +142,7 @@ const ProfileOrderDetail = () => {
           </div>
         )}
 
-        {isOpen2 && (
+        {/* {isOpen2 && (
           <div className="popOrderDetail">
             <div className="popOrderDetail2">
               <button>
@@ -154,7 +154,7 @@ const ProfileOrderDetail = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
