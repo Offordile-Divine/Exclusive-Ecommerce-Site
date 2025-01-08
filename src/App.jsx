@@ -53,6 +53,7 @@ import ProfilePaymentOption from "./pages/profile/profileInfo/ProfilePaymentOpti
 import ProfileAddNewCard from "./pages/profile/profileInfo/ProfileAddNewCard.jsx";
 import ProfileVerifyPaymentOTP from "./pages/profile/profileInfo/ProfileVerifyPaymentOTP.jsx";
 import ProfileLogOut from "./pages/profile/profileInfo/ProfileLogOut.jsx";
+import ProfileUserDetail from "./pages/profile/profileInfo/ProfileUserDetail.jsx";
 
 export const AppContext = createContext("Bruce");
 
@@ -146,6 +147,10 @@ const router = createBrowserRouter([
       {
         path: "/profile/profileLogOut",
         element: <ProfileLogOut />,
+      },
+      {
+        path: "/profile/profileUserDetail",
+        element: <ProfileUserDetail />
       },
     ],
   },

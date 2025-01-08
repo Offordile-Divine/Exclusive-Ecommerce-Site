@@ -67,6 +67,7 @@ const Slider = () => {
       );
 
       setProducts(res.data);
+      console.log(res.data);
       setLoading(false);
     } catch (err) {
       setError(err.response ? err.response.data : "An error occurred");
@@ -97,15 +98,16 @@ const Slider = () => {
 
       setProducts([...products, res.data]);
       setNewProducts({
-        name: "",
-        description: "",
-        price: "",
-        category: "",
+        name: "Shoe",
+        description: "This is a shoe",
+        price: "300",
+        category: "Shoes",
         images: [
           "https://images.pexels.com/photos/2078268/pexels-photo-2078268.jpeg?auto=compress&cs=tinysrgb&w=600",
           "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600",
         ],
-        unit: "",
+        ratings: "4",
+        stock: 20,
       });
     } catch (err) {
       setError(err.response ? err.response.data : "An error occurred");
@@ -132,10 +134,10 @@ const Slider = () => {
       <div className="wrapSectonDescription3">
         {products.map((product, ix) => (
           <SectionImgDescription
-          key={product.id || product._id || ix} // Fallback to index if `id` is missing
-          id={product.id || product._id}       // Use `id` or `_id`
-          img={product.images && product.images[0]} // Handle `images` as array
-          name={product.name || "Unnamed Product"}  // Fallback for missing name
+            key={product.id || product._id || ix} // Fallback to index if `id` is missing
+            id={product.id || product._id} // Use `id` or `_id`
+            img={product.images && product.images[0]} // Handle `images` as array
+            name={product.name || "Unnamed Product"} // Fallback for missing name
           />
         ))}
       </div>

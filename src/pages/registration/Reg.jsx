@@ -15,8 +15,7 @@ import { EmailContext } from "../../context/EmailContext";
 
 // const APIKEY = import.meta.env.VITE_API_KEY;
 
-const Reg = () => {
-  const { setEmail } = useContext(EmailContext);
+const Reg = () => {  const { setEmail } = useContext(EmailContext);
   console.log(useContext(EmailContext));
   // const { name } = useContext(AppContext);
 

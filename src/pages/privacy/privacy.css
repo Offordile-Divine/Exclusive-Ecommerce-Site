@@ -17,6 +17,14 @@
 #pp_heading{
   font-weight: lighter;
 } 
-/* ul{
-  margin-left: 2%;
-} */
+
+#list_1 {
+  position: unset;
+  
+  box-shadow: none;
+}
+
+#list_2 {
+  position: unset;
+  box-shadow: none;
+}
