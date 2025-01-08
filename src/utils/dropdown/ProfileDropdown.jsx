@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
@@ -19,14 +19,59 @@ import { FaPersonCircleQuestion } from "react-icons/fa6";
 import { IoMdLogOut } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { AuthContext } from "../../context/AuthProvider";
+import axios from "axios";
 
 const ProfileDropdown = () => {
   const [click, setClick] = useState(false);
-  const { name, setName } = useContext(AppContext);
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+
+  const navigate = useNavigate();
+
+  const { isAuthenticated } = useContext(AuthContext);
 
   const handleClick = () => {
     setClick(!click);
   };
+
+  useEffect(() => {
+    const userId = JSON.parse(localStorage.getItem("user"));
+    const token = localStorage.getItem("accessToken");
+    // console.log("Token", token, "UserId", userId);
+
+    if (!token) {
+      navigate("/login");
+    }
+
+    const fetchUserDetail = async () => {
+      const authLogin = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      };
+      try {
+        const response = await axios.get(
+          `https://one00daysofcoding.onrender.com/user/v1/profile`,
+          authLogin
+        );
+
+        if (response.status === 200) {
+          const { firstname, lastname } = response.data.data;
+          setFirstname(firstname);
+          console.log(firstname);
+          setLastname(lastname);
+        }
+        console.log(response);
+      } catch (err) {
+        console.error("Error occured", err.response);
+      }
+    };
+
+    fetchUserDetail();
+  }, [navigate]);
+
   return (
     <nav className="ProfileDropDown">
       <div className="tog">
@@ -38,7 +83,7 @@ const ProfileDropdown = () => {
                 cursor: "pointer",
                 textAlign: "center",
                 fontSize: "10px",
-                marginLeft: "6px"
+                marginLeft: "6px",
               }}
             />
           ) : (
@@ -46,7 +91,7 @@ const ProfileDropdown = () => {
               style={{
                 cursor: "pointer",
                 textAlign: "center",
-                marginLeft: "6px"
+                marginLeft: "6px",
               }}
             />
           )}
@@ -54,7 +99,14 @@ const ProfileDropdown = () => {
       </div>
 
       <ul className={click ? "prof_toggle active" : "prof_toggle"}>
-        <h1 id="customerName">Hi, {name ?? "user"}</h1>
+        {isAuthenticated ? (
+          <h1 id="customerName">
+            Hii,{firstname} {lastname}
+          </h1>
+        ) : (
+          <h1>No User</h1>
+        )}
+
         <hr />
         <li className="prof_tog">
           <Link to="/profile" className="rm">

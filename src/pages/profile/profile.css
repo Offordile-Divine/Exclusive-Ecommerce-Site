@@ -1408,6 +1408,57 @@ select option {
   gap: 20px;
 }
 
+/* Profile User Detail */
+
+.userDetailForm {
+  padding: 20px;
+  display: flex;
+  flex-direction: unset;
+}
+
+.userDetailForm input {
+  margin-top: 10px;
+  background: rgba(245, 245, 245, 1);
+  border: none;
+  padding: 10px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.userDetailInput {
+  margin-top: 30px;
+  width: 97%;
+}
+
+.userDetailInput label {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(22, 28, 45, 1);
+}
+
+.btnEditAcct {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btnEditAcct button {
+  width: 30%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  background: rgba(22, 28, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+}
+
 @media only screen and (max-width: 1420px) {
   /* Account Info Address */
   .account_infoAddressContent {
@@ -2015,6 +2066,25 @@ select option {
   /* ProfileLogOut */
   #certainText {
     font-size: 20px;
+  }
+
+  /* Profile User Detail */
+
+  .userDetailInput {
+    margin-top: 20px;
+  }
+
+  .userDetailForm input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .userDetailForm {
+    padding: 10px;
+  }
+
+  .userDetailInput label {
+    font-size: 14px;
   }
 }
 
@@ -2757,6 +2827,31 @@ select option {
   .logOutDetailProfile {
     gap: 30px;
   }
+
+  /* Profile User Detail */
+
+  .userDetailInput {
+    margin-top: 20px;
+  }
+
+  .userDetailForm input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .userDetailForm {
+    padding: 10px;
+  }
+
+  .userDetailInput label {
+    font-size: 14px;
+  }
+
+  .btnEditAcct button {
+    width: 50%;
+    line-height: 26px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -3492,6 +3587,31 @@ select option {
   .logOutDetailProfile {
     gap: 30px;
   }
+
+  /* Profile User Detail */
+
+  .userDetailInput {
+    margin-top: 20px;
+  }
+
+  .userDetailForm input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .userDetailForm {
+    padding: 10px;
+  }
+
+  .userDetailInput label {
+    font-size: 14px;
+  }
+
+  .btnEditAcct button {
+    width: 50%;
+    line-height: 26px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -4216,5 +4336,30 @@ select option {
 
   .logOutDetailProfile {
     gap: 30px;
+  }
+
+  /* Profile User Detail */
+
+  .userDetailInput {
+    margin-top: 20px;
+  }
+
+  .userDetailForm input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .userDetailForm {
+    padding: 10px;
+  }
+
+  .userDetailInput label {
+    font-size: 14px;
+  }
+
+  .btnEditAcct button {
+    width: 50%;
+    line-height: 26px;
+    font-size: 14px;
   }
 }
