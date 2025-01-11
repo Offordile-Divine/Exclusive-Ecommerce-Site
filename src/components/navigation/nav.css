@@ -1,0 +1,778 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+} */
+
+.HomeNav {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.log_nav {
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 15px;
+}
+
+.reg_nav {
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 15px;
+}
+
+.home_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.loginRgInput {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+}
+
+.logReg2 {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#register2 {
+  border: 2px solid rgba(15, 98, 254, 1);
+  font-family: Montserrat;
+  font-size: 18x;
+  font-weight: 500;
+  background: rgba(15, 98, 254, 1);
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgba(22, 28, 45, 1);
+  border-radius: 7px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+#navLogLink2 {
+  border: 2px solid rgba(15, 98, 254, 1);
+  font-family: Montserrat;
+  font-size: 18x;
+  font-weight: 500;
+  color: rgba(15, 98, 254, 1);
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.input input {
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-family: "montserrate", sans-serif;
+  padding: 5px;
+}
+
+.input svg {
+  padding: 5px;
+  cursor: pointer;
+  color: rgba(22, 28, 45, 1);
+}
+
+.nav_dir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logInput2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.nav_dir a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgba(22, 28, 45, 1);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginNav {
+  text-decoration: none;
+  margin: 0;
+  border: 2px solid rgba(15, 98, 254, 1);
+  padding: 7px 30px;
+  border-radius: 7px;
+  color: rgba(15, 98, 254, 1);
+}
+
+#loginNav:hover {
+  background-color: rgba(15, 98, 254, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.inputCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inputCenter .input {
+  width: 100%;
+}
+
+#register {
+  text-decoration: none;
+  margin: 0;
+  background-color: rgba(15, 98, 254, 1);
+  padding: 7px 30px;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#register:hover {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(15, 98, 254, 1);
+  border: 2px solid rgba(15, 98, 254, 1);
+}
+
+.profcart {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.prof {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(22, 28, 45, 1);
+}
+
+/* .mb-regnav {
+  display: none;
+} */
+
+.registrationNav {
+  display: none;
+}
+
+.mbHome_userNav {
+  display: none;
+}
+
+.mbHamburger_tog {
+  display: none;
+}
+
+#navRegLink {
+  text-decoration: none;
+}
+
+/* HomeNav */
+@media only screen and (max-width: 768px) {
+  .HomeNav {
+    display: none;
+  }
+
+  .log_nav {
+    display: none;
+  }
+
+  .mbHome_nav {
+    display: block;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .mbHome_userNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #UserHomeNavIcon {
+    font-size: 40px;
+    color: rgba(41, 45, 50, 1);
+  }
+
+  #mb_InputHomeNav {
+    margin: 0;
+    border: 0.1px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #mb_InputHomeNav input {
+    margin: 0;
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 18px;
+  }
+
+  .mbHamburger_tog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .HomeNav {
+    display: none;
+  }
+
+  .mbHome_nav {
+    display: block;
+  }
+
+  .mbHome_userNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #UserHomeNavIcon {
+    font-size: 25px;
+    color: rgba(41, 45, 50, 1);
+  }
+
+  #mb_InputHomeNav {
+    margin: 0;
+    border: 0.1px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #mb_InputHomeNav input {
+    margin: 0;
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mbHamburger_tog {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .HomeNav {
+    display: none;
+  }
+
+  .mbHome_nav {
+    display: block;
+  }
+
+  .mbHome_userNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #UserHomeNavIcon {
+    font-size: 20px;
+    color: rgba(41, 45, 50, 1);
+  }
+
+  #mb_InputHomeNav {
+    margin: 0;
+    border: 0.1px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #mb_InputHomeNav input {
+    margin: 0;
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mbHamburger_tog {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .HomeNav {
+    display: none;
+  }
+
+  .mbHome_nav {
+    display: block;
+  }
+
+  .mbHome_userNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mb_UserHomeNav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .mbHamburger_tog {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #UserHomeNavIcon {
+    font-size: 20px;
+    color: rgba(41, 45, 50, 1);
+  }
+
+  #mb_InputHomeNav {
+    margin: 0;
+    border: 0.1px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #mb_InputHomeNav input {
+    margin: 0;
+    border: none;
+    padding-right: 0;
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+/* RegNav */
+
+@media only screen and (max-width: 768px) {
+  .reg_nav {
+    display: none;
+  }
+  .mb-regnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mb-arrowName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #companyName {
+    font-size: 18px;
+  }
+
+  .userBtn {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #styleLogo {
+    font-size: 30px;
+  }
+
+  #navRegLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+  }
+
+  .mbRegInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    width: 70%;
+    padding: 3px 10px;
+  }
+
+  .mbRegInput input {
+    margin: 0;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 40%;
+  }
+
+  .inputRegDiv {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  #search {
+    font-size: 22px;
+  }
+
+  .registrationNav {
+    display: block;
+  }
+
+  #backArrow {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #navLogLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .reg_nav {
+    display: none;
+  }
+  .mb-regnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mb-arrowName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #companyName {
+    font-size: 16px;
+  }
+
+  .userBtn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #styleLogo {
+    font-size: 23px;
+  }
+
+  #navRegLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+  }
+
+  .mbRegInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    width: 70%;
+    padding: 3px 10px;
+  }
+
+  .mbRegInput input {
+    margin: 0;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+    width: 45%;
+  }
+
+  .inputRegDiv {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  #search {
+    font-size: 16px;
+  }
+
+  .registrationNav {
+    display: block;
+  }
+
+  #backArrow {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #navLogLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .reg_nav {
+    display: none;
+  }
+  .mb-regnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mb-arrowName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #companyName {
+    font-size: 14px;
+  }
+
+  .userBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #styleLogo {
+    font-size: 22px;
+  }
+
+  #navRegLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+  }
+
+  .mbRegInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    width: 70%;
+    padding: 3px 10px;
+  }
+
+  .mbRegInput input {
+    margin: 0;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .inputRegDiv {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  #search {
+    font-size: 16px;
+  }
+
+  .registrationNav {
+    display: block;
+  }
+
+  #backArrow {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #navLogLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .reg_nav {
+    display: none;
+  }
+  .mb-regnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  .registrationNav {
+    display: block;
+  }
+
+  .mb-arrowName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #backArrow {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #companyName {
+    font-size: 14px;
+  }
+
+  .userBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #styleLogo {
+    font-size: 22px;
+  }
+
+  #navRegLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+  }
+
+  #navLogLink {
+    margin: 0;
+    background-color: rgba(15, 98, 254, 1);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .mbRegInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4px solid rgba(22, 28, 45, 1);
+    border-radius: 7px;
+    width: 70%;
+    padding: 3px 10px;
+  }
+
+  .mbRegInput input {
+    margin: 0;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .inputRegDiv {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  #search {
+    font-size: 15px;
+  }
+}

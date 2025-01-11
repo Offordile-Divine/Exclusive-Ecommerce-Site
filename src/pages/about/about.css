@@ -1,0 +1,81 @@
+*{
+    padding:5px
+}
+
+.AboutBlock{
+    display: flex;
+
+
+}
+
+/* div{
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif;
+} */
+
+.AboutUsSidePicture{
+    float: right;
+    /* background-color: aqua; */
+    
+}
+
+.AboutUsSidePicture > img{
+    height: 72vh;
+    width: 37vw;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.AboutUsText > h2{
+    text-align: center;
+}
+
+.AboutUsText > p{
+    text-align: justify;
+}
+
+.logPics{
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logPics > img{
+    padding: 20px;
+}
+
+ .thirdFrameSet{
+    background-color: black; 
+    height: 70vh;
+    /* width: 70%;  */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: auto;
+} 
+
+.thirdFrameSet  > div{
+    margin-top: 20px;
+}
+
+.imgCard > div{
+        display: flex;
+        height:36vh; 
+        width: 14vw;
+        border-radius: 1px;
+        border: solid grey;
+        
+}
+
+.imgCard img{
+    height: 34vh;
+}
+
+.slides{
+    display: flex;
+    /* height:  39vh; */
+}

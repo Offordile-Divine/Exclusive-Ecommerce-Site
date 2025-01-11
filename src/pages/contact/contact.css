@@ -1,0 +1,931 @@
+.mtact_check {
+    display: none;
+}
+
+.tact_general {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.tact_link {
+    margin-bottom: 60px;
+}
+
+.tact_link a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #494848;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.tact_header {
+    height: 50px;
+    background-color: #161C2D;
+    color: #FFFFFF;
+    font-family: arial;
+    padding-top: 20px;
+    padding-left: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.tact_header h3 {
+    font-weight: 500;
+}
+
+.tact_main {
+    border: 1px solid #DEDFE1;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.tact_main input {
+    margin-top: 10px;
+    border-bottom: 1px solid #CACACA;
+}
+
+.tact_major {
+    width: 30%;
+}
+
+.tact_major p {
+    color: #666666;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center;
+}
+
+.tact_major label {
+    color: #161C2D;
+    font-family: arial;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.tact_major form {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.tact_major input {
+    margin-top: none;
+}
+
+.tact_minor {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.tact_minor h3 {
+    color: #161C2D;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35.2px;
+    text-align: left;
+}
+
+.tact_minor p {
+    color: #666666;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.tact_total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.tact_total input {
+    border: 1px solid #CACACA;
+    border-radius: 50px;
+    color:  #979797;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.tact_name {
+    width: 48%;
+}
+
+.tact_email {
+    width: 48%;
+}
+
+.tact_message {
+    margin-top: 20px;
+}
+
+.tact_message input {
+    border: 1px solid #CACACA;
+    border-radius: 20px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #979797;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.tact_send {
+    margin-top: 20px;
+}
+
+.tact_send button {
+    background-color: #161C2D;
+    color: #FFFFFF;
+    width: 25%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .tact_check {
+        display: none;
+    }
+
+    .mtact_check {
+        display: block;
+    }
+
+
+    .mtact_general {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .mtact_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtact_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #494848;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtact_header {
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        font-family: arial;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .mtact_header h3 {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+    .mtact_main {
+        border: 1px solid #DEDFE1;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_main input {
+        margin-top: 2px;
+        border-bottom: 1px solid #CACACA;
+    }
+    
+    .mtact_major {
+        width: 30%;
+    }
+    
+    .mtact_major p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20.6px;
+        text-align: center;
+    }
+    
+    .mtact_major label {
+        color: #161C2D;
+        font-family: arial;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .mtact_major form {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+    }
+    
+    .mtact_major input {
+        margin-top: none;
+        font-size: 10px;
+    }
+    
+    .mtact_minor {
+        width: 60%;
+        margin-top: 5px;
+    }
+    
+    .mtact_minor h3 {
+        color: #161C2D;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 15.2px;
+        text-align: left;
+    }
+    
+    .mtact_minor p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    .mtact_total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_total input {
+        border: 1px solid #CACACA;
+        border-radius: 50px;
+        color:  #979797;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        height: 25px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    .mtact_name {
+        width: 45%;
+    }
+    
+    .mtact_email {
+        width: 45%;
+    }
+    
+    .mtact_message {
+        margin-top: 10px;
+    }
+    
+    .mtact_message input {
+        border: 1px solid #CACACA;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #979797;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .mtact_send {
+        margin-top: 10px;
+    }
+    
+    .mtact_send button {
+        background-color: #161C2D;
+        color: #FFFFFF;
+        width: 25%;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 425px) {
+    .tact_check {
+        display: none;
+    }
+
+    .mtact_check {
+        display: block;
+    }
+
+
+    .mtact_general {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .mtact_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtact_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #494848;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtact_header {
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        font-family: arial;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .mtact_header h3 {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+    .mtact_main {
+        border: 1px solid #DEDFE1;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_main input {
+        margin-top: 2px;
+        border-bottom: 1px solid #CACACA;
+    }
+    
+    .mtact_major {
+        width: 30%;
+    }
+    
+    .mtact_major p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20.6px;
+        text-align: center;
+    }
+    
+    .mtact_major label {
+        color: #161C2D;
+        font-family: arial;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .mtact_major form {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+    }
+    
+    .mtact_major input {
+        margin-top: none;
+        font-size: 10px;
+    }
+    
+    .mtact_minor {
+        width: 60%;
+        margin-top: 5px;
+    }
+    
+    .mtact_minor h3 {
+        color: #161C2D;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 15.2px;
+        text-align: left;
+    }
+    
+    .mtact_minor p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    .mtact_total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_total input {
+        border: 1px solid #CACACA;
+        border-radius: 50px;
+        color:  #979797;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        height: 25px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    .mtact_name {
+        width: 45%;
+    }
+    
+    .mtact_email {
+        width: 45%;
+    }
+    
+    .mtact_message {
+        margin-top: 10px;
+    }
+    
+    .mtact_message input {
+        border: 1px solid #CACACA;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #979797;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .mtact_send {
+        margin-top: 10px;
+    }
+    
+    .mtact_send button {
+        background-color: #161C2D;
+        color: #FFFFFF;
+        width: 45%;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .tact_check {
+        display: none;
+    }
+
+    .mtact_check {
+        display: block;
+    }
+
+
+    .mtact_general {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .mtact_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtact_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #494848;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtact_header {
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        font-family: arial;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .mtact_header h3 {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+    .mtact_main {
+        border: 1px solid #DEDFE1;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_main input {
+        margin-top: 2px;
+        border-bottom: 1px solid #CACACA;
+    }
+    
+    .mtact_major {
+        width: 30%;
+    }
+    
+    .mtact_major p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20.6px;
+        text-align: center;
+    }
+    
+    .mtact_major label {
+        color: #161C2D;
+        font-family: arial;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .mtact_major form {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+    }
+    
+    .mtact_major input {
+        margin-top: none;
+        font-size: 10px;
+    }
+    
+    .mtact_minor {
+        width: 60%;
+        margin-top: 5px;
+    }
+    
+    .mtact_minor h3 {
+        color: #161C2D;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 15.2px;
+        text-align: left;
+    }
+    
+    .mtact_minor p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    .mtact_total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_total input {
+        border: 1px solid #CACACA;
+        border-radius: 50px;
+        color:  #979797;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        height: 25px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    .mtact_name {
+        width: 45%;
+    }
+    
+    .mtact_email {
+        width: 45%;
+    }
+    
+    .mtact_message {
+        margin-top: 10px;
+    }
+    
+    .mtact_message input {
+        border: 1px solid #CACACA;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #979797;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .mtact_send {
+        margin-top: 10px;
+    }
+    
+    .mtact_send button {
+        background-color: #161C2D;
+        color: #FFFFFF;
+        width: 45%;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+    .tact_check {
+        display: none;
+    }
+
+    .mtact_check {
+        display: block;
+    }
+
+
+    .mtact_general {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .mtact_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtact_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #494848;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtact_header {
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        font-family: arial;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .mtact_header h3 {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+    .mtact_main {
+        border: 1px solid #DEDFE1;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_main input {
+        margin-top: 2px;
+        border-bottom: 1px solid #CACACA;
+    }
+    
+    .mtact_major {
+        width: 30%;
+    }
+    
+    .mtact_major p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 20.6px;
+        text-align: center;
+    }
+    
+    .mtact_major label {
+        color: #161C2D;
+        font-family: arial;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .mtact_major form {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+    }
+    
+    .mtact_major input {
+        margin-top: none;
+        font-size: 10px;
+    }
+    
+    .mtact_minor {
+        width: 60%;
+        margin-top: 5px;
+    }
+    
+    .mtact_minor h3 {
+        color: #161C2D;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 15.2px;
+        text-align: left;
+    }
+    
+    .mtact_minor p {
+        color: #666666;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    .mtact_total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mtact_total input {
+        border: 1px solid #CACACA;
+        border-radius: 50px;
+        color:  #979797;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        height: 25px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    .mtact_name {
+        width: 45%;
+    }
+    
+    .mtact_email {
+        width: 45%;
+    }
+    
+    .mtact_message {
+        margin-top: 10px;
+    }
+    
+    .mtact_message input {
+        border: 1px solid #CACACA;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 22.4px;
+        color: #979797;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .mtact_send {
+        margin-top: 10px;
+    }
+    
+    .mtact_send button {
+        background-color: #161C2D;
+        color: #FFFFFF;
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+    }
+}

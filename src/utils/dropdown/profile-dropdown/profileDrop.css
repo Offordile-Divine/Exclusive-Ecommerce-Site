@@ -1,0 +1,154 @@
+.pi_linktarget.active {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+  padding: 10px;
+}
+
+.pi_linktarget.active a {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  color: grey;
+}
+
+.pi_linktarget.active a:focus {
+  color: rgba(15, 98, 254, 1);
+}
+
+.manageDrop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pi_linktarget {
+  display: none;
+}
+
+.pi_tog {
+  display: flex;
+  align-items: center;
+}
+
+.pi_togHeader {
+  color: rgba(22, 28, 45, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.manage {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_linktarget.active {
+    padding: 10px;
+    align-items: normal;
+    background: rgba(22, 28, 45, 1);
+  }
+
+  .pi_linktarget.active a {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .profDrop {
+    gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_linktarget.active {
+    padding: 10px;
+    align-items: normal;
+    background: rgba(22, 28, 45, 1);
+  }
+
+  .pi_linktarget.active a {
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .profDrop {
+    gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_linktarget.active {
+    padding: 10px;
+    align-items: normal;
+    background: rgba(22, 28, 45, 1);
+  }
+
+  .pi_linktarget.active a {
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .profDrop {
+    gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pi_togHeader {
+    margin-left: 10px;
+  }
+
+  .pi_linktarget.active {
+    padding: 10px;
+    align-items: normal;
+    background: rgba(22, 28, 45, 1);
+  }
+
+  .pi_linktarget.active a {
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .profDrop {
+    gap: 20px;
+  }
+
+  .pi_tog {
+    padding: 10px;
+  }
+}
