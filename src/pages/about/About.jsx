@@ -86,7 +86,6 @@ const slides = [
 const About = () => {
   return (
     <>
-      {" "}
       <div className="AboutBlock">
         <div className="AboutUsText">
           <br />
@@ -100,7 +99,9 @@ const About = () => {
           </h2>
 
           <p>
+
             {" "}
+
             We are an ecommerce start up, committed to Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Voluptate natus repellendus
             assumenda, officia perspiciatis nulla obcaecati incidunt amet,
@@ -158,7 +159,11 @@ const About = () => {
       <div>
         <br />
         <br />
+
         <div className="logPics">
+
+        <div  className="logPics">
+
           <img
             src="/src/assets/Images/Frame 705.png"
             alt="a picture is here"
@@ -173,8 +178,11 @@ const About = () => {
           ></img>
         </div>
       </div>
+      </div>
     </>
+
+    
   );
-};
+}
 
 export default About;

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { DiVim } from 'react-icons/di'
 import "./faq.css"

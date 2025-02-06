@@ -669,3 +669,916 @@
         padding-bottom: 20px;
     }  
 } 
+
+/* .footer_content{
+    background-color: #161C2D;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 50vh;
+    border-radius: 15px;
+    padding-top: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    max-height: 140px;
+}
+    
+.footer_name h1{
+    color: #697077;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+    gap: 200px;
+    padding: 50px;
+}
+
+.footer_support p{
+   display: flex;
+   flex-direction: column;
+   color: #FAFAFA;
+   padding: 7px;
+   font-weight: 300;
+}
+
+.footer_account p{
+    display: block;
+   flex-direction: column;
+   color: #FAFAFA;
+   padding: 7px;
+}
+
+.footer_link p{
+    display: column;
+   flex-direction: column;
+   color: #FAFAFA;
+   padding-bottom: 30px;
+}
+
+.footer_payment p{
+    display: column;
+   flex-direction: column;
+   color: #FAFAFA;
+   padding: 7px;
+}
+
+.footer_legal p{
+    display: flex;
+   flex-direction: column;
+   color: #FAFAFA;
+   padding-bottom: 20px;
+}
+.header {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 50px;
+    text-align: left;
+
+
+} 
+
+hr {
+    border: 1px solid #FFFFFF
+}
+ 
+.footer_copyright {
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+
+}
+
+.footer_below {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mb_content {
+    display: none;
+}
+
+.mb_content {
+    background-color: #161C2D;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+}
+
+.mb_header h1{
+    text-align: center;
+    color: #697077;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 15.88px;
+}
+
+.mb_account {
+    text-align: left;
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 220px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mb_contact {
+    text-align: center;
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mb_help {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mb_terms {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mb_faq {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 220px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.mb_us {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.mb_return {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.mb_privacy {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 14.3px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+ 
+.mb_copyright {
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+    color: #FFFFFF;
+}
+
+.mb_below {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* @media (max-width: 1024px) {
+    .mb_content {
+        display: none;
+    }
+
+    .footer_content{
+        background-color: #161C2D;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        min-height: 50vh;
+        border-radius: 15px;
+        padding-top: 25px;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding: 50px;
+        flex-wrap: wrap;
+        max-height: 140px;
+    }
+        
+    .footer_name h1{
+        color: #697077;
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat;
+        font-size: 50px;
+        font-weight: 700;
+        gap: 200px;
+        padding: 50px;
+    }
+    
+    .footer_support p{
+       display: flex;
+       flex-direction: column;
+       color: #FAFAFA;
+       padding: 7px;
+       font-weight: 300;
+    }
+    
+    .footer_account p{
+        display: block;
+       flex-direction: column;
+       color: #FAFAFA;
+       padding: 7px;
+    }
+    
+    .footer_link p{
+        display: column;
+       flex-direction: column;
+       color: #FAFAFA;
+       padding-bottom: 30px;
+    }
+    
+    .footer_payment p{
+        display: column;
+       flex-direction: column;
+       color: #FAFAFA;
+       padding: 7px;
+    }
+    
+    .footer_legal p{
+        display: flex;
+       flex-direction: column;
+       color: #FAFAFA;
+       padding-bottom: 20px;
+    }
+    .header {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 50px;
+        text-align: left;
+    
+    
+    } 
+    
+    hr {
+        border: 1px solid #FFFFFF
+    }
+     
+    .footer_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
+    
+    }
+    
+    .footer_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .footer_content {
+        display: none;
+    }
+
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-radius: 15px;
+        width: 1065px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 15.88px;
+        padding-bottom: 5px;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 120px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
+        color: #FFFFFF;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+/* @media (max-width: 425px) {
+    .footer_content {
+        display: none;
+    }
+
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-radius: 15px;
+        width: 1065px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 15.88px;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 120px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 50px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
+        color: #FFFFFF;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+/* @media (max-width: 375px) {
+    .footer_content {
+        display: none;
+    }
+    
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-radius: 15px;
+        width: 1065px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 15.88px;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 120px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
+        color: #FFFFFF;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+/* @media (max-width: 320px) {
+    .footer_content {
+        display: none;
+    }
+
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-radius: 15px;
+        width: 320px;
+        width: 875px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 15.88px;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 30px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 80px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 30px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 30px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 20px;
+        padding-right: 90px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 50px;
+        padding-right: 90px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 14.3px;
+        padding-left: 60px;
+        padding-right: 90px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF;
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 15px;
+        color: #FFFFFF;
+        padding-top: 20px;
+        
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+} */
+

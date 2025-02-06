@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 import "./contact.css"
 import HomeNav from "../../components/navigation/home-nav/HomeNav"

@@ -1,4 +1,6 @@
+
 import React, { useContext, useEffect } from "react";
+
 import HomeNav from "../../components/navigation/home-nav/HomeNav";
 import Footer from "../../components/footer/Footer";
 import "./cart.css";
@@ -7,6 +9,7 @@ import { PRODUCT } from "../../products";
 import { ShopContext } from "../../context/Shop-context";
 import CartItem from "./Cart-item";
 import { Goods } from "../../db";
+
 import { Link } from 'react-router-dom'
 
 // const cartFromlocalStorage = JSON.parse(localStorage.getItem("cartitems"))  // "[]"
@@ -28,14 +31,22 @@ const Carts = () => {
   console.log(cartItems, "...cartitems");
   console.log(Goods)
 
+
+
+
+// const Carts = () => {
+//   const { cartItems } = useContext(ShopContext); // Assuming you have a context that provides cart items
+//   console.log(cartItems, "...cartitems");
+//   console.log(Goods)
   return (
     <>
-    <div className="ct_content">
       <HomeNav />
+      <div className="ct_content">
 
         <div className="ct_header">
           <h1>My Shopping Cart</h1>
         </div>
+
 
         <div className="ct_main">
         <div className="ct_data">
@@ -48,6 +59,10 @@ const Carts = () => {
           </div>
           <hr />
 
+        <div className="ct_general">
+          <div className="ct_main"></div>
+
+
           <div className="ct_body">
             {Goods.map((product) => {
               if (cartItems[product.id]) {
@@ -56,6 +71,7 @@ const Carts = () => {
               return null; // Explicitly return null if the condition is not met
             })}
           </div>
+
         </div>
 
         <div className="ct_form">
@@ -85,6 +101,7 @@ const Carts = () => {
         </div>
         </div>
       <Footer />
+      </div>
     </div>
      
     
@@ -142,11 +159,13 @@ const Carts = () => {
         </div>
         </div>
       </div>
+      </div>
     <Footer />
-  </div>
-     
-</>
- ); 
+  
+
+    </>
+  );
+
 };
 
 export default Carts;

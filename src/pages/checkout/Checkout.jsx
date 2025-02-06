@@ -1,5 +1,6 @@
 import React from 'react'
 import TpsNav from '../../components/navigation/terms-privacy-support-nav/TpsNav'
+
 import Footer from '../../components/footer/Footer'
 import { useContext } from "react";
 import { ShopContext } from "../../context/Shop-context";
@@ -235,6 +236,7 @@ const Checkout = (props) => {
       <Footer />
     </div>
     </>
+
   )
 }
 
