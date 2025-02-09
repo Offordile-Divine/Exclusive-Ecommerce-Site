@@ -11,7 +11,7 @@ import { Goods } from "../../db";
 const Carts = () => {
   const { cartItems } = useContext(ShopContext); // Assuming you have a context that provides cart items
   console.log(cartItems, "...cartitems");
-  console.log(Goods)
+  console.log(Goods);
   return (
     <>
       <HomeNav />
