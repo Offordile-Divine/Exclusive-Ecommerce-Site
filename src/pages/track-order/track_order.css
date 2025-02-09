@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mtrack_check {
+    display: none;
+}
+
+.track_general {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.track_link {
+    margin-bottom: 40px;
+}
+
+.track_link a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #000000;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.track_header h1{
+    font-family: arial;
+    font-weight: 550;
+    color: #161C2D;
+}
+
+.track_form input {
+    border-bottom: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    background: #F5F5F5;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.track_button button {
+    width: 9%;
+    height: 35px;
+    background-color: #161C2D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .mtrack_general {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .track_check {
+        display: none;
+    }
+
+    .mtrack_check {
+        display: block;
+    }
+    
+    .mtrack_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtrack_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #000000;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtrack_header h1{
+        font-family: arial;
+        font-weight: 550;
+        font-size: 25px;
+        color: #161C2D;
+    }
+    
+    .mtrack_form input {
+        border-bottom: none;
+        border-radius: 10px;
+        width: 50%;
+        height: 40px;
+        background: #F5F5F5;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .mtrack_button button {
+        width: 20%;
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5, 5, 5;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .mtrack_general {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .track_check {
+        display: none;
+    }
+
+    .mtrack_check {
+        display: block;
+    }
+    
+    .mtrack_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtrack_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #000000;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtrack_header h1{
+        font-family: arial;
+        font-weight: 550;
+        font-size: 25px;
+        color: #161C2D;
+    }
+    
+    .mtrack_form input {
+        border-bottom: none;
+        border-radius: 10px;
+        width: 80%;
+        height: 40px;
+        background: #F5F5F5;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .mtrack_button button {
+        width: 30%;
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5, 5, 5;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .mtrack_general {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .track_check {
+        display: none;
+    }
+
+    .mtrack_check {
+        display: block;
+    }
+    
+    .mtrack_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtrack_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #000000;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtrack_header h1{
+        font-family: arial;
+        font-weight: 550;
+        font-size: 25px;
+        color: #161C2D;
+    }
+    
+    .mtrack_form input {
+        border-bottom: none;
+        border-radius: 10px;
+        width: 80%;
+        height: 40px;
+        background: #F5F5F5;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .mtrack_button button {
+        width: 30%;
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .mtrack_general {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .track_check {
+        display: none;
+    }
+
+    .mtrack_check {
+        display: block;
+    }
+    
+    .mtrack_link {
+        margin-bottom: 40px;
+    }
+    
+    .mtrack_link a {
+        text-decoration: none;
+        font-family: Montserrat;
+        color: #000000;
+        font-weight: 250;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: left;
+    }
+    
+    .mtrack_header h1{
+        font-family: arial;
+        font-weight: 550;
+        font-size: 25px;
+        color: #161C2D;
+    }
+    
+    .mtrack_form input {
+        border-bottom: none;
+        border-radius: 10px;
+        width: 80%;
+        height: 40px;
+        background: #F5F5F5;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .mtrack_button button {
+        width: 30%;
+        height: 30px;
+        background-color: #161C2D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+    }
+}

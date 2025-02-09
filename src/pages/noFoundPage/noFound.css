@@ -6,6 +6,18 @@
   padding: 40px;
 }
 
+
+.noFound h1 {
+  color: red;
+}
+
+.noFound a {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
 .pi_navFooter {
   display: flex;
   align-items: center;

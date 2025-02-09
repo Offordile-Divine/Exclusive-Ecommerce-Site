@@ -285,6 +285,391 @@
   }
 }
 
+
+@media (max-width: 425px) {
+    .footer_content {
+        display: none;
+    }
+    
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        max-height: 210px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 25px;
+        padding-bottom: 1px;
+        padding-top: 15px;
+        font-weight: 700;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-right: 5px;
+        
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 1px;
+        padding-top: 10px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF;
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 11px;
+        color: #FFFFFF;
+        font-size: 7px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .footer_content {
+        display: none;
+    }
+    
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* padding-right: 50px; */
+        border-radius: 5px;
+        max-width: 650px;
+        max-height: 210px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 25px;
+        padding-bottom: 1px;
+        padding-top: 15px;
+        font-weight: 700;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-right: 5px;
+        
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 1px;
+        padding-top: 10px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF;
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 11px;
+        color: #FFFFFF;
+        font-size: 7px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+}
+
+
+@media (max-width: 320px) {
+    .footer_content {
+        display: none;
+    }
+
+    .mb_content {
+        background-color: #161C2D;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        max-width: 320px;
+        max-height: 210px;
+        display: block;
+    }
+    
+    .mb_header h1{
+        text-align: center;
+        color: #697077;
+        font-family: Montserrat;
+        font-size: 25px;
+        padding-bottom: 1px;
+        padding-top: 15px;
+        font-weight: 700;
+    }
+    
+    .mb_account {
+        text-align: left;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    
+    .mb_contact {
+        text-align: center;
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-right: 5px;
+        
+    }
+    
+    .mb_help {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    
+    .mb_terms {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    
+    .mb_faq {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+    
+    .mb_us {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    
+    .mb_return {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    
+    .mb_privacy {
+        color: #FAFAFA;
+        font-family: Inter;
+        font-size: 7px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 1px;
+        padding-top: 10px;
+    }
+    
+    hr {
+        border: 0.1rem solid #FFFFFF;
+    }
+     
+    .mb_copyright {
+        display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 11px;
+        color: #FFFFFF;
+        font-size: 7px;
+    }
+    
+    .mb_below {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }  
+} 
+
 /* .footer_content{
     background-color: #161C2D;
     padding: 0;
@@ -1196,3 +1581,4 @@ hr {
     
     
 } */
+

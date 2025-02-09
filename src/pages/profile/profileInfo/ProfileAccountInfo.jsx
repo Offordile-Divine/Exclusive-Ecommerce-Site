@@ -38,11 +38,14 @@ const ProfileAccountInfo = () => {
   const onSubmit = (data) => {
     console.log(data);
 
+
+
     const profileForm = {
       firstname: data.firstname,
       lastname: data.lastname,
       email: data.email,
     }
+
   };
   return (
     <div>

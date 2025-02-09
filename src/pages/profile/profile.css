@@ -461,6 +461,7 @@ select option {
   padding: 30px;
 }
 
+
 /* Profile Order History */
 
 .orderHistoryNAv {
@@ -1459,6 +1460,7 @@ select option {
   border-radius: 6px;
 }
 
+
 @media only screen and (max-width: 1420px) {
   /* Account Info Address */
   .account_infoAddressContent {
@@ -1547,6 +1549,7 @@ select option {
     width: 90%;
   }
 
+
   /* Profile AddNewCard */
   .formAddNewCard {
     align-items: normal;
@@ -1572,6 +1575,7 @@ select option {
   .pi_InputName {
     margin-bottom: 0;
   }
+
   .pi_inputFieldContent {
     gap: 30px;
   }
@@ -1735,6 +1739,7 @@ select option {
     background: rgba(255, 255, 255, 1);
     cursor: pointer;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1935,6 +1940,7 @@ select option {
     width: 90%;
   }
 
+
   /* Cancel Order */
   .deleteOrderInfo {
     width: 62%;
@@ -2086,6 +2092,7 @@ select option {
   .userDetailInput label {
     font-size: 14px;
   }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -2368,6 +2375,7 @@ select option {
     font-size: 20px;
     margin-top: 0;
   }
+
 
   /* Order History */
 
@@ -3788,7 +3796,7 @@ select option {
   /* Form Address Detail */
 
   .addressVal {
-    gap: 20px;
+  gap: 20px;
     padding: 5px;
   }
 
@@ -3882,6 +3890,7 @@ select option {
     font-size: 20px;
     margin-top: 0;
   }
+
 
   /* Order History */
 

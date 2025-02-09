@@ -20,6 +20,7 @@ export const PRODUCT = [
         productName : "Gucii Shades",
         price : 100,
         productImage : product1,   
-    }
+
+    },
     
 ]

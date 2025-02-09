@@ -18,6 +18,11 @@
   font-weight: lighter;
 } 
 
+/* ul{
+  margin-left: 2%;
+} */
+
+
 #list_1 {
   position: unset;
   
@@ -28,3 +33,4 @@
   position: unset;
   box-shadow: none;
 }
+
