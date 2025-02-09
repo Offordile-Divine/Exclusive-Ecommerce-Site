@@ -13,10 +13,14 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("isAuthenticated", JSON.stringify(true));
   };
 
+
+
   const logOut = () => {
     setIsAuthenticated(false);
     localStorage.setItem("isAuthenticated", JSON.stringify(false));
   };
+
+
 
   return (
     <AuthContext.Provider value={{ isAuthenticated, login, logOut }}>

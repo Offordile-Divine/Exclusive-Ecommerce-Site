@@ -58,224 +58,225 @@ import ProfileUserDetail from "./pages/profile/profileInfo/ProfileUserDetail.jsx
 export const AppContext = createContext("Bruce");
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <NofoundPage />,
-  },
+ {
+ path: "/",
+ element: <Home />,
+ errorElement: <NofoundPage />,
+ },
 
-  {
-    path: "/profile/",
-    element: <Profile />,
-    children: [
-      {
-        path: "",
-        element: <ProfileInactive />,
-      },
-      {
-        path: "/profile/myProfile",
-        element: <ProfileAccountInfo />,
-      },
-      {
-        path: "/profile/myAdddress",
-        element: <ProfileDeliveryDrop />,
-      },
-      {
-        path: "/profile/myAdddress/deliveryDrop",
-        element: <ProfileSubmitAddress />,
-      },
-      {
-        path: "/profile/delAcct",
-        element: <ProfileDelete />,
-      },
-      {
-        path: "/profile/orderHistory",
-        element: <ProfileOrderHistory />,
-      },
-      {
-        path: "/profile/orderReview",
-        element: <ProfileOrderReview />,
-      },
-      {
-        path: "/profile/orderReview2",
-        element: <ProfileOrderReview2 />,
-      },
-      {
-        path: "/profile/orderReview3",
-        element: <ProfileOrderReview3 />,
-      },
-      {
-        path: "/profile/orderHistory2",
-        element: <ProfileOrder2 />,
-      },
-      {
-        path: "/profile/orderDetail",
-        element: <ProfileOrderDetail />,
-      },
-      {
-        path: "/profile/cancelOrder",
-        element: <ProfileCancelOrder />,
-      },
-      {
-        path: "/profile/a",
-        element: <ProfileRefundCancel />,
-      },
-      {
-        path: "/profile/b",
-        element: <ProfileRefundRequestMethod />,
-      },
-      {
-        path: "/profile/pickUp",
-        element: <ProfilePickUp />,
-      },
-      {
-        path: "/profile/verifyDetails",
-        element: <ProfileVerifyDetails />,
-      },
-      {
-        path: "/profile/paymentOption",
-        element: <ProfilePaymentOption />,
-      },
-      {
-        path: "/profile/addNewCard",
-        element: <ProfileAddNewCard />,
-      },
-      {
-        path: "/profile/verifyPaymentOTP",
-        element: <ProfileVerifyPaymentOTP />,
-      },
-      {
-        path: "/profile/profileLogOut",
-        element: <ProfileLogOut />,
-      },
-      {
-        path: "/profile/profileUserDetail",
-        element: <ProfileUserDetail />
-      },
-    ],
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/help",
-    element: <Help />,
-  },
-  {
-    path: "/registration",
-    element: <Reg />,
-  },
+ {
+ path: "/profile/",
+ element: <Profile />,
+ children: [
+ {
+ path: "",
+ element: <ProfileInactive />,
+ },
+ {
+ path: "/profile/myProfile",
+ element: <ProfileAccountInfo />,
+ },
+ {
+ path: "/profile/myAdddress",
+ element: <ProfileDeliveryDrop />,
+ },
+ {
+ path: "/profile/myAdddress/deliveryDrop",
+ element: <ProfileSubmitAddress />,
+ },
+ {
+ path: "/profile/delAcct",
+ element: <ProfileDelete />,
+ },
+ {
+ path: "/profile/orderHistory",
+ element: <ProfileOrderHistory />,
+ },
+ {
+ path: "/profile/orderReview",
+ element: <ProfileOrderReview />,
+ },
+ {
+ path: "/profile/orderReview2",
+ element: <ProfileOrderReview2 />,
+ },
+ {
+ path: "/profile/orderReview3",
+ element: <ProfileOrderReview3 />,
+ },
+ {
+ path: "/profile/orderHistory2",
+ element: <ProfileOrder2 />,
+ },
+ {
+ path: "/profile/orderDetail",
+ element: <ProfileOrderDetail />,
+ },
+ {
+ path: "/profile/cancelOrder",
+ element: <ProfileCancelOrder />,
+ },
+ {
+ path: "/profile/a",
+ element: <ProfileRefundCancel />,
+ },
+ {
+ path: "/profile/b",
+ element: <ProfileRefundRequestMethod />,
+ },
+ {
+ path: "/profile/pickUp",
+ element: <ProfilePickUp />,
+ },
+ {
+ path: "/profile/verifyDetails",
+ element: <ProfileVerifyDetails />,
+ },
+ {
+ path: "/profile/paymentOption",
+ element: <ProfilePaymentOption />,
+ },
+ {
+ path: "/profile/addNewCard",
+ element: <ProfileAddNewCard />,
+ },
+ {
+ path: "/profile/verifyPaymentOTP",
+ element: <ProfileVerifyPaymentOTP />,
+ },
+ {
+ path: "/profile/profileLogOut",
+ element: <ProfileLogOut />,
+ },
+ {
+ path: "/profile/profileUserDetail",
+ element: <ProfileUserDetail />
+ },
+ ],
+ },
+ {
+ path: "/about",
+ element: <About />,
+ },
+ {
+ path: "/help",
+ element: <Help />,
+ },
+ {
+ path: "/registration",
+ element: <Reg />,
+ },
 
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/getStarted",
-    element: <Get_started />,
-  },
-  {
-    path: "/cart",
-    element: <Carts />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/inactiveProfile",
-    element: <ProfileInactive />,
-  },
-  {
-    path: "/orders",
-    element: <Order />,
-  },
-  {
-    path: "/savedItems",
-    element: <SavedItems />,
-  },
-  {
-    path: "/inbox",
-    element: <Inbox />,
-  },
-  {
-    path: "/track",
-    element: <Track_order />,
-  },
-  {
-    path: "/paymentWallet",
-    element: <Payment_wallet />,
-  },
-  {
-    path: "/logOut",
-    element: <Logout />,
-  },
-  {
-    path: "/otp",
-    element: <Otp />,
-  },
-  {
-    path: "/shop",
-    element: <Shop />,
-  },
-  {
-    path: "/returnPolicy",
-    element: <ReturnPolicy />,
-  },
-  {
-    path: "/faq",
-    element: <Faq />,
-  },
-  {
-    path: "/terms",
-    element: <Terms />,
-  },
-  {
-    path: "/privacy",
-    element: <Privacy />,
-  },
-  {
-    path: "googleSuccess",
-    element: <GoogleAuthSuccess />,
-  },
-  {
-    path: "/googleFailure",
-    element: <GoogleAuthFailure />,
-  },
-  {
-    path: "/products",
-    element: <Products />,
-    children: [
-      {
-        path: ":id",
-        element: <ProductDetail />,
-      },
-    ],
-  },
+ {
+ path: "/login",
+ element: <Login />,
+ },
+ {
+ path: "/getStarted",
+ element: <Get_started />,
+ },
+ {
+ path: "/cart",
+ element: <Carts />,
+ },
+ {
+ path: "/contact",
+ element: <Contact />,
+ },
+ {
+ path: "/inactiveProfile",
+ element: <ProfileInactive />,
+ },
+ {
+ path: "/orders",
+ element: <Order />,
+ },
+ {
+ path: "/savedItems",
+ element: <SavedItems />,
+ },
+ {
+ path: "/inbox",
+ element: <Inbox />,
+ },
+ {
+ path: "/track",
+ element: <Track_order />,
+ },
+ {
+ path: "/paymentWallet",
+ element: <Payment_wallet />,
+ },
+ {
+ path: "/logOut",
+ element: <Logout />,
+ },
+ {
+ path: "/otp",
+ element: <Otp />,
+ },
+ {
+ path: "/shop",
+ element: <Shop />,
+ },
+ {
+ path: "/returnPolicy",
+ element: <ReturnPolicy />,
+ },
+ {
+ path: "/faq",
+ element: <Faq />,
+ },
+ {
+ path: "/terms",
+ element: <Terms />,
+ },
+ {
+ path: "/privacy",
+ element: <Privacy />,
+ },
+ {
+ path: "googleSuccess",
+ element: <GoogleAuthSuccess />,
+ },
+ {
+ path: "/googleFailure",
+ element: <GoogleAuthFailure />,
+ },
+ {
+ path: "/products",
+ element: <Products />,
+ children: [
+ {
+ path: ":id",
+ element: <ProductDetail />,
+ },
+ ],
+ },
 ]);
 
 function App() {
-  const [name, setName] = useState("Bruce");
-  const [loggedIn, setLoggedIn] = useState("");
-  return (
-    <>
-      <AppContext.Provider
-        value={{
-          name,
-          loggedIn,
-        }}
-      >
-        <EmailProvider>
-          <ShopContextProvider>
-            <AuthProvider>
-              <RouterProvider router={router} />
-            </AuthProvider>
-          </ShopContextProvider>
-        </EmailProvider>
-      </AppContext.Provider>
-    </>
-  );
+ const [name, setName] = useState("Bruce");
+ const [loggedIn, setLoggedIn] = useState("");
+ return (
+ <>
+ <AppContext.Provider
+ value={{
+ name,
+ loggedIn,
+ }}
+ >
+ <EmailProvider>
+ <ShopContextProvider>
+ <AuthProvider>
+ <RouterProvider router={router} />
+ </AuthProvider>
+ </ShopContextProvider>
+ </EmailProvider>
+ </AppContext.Provider>
+ </>
+ );
 }
 
 export default App;
+

@@ -67,6 +67,8 @@
   flex-direction: column;
 }
 
+
+
 .clickedImg img {
   width: 80%;
 }
@@ -337,6 +339,7 @@
     padding: 8px 14px;
     font-size: 32px;
   }
+
 
   .clickedImg img {
     width: 90%;

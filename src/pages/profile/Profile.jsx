@@ -12,42 +12,43 @@ import WalletProfileDrop from "../../utils/dropdown/profile-dropdown/WalletProfi
 import LogOutDrop from "../../utils/dropdown/profile-dropdown/LogOutDrop";
 
 const Profile = () => {
-  const [activeProfile, setActiveProfile] = useState(true);
-  return (
-    <div>
-      <HomeNav />
-      <div>
-        <div className="profile_inactive">
-          <div className="pi_nav">
-            <Link to="/">Home</Link>
-            <BsSlashLg id="pi_icon" />
-            <Link className="proof" to="/profile">
-              Profile
-            </Link>
-            <BsSlashLg id="pi_icon" />
-            <Link className="pi_focus">Account Information</Link>
-          </div>
-          <section className="section_inaction">
-            <div className="profDrop">
-              {/* <ManagementDrop setLayout={(x) => setProfileLayout(x)} /> */}
-              <ManagementDrop />
-              <OrderProfileDrop />
-              <WalletProfileDrop />
-              <LogOutDrop />
-            </div>
-            <div className="wrap-layout">
-              <Outlet />
-              {/* // Inactive */}
-              {/* {profileLayout === 0 && <ProfileAccountInfo />} */}
-              {/* Profile Delivery Drop */}
-              {/* {profileLayout === 1 && <ProfileDeliveryDrop />} */}
-              {/* Profile  Delivery info */}
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-  );
+ const [activeProfile, setActiveProfile] = useState(true);
+ return (
+ <div>
+ <HomeNav />
+ <div>
+ <div className="profile_inactive">
+ <div className="pi_nav">
+ <Link to="/">Home</Link>
+ <BsSlashLg id="pi_icon" />
+ <Link className="proof" to="/profile">
+ Profile
+ </Link>
+ <BsSlashLg id="pi_icon" />
+ <Link className="pi_focus">Account Information</Link>
+ </div>
+ <section className="section_inaction">
+ <div className="profDrop">
+ {/* <ManagementDrop setLayout={(x) => setProfileLayout(x)} /> */}
+ <ManagementDrop />
+ <OrderProfileDrop />
+ <WalletProfileDrop />
+ <LogOutDrop />
+ </div>
+ <div className="wrap-layout">
+ <Outlet />
+ {/* // Inactive */}
+ {/* {profileLayout === 0 && <ProfileAccountInfo />} */}
+ {/* Profile Delivery Drop */}
+ {/* {profileLayout === 1 && <ProfileDeliveryDrop />} */}
+ {/* Profile Delivery info */}
+ </div>
+ </section>
+ </div>
+ </div>
+ </div>
+ );
 };
 
 export default Profile;
+

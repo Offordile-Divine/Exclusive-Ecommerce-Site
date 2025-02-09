@@ -1,3 +1,1108 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mcheck_total {
+    display: none;
+}
+
+.check_total {
+    display: block;
+}
+
+.check_general {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.check_major {
+    width: 50%;
+}
+
+.check_main h3 {
+    margin-top: 40px;
+    color: #000000;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.check_main {
+    width: 40%;
+}
+
+.check_header h3 {
+    color: #000000;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.check_header label {
+    justify-items: left;
+}
+
+.check_header input {
+    border-radius: 3px;
+    border: 1px solid #EFEAEA;
+}
+
+.check_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.check_form input {
+    margin-top: 30px;
+    height: 30px;
+}
+
+.check_form label {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.check_name {
+    width: 45%;
+}
+
+.check_number {
+    width: 45%;
+}
+
+.check_delivery input {
+    margin-top: 30px;
+    height: 30px;
+    color:  #EDE2E2;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.check_delivery label {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.mcheck_merge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.check_summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check_countHandler{
+    display: flex;
+    
+}
+
+.check_countHandler button{
+    width: 30px;
+    height: 40px;
+}
+
+.check_item{
+    border: none;
+    width: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.check_item{
+    border: none;
+    width: 30px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.check_button button {
+    width: 50%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    background-color: #161C2D;
+    color: #FDFDFD;
+    font-size: 15px;
+    font-family: arial;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.check_positive {
+    background-color: #161C2D;
+    border: 1.2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.check_negative {
+    border: 1.2px solid #FFFFFF;
+    background-color: #F8F8F8;
+}
+
+.check_bag {
+    font-size: 15px;
+    font-family: arial;
+    line-height: 30px;
+}
+
+.check_action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check_action input {
+    margin-top: 0;
+}
+
+.check_action label {
+    margin-left: 0;
+}
+
+.check_radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1024px) {
+    .mcheck_total {
+        display: none;
+    }
+    
+    .check_total {
+        display: block;
+    }
+    
+    .check_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .check_major {
+        width: 50%;
+    }
+    
+    .check_main h3 {
+        margin-top: 40px;
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .check_main {
+        width: 40%;
+    }
+    
+    .check_header h3 {
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .check_header label {
+        justify-items: left;
+    }
+    
+    .check_header input {
+        border-radius: 3px;
+        border: 1px solid #EFEAEA;
+    }
+    
+    .check_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .check_form input {
+        margin-top: 10px;
+        height: 19px;
+    }
+    
+    .check_form label {
+        align-self: flex-start;
+        margin-top: 15px;
+        font-size: 11px;
+    }
+    
+    .check_name {
+        width: 45%;
+    }
+    
+    .check_number {
+        width: 45%;
+    }
+    
+    .check_delivery input {
+        margin-top: 10px;
+        height: 19px;
+        color:  #EDE2E2;
+        font-family: arial;
+        font-size: 11px;
+        font-weight: 100;
+    }
+    
+    .check_delivery label {
+        align-self: flex-start;
+        margin-top: 15px;
+        font-size: 11px;
+    }
+    
+    .check_merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .check_merge label {
+        font-size: 11px;
+    }
+
+    .check_merge input {
+        margin-top: 10px;
+    }
+
+    .check_action label {
+        font-size: 11px;
+    }
+
+    .check_action {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .check_summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .check_countHandler{
+        display: flex;
+        
+    }
+    
+    .check_countHandler button{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .check_item{
+        border: none;
+        width: 25px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .check_item{
+        border: none;
+        width: 30px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 15px;
+    }
+    
+    .check_button button {
+        width: 60%;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        background-color: #161C2D;
+        color: #FDFDFD;
+        font-size: 11px;
+        font-family: arial;
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+    }
+    
+    .check_positive {
+        background-color: #161C2D;
+        border: 1.2px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    
+    .check_negative {
+        border: 1.2px solid #FFFFFF;
+        background-color: #F8F8F8;
+    }
+    
+    .check_bag {
+        font-size: 12px;
+        font-family: arial;
+        line-height: 20px;
+    }
+
+    .check_summary img {
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .mcheck_total {
+        display: none;
+    }
+    
+    .check_total {
+        display: block;
+    }
+    
+    .check_general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .check_major {
+        width: 50%;
+    }
+    
+    .check_main h3 {
+        margin-top: 40px;
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .check_main {
+        width: 40%;
+    }
+    
+    .check_header h3 {
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .check_header label {
+        justify-items: left;
+    }
+    
+    .check_header input {
+        border-radius: 3px;
+        border: 1px solid #EFEAEA;
+    }
+    
+    .check_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .check_form input {
+        margin-top: 10px;
+        height: 19px;
+    }
+    
+    .check_form label {
+        align-self: flex-start;
+        margin-top: 15px;
+        font-size: 11px;
+    }
+    
+    .check_name {
+        width: 45%;
+    }
+    
+    .check_number {
+        width: 45%;
+    }
+    
+    .check_delivery input {
+        margin-top: 10px;
+        height: 19px;
+        color:  #EDE2E2;
+        font-family: arial;
+        font-size: 11px;
+        font-weight: 100;
+    }
+    
+    .check_delivery label {
+        align-self: flex-start;
+        margin-top: 15px;
+        font-size: 11px;
+    }
+    
+    .check_merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .check_merge label {
+        font-size: 11px;
+    }
+
+    .check_merge input {
+        margin-top: 10px;
+    }
+
+    .check_action label {
+        font-size: 11px;
+    }
+
+    .check_action {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .check_summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .check_countHandler{
+        display: flex;
+        
+    }
+    
+    .check_countHandler button{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .check_item{
+        border: none;
+        width: 25px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .check_item{
+        border: none;
+        width: 30px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 15px;
+    }
+    
+    .check_button button {
+        width: 60%;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        background-color: #161C2D;
+        color: #FDFDFD;
+        font-size: 11px;
+        font-family: arial;
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+    }
+    
+    .check_positive {
+        background-color: #161C2D;
+        border: 1.2px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    
+    .check_negative {
+        border: 1.2px solid #FFFFFF;
+        background-color: #F8F8F8;
+    }
+    
+    .check_bag {
+        font-size: 12px;
+        font-family: arial;
+        line-height: 20px;
+    }
+
+    .check_summary img {
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .check_total {
+        display: none;
+    }
+
+    .mcheck_total {
+        display: block;
+    }
+
+    .mcheck_general {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .mcheck_main h3 {
+        font-size: 15px;
+        color: #000000;
+        font-family: arial;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .mcheck_header h3 {
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .mcheck_header label {
+        justify-items: left;
+    }
+    
+    .mcheck_header input {
+        border-radius: 3px;
+        border: 1px solid #EFEAEA;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .mcheck_form input {
+        margin-top: 10px;
+        height: 19px;
+    }
+    
+    .mcheck_form label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_name {
+        width: 45%;
+    }
+    
+    .mcheck_number {
+        width: 45%;
+    }
+    
+    .mcheck_delivery input {
+        margin-top: 15px;
+        height: 19px;
+        color:  #EDE2E2;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: 100;
+        
+    }
+    
+    .mcheck_delivery label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_method {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mcheck_method input {
+        align-self: flex-start;
+    }
+    
+    .mcheck_merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .mcheck_merge label {
+        font-size: 11px;
+    }
+
+    .mcheck_merge input {
+        margin-top: 10px;
+    }
+
+    .mcheck_action {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mcheck_summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mcheck_summary img {
+        width: 35%;
+    }
+
+    .mcheck_bag {
+        font-size: 11px;
+        font-family: arial;
+        line-height: 20px;
+    }
+
+    .mcheck_countHandler{
+        display: flex;
+    }
+    
+    .mcheck_countHandler button{
+        width: 30px;
+        height: 25px;
+    }
+    
+    .mcheck_item{
+        border: none;
+        width: 25px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .mcheck_button button {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background-color: #161C2D;
+        color: #FDFDFD;
+        font-size: 11px;
+        font-family: arial;
+        border: none;
+        border-radius: 5px;
+        height: 26px;
+    }
+
+    .mcheck_positive {
+        background-color: #161C2D;
+        border: 1.2px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .mcheck_negative {
+        border: 1.2px solid #FFFFFF;
+        background-color: #F8F8F8;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .check_total {
+        display: none;
+    }
+
+    .mcheck_total {
+        display: block;
+    }
+
+    .mcheck_general {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .mcheck_main h3 {
+        font-size: 15px;
+        color: #000000;
+        font-family: arial;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .mcheck_header h3 {
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .mcheck_header label {
+        justify-items: left;
+    }
+    
+    .mcheck_header input {
+        border-radius: 3px;
+        border: 1px solid #EFEAEA;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .mcheck_form input {
+        margin-top: 10px;
+        height: 19px;
+    }
+    
+    .mcheck_form label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_name {
+        width: 45%;
+    }
+    
+    .mcheck_number {
+        width: 45%;
+    }
+    
+    .mcheck_delivery input {
+        margin-top: 15px;
+        height: 19px;
+        color:  #EDE2E2;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: 100;
+        
+    }
+    
+    .mcheck_delivery label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_method {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mcheck_method input {
+        align-self: flex-start;
+    }
+    
+    .mcheck_merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .mcheck_merge label {
+        font-size: 11px;
+    }
+
+    .mcheck_merge input {
+        margin-top: 10px;
+    }
+
+    .mcheck_action {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mcheck_summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mcheck_summary img {
+        width: 35%;
+    }
+
+    .mcheck_bag {
+        font-size: 11px;
+        font-family: arial;
+        line-height: 20px;
+    }
+    .mcheck_countHandler{
+        display: flex;
+    }
+    
+    .mcheck_countHandler button{
+        width: 30px;
+        height: 25px;
+    }
+    
+    .mcheck_item{
+        border: none;
+        width: 25px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .mcheck_button button {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background-color: #161C2D;
+        color: #FDFDFD;
+        font-size: 11px;
+        font-family: arial;
+        border: none;
+        border-radius: 5px;
+        height: 26px;
+    }
+
+    .mcheck_positive {
+        background-color: #161C2D;
+        border: 1.2px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .mcheck_negative {
+        border: 1.2px solid #FFFFFF;
+        background-color: #F8F8F8;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .check_total {
+        display: none;
+    }
+
+    .mcheck_total {
+        display: block;
+    }
+
+    .mcheck_general {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .mcheck_main h3 {
+        font-size: 15px;
+        color: #000000;
+        font-family: arial;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .mcheck_header h3 {
+        color: #000000;
+        font-family: arial;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .mcheck_header label {
+        justify-items: left;
+    }
+    
+    .mcheck_header input {
+        border-radius: 3px;
+        border: 1px solid #EFEAEA;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .mcheck_form input {
+        margin-top: 10px;
+        height: 19px;
+    }
+    
+    .mcheck_form label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_name {
+        width: 45%;
+    }
+    
+    .mcheck_number {
+        width: 45%;
+    }
+    
+    .mcheck_delivery input {
+        margin-top: 15px;
+        height: 19px;
+        color:  #EDE2E2;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: 100;
+        
+    }
+    
+    .mcheck_delivery label {
+        align-self: flex-start;
+        margin-top: 5px;
+        font-size: 11px;
+        font-family: arial;
+    }
+    
+    .mcheck_method {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mcheck_method input {
+        align-self: flex-start;
+    }
+    
+    .mcheck_merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .mcheck_merge label {
+        font-size: 11px;
+    }
+
+    .mcheck_merge input {
+        margin-top: 10px;
+    }
+
+    .mcheck_action {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mcheck_summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mcheck_summary img {
+        width: 35%;
+    }
+
+    .mcheck_bag {
+        font-size: 11px;
+        font-family: arial;
+        line-height: 20px;
+    }
+    .mcheck_countHandler{
+        display: flex;
+    }
+    
+    .mcheck_countHandler button{
+        width: 30px;
+        height: 25px;
+    }
+    
+    .mcheck_item{
+        border: none;
+        width: 25px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .mcheck_button button {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background-color: #161C2D;
+        color: #FDFDFD;
+        font-size: 11px;
+        font-family: arial;
+        border: none;
+        border-radius: 5px;
+        height: 26px;
+    }
+
+    .mcheck_positive {
+        background-color: #161C2D;
+        border: 1.2px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    .mcheck_negative {
+        border: 1.2px solid #FFFFFF;
+        background-color: #F8F8F8;
+    }
+
 #c_background{
   color: rgb(89, 91, 91);
+}
 }

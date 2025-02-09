@@ -47,6 +47,40 @@ export const ShopContextProvider = (props) => {
       console.log(cartItems, "contextCartItems");
     };
 
+
+
+    const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}));
+    };
+
+    const handleRemove = (itemId) => {
+       setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - [itemId]}))
+       removeFromCart(id);
+    };
+    
+    const contextValue = { 
+    cartItems, 
+    addToCart, 
+    removeFromCart,
+    updateCartItemCount,
+    getTotalCartAmount,
+    handleRemove,
+    };
+
+
+  // const removeFromCart = (itemId) => {
+  //   setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  // };
+
+  // const contextValue = {
+  //   cartItems,
+  //   addToCart,
+  //   removeFromCart,
+  //   updateCartItemCount,
+  //   getTotalCartAmount,
+  // };
+
+
 //   const addToCart = (item) => {
 //     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id); // check if the item is already in the cart
 
@@ -66,17 +100,6 @@ export const ShopContextProvider = (props) => {
 //     }
 //   };
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
-  };
-
-  const contextValue = {
-    cartItems,
-    addToCart,
-    removeFromCart,
-    updateCartItemCount,
-    getTotalCartAmount,
-  };
 
   console.log(cartItems);
 
