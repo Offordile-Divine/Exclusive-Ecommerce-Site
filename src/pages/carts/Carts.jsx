@@ -29,7 +29,7 @@ const Carts = () => {
 
 
   console.log(cartItems, "...cartitems");
-  console.log(Goods)
+
 
 
 
@@ -38,6 +38,7 @@ const Carts = () => {
 //   const { cartItems } = useContext(ShopContext); // Assuming you have a context that provides cart items
 //   console.log(cartItems, "...cartitems");
 //   console.log(Goods)
+
   return (
     <>
       <HomeNav />

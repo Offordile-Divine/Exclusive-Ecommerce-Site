@@ -75,7 +75,7 @@ const Otp = () => {
         // Optional: Store user info if needed
         localStorage.setItem("user", JSON.stringify(user));
 
-        setTimeout(() => navigate("/"), 2000);
+        setTimeout(() => navigate("/getStarted"), 2000);
         setSuccessMessage("OTP verified successfully");
       } else {
         setError("Invalid OTP, Please try again");

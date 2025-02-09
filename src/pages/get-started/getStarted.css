@@ -20,7 +20,7 @@
 }
 
 .getStarted_form {
-  width: 30%;
+  width: 45%;
   align-self: center;
 }
 
@@ -28,7 +28,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+  width: 100%;
 }
 
 #cont {

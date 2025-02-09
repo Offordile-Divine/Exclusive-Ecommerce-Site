@@ -1446,7 +1446,6 @@ select option {
   padding-bottom: 40px;
   padding-top: 30px;
   width: 100%;
-  cursor: pointer;
 }
 
 .btnEditAcct button {
@@ -1458,6 +1457,7 @@ select option {
   background: rgba(22, 28, 45, 1);
   color: rgba(255, 255, 255, 1);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 
