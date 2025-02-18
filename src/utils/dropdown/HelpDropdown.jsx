@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
+import { FiHelpCircle } from "react-icons/fi";
 import "./dropdown.css";
 
 const HelpDropdown = () => {
@@ -14,8 +15,11 @@ const HelpDropdown = () => {
   return (
     <nav className="HelpDropDown">
       <div className="tog">
-        <div className="help-icon" onClick={handleClick}>
-          <Link id="tog_help">Help</Link>
+        <div className="help-icon flex items-center" onClick={handleClick}>
+          <Link className="flex  items-center gap-2" id="tog_help">
+            <FiHelpCircle size={20} />
+            Help
+          </Link>
           {click ? (
             <SlArrowDown
               style={{

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,CSSProperties } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SectionA from "./SectionA";
@@ -114,22 +114,22 @@ const Slider = () => {
  }
  };
 
- useEffect(() => {
- createNewProduct();
- }, []);
+  useEffect(() => {
+    createNewProduct();
+  }, []);
 
- return (
- <div>
- <Carousel swipeable={true} draggable={true} responsive={responsive}>
- <SectionA />
- <SectionA />
- <SectionA />
- </Carousel>
- <div className="dealsWrap">
- <div className="explore">
- <Link id="exploreLink">Our Categories</Link>
- </div>
- </div>
+  return (
+    <div>
+      <Carousel swipeable={true} draggable={true} responsive={responsive}>
+        <SectionA />
+        <SectionA />
+        <SectionA />
+      </Carousel>
+      <div className="dealsWrap">
+        <div className="explore">
+          <Link id="exploreLink">Our Categories</Link>
+        </div>
+      </div>
 
  <div className="wrapSectonDescription3">
  {products.map((product, ix) => (

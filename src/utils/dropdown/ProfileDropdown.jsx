@@ -7,6 +7,7 @@ import "./dropdown.css";
 import { AppContext } from "../../App";
 import { CgProfile } from "react-icons/cg";
 import { CiHome } from "react-icons/ci";
+import { VscAccount } from "react-icons/vsc";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { MdOutlineTrackChanges } from "react-icons/md";
@@ -72,6 +73,7 @@ const ProfileDropdown = () => {
  fetchUserDetail();
  }, [navigate]);
 
+<<<<<<< Updated upstream
  return (
  <nav className="ProfileDropDown">
  <div className="tog">
@@ -97,6 +99,36 @@ const ProfileDropdown = () => {
  )}
  </div>
  </div>
+=======
+  return (
+    <nav className="ProfileDropDown">
+      <div className="tog">
+        <div className="prof-icon flex items-center" onClick={handleClick}>
+          <span id="tog_prof" className="flex items-center gap-2">
+          <VscAccount size={20} />
+            Profile
+          </span>
+          {click ? (
+            <SlArrowDown
+              style={{
+                cursor: "pointer",
+                textAlign: "center",
+                fontSize: "10px",
+              }}
+            />
+          ) : (
+            <IoIosArrowUp
+              style={{
+                cursor: "pointer",
+                textAlign: "center",
+
+
+              }}
+            />
+          )}
+        </div>
+      </div>
+>>>>>>> Stashed changes
 
  <ul className={click ? "prof_toggle active" : "prof_toggle"}>
  {isAuthenticated ? (
