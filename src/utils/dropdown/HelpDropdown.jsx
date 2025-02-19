@@ -4,6 +4,7 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
 import { FiHelpCircle } from "react-icons/fi";
+import { IoIosArrowDown } from "react-icons/io";
 import "./dropdown.css";
 
 const HelpDropdown = () => {
@@ -13,18 +14,15 @@ const HelpDropdown = () => {
     setClick(!click);
   };
   return (
-    <nav className="HelpDropDown">
+    <nav className="HelpDropDown p-2">
       <div className="tog">
-        <div className="help-icon flex items-center" onClick={handleClick}>
-          <Link className="flex  items-center gap-2" id="tog_help">
-            <FiHelpCircle size={20} />
-            Help
-          </Link>
+        <div className="help-icon flex items-center gap-2" onClick={handleClick}>
+          <FiHelpCircle size={20} />
+         <span >Help</span> 
           {click ? (
-            <SlArrowDown
+            <IoIosArrowDown
               style={{
                 cursor: "pointer",
-                marginLeft: "5px",
                 textAlign: "center",
               }}
             />
@@ -32,7 +30,6 @@ const HelpDropdown = () => {
             <IoIosArrowUp
               style={{
                 cursor: "pointer",
-                marginLeft: "5px",
                 textAlign: "center",
               }}
             />
