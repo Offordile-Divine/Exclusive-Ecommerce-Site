@@ -39,6 +39,7 @@ const Footer = () => {
             </p>
             <Link>FAQ</Link>
             <Link>Contact</Link>
+            <Link to='/about'>About us</Link>
           </div>
 
           <div className="footer_session">

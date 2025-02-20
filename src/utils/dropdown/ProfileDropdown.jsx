@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState ,useRef} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
@@ -28,6 +28,7 @@ const ProfileDropdown = () => {
   const [click, setClick] = useState(false);
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
+  const dropDownRef = useRef(null)
 
   const navigate = useNavigate();
 
@@ -74,12 +75,25 @@ const ProfileDropdown = () => {
     fetchUserDetail();
   }, [navigate]);
 
+ 
+
+  useEffect(() => {
+    function handleOutsideClick(e) {
+      if (dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)) {
+        setClick(false)
+      }
+    }
+    document.addEventListener('mousedown', handleOutsideClick)
+    return () => { document.removeEventListener('mousedown', handleOutsideClick) }
+  }, [])
 
   return (
-    <nav className="ProfileDropDown p-2">
+    <nav className="relative p-2">
       <div className="tog">
-        <div className="flex items-center gap-2" onClick={handleClick}>
-          <span id="tog_prof">Profile</span>
+        <div ref={dropDownRef['second']} className="flex items-center gap-2" onClick={handleClick}>
+          <span id="tog_prof" className="relative flex items-center gap-2">
+          {<CgProfile size={20} />} Profile
+          </span>
           {click ? (
             <IoIosArrowDown
               style={{
@@ -97,6 +111,53 @@ const ProfileDropdown = () => {
           )}
         </div>
       </div>
+      <ol ref={dropDownRef['first']} className={click ? "prof_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[9%] " : "prof_toggle "}>
+        {isAuthenticated ? (
+          <h1 id="customerName">
+            Hii,{firstname} {lastname}
+          </h1>
+        ) : (
+          <h1>No User</h1>
+        )}
+
+        <li className="prof_tog">
+          <Link to="/profile" className="rm">
+            My profile {<CgProfile size={20} />}
+          </Link>
+        </li>
+
+        <li className="prof_tog">
+          <Link to="/orders" className="rm">
+            Orders {<MdOutlineFavoriteBorder size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/savedItems" className="rm">
+            Saved Items
+            {<MdOutlineFavoriteBorder size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/inbox" className="rm">
+            Inbox {<MdOutlineForwardToInbox size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/track" className="rm">
+            Track My Order {<MdOutlineTrackChanges size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/paymentWallet" className="rm">
+            Payment/Wallet Setting {<RiSecurePaymentLine size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/logOut" className="rm">
+            Log Out {<IoMdLogOut size={20} />}
+          </Link>
+        </li>
+      </ol>
     </nav>
 
   )

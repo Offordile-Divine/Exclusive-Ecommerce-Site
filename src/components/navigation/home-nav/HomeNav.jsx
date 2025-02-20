@@ -94,7 +94,7 @@ const HomeNav = () => {
   return (
 
     <header className="h-[65px]  z-[10001] top-0 left-0 right-0 fixed bg-white shadow-[0px_3px_2px_rgba(0,0,0,0.3)]">
-      <nav className=" w-full h-full flex px-4">
+      <nav className=" w-full h-full flex px-8">
         <div className=" flex w-full ">
           <li className="text-3xl font-bold text-[#161c2d] ">
             <Link to="/" id="logo" className="block w-full h-full" style={{ textDecoration: "none" }}>
@@ -103,9 +103,9 @@ const HomeNav = () => {
             </Link>
           </li>
 
-          <li className="flex flex-1 my-2">
+          <li className="flex  my-2">
             <div className=" w-full flex justify-center ">
-              <div className="flex w-full md:w-[560px] items-center pl-4 gap-2">
+              <div className="flex w-full lg:w-[540px] items-center pl-4 gap-2">
                 <span className="w-full border border-[#808080de] p-2 rounded-[3px] flex items-center">
                   <BiSearchAlt2 size={20} />
                   <input type="text" className="w-[100%] pl-2 font-Noto font-normal" placeholder="What are you looking for" />
@@ -126,7 +126,7 @@ const HomeNav = () => {
                 </Link>
               </div>
             )} */}
-          < li className="flex items-center ml-auto font-Noto font-[600]">
+          < li className="flex items-center ml-auto  font-Noto font-[600]">
             {/* <Link to="/products">Products</Link> */}
             {/* <Link to="/about" >About</Link> */}
             <ProfileDropdown />
