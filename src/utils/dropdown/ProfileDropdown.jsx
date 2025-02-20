@@ -1,12 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState ,useRef} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
 import "./dropdown.css";
+import { IoIosArrowDown } from "react-icons/io";
 import { AppContext } from "../../App";
 import { CgProfile } from "react-icons/cg";
 import { CiHome } from "react-icons/ci";
+import { VscAccount } from "react-icons/vsc";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { MdOutlineTrackChanges } from "react-icons/md";
@@ -26,6 +28,9 @@ const ProfileDropdown = () => {
   const [click, setClick] = useState(false);
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
+
+  const dropDownRef = useRef(null)
+
 
   const navigate = useNavigate();
 
@@ -71,6 +76,16 @@ const ProfileDropdown = () => {
 
     fetchUserDetail();
   }, [navigate]);
+  
+   useEffect(() => {
+    function handleOutsideClick(e) {
+      if (dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)) {
+        setClick(false)
+      }
+    }
+    document.addEventListener('mousedown', handleOutsideClick)
+    return () => { document.removeEventListener('mousedown', handleOutsideClick) }
+  }, [])
 
   return (
     <nav className="ProfileDropDown">
@@ -84,6 +99,20 @@ const ProfileDropdown = () => {
                 textAlign: "center",
                 fontSize: "10px",
                 marginLeft: "6px",
+
+  return (
+    <nav className="relative p-2">
+      <div className="tog">
+        <div ref={dropDownRef['second']} className="flex items-center gap-2" onClick={handleClick}>
+          <span id="tog_prof" className="relative flex items-center gap-2">
+          {<CgProfile size={20} />} Profile
+          </span>
+          {click ? (
+            <IoIosArrowDown
+              style={{
+                cursor: "pointer",
+                textAlign: "center",
+
               }}
             />
           ) : (
@@ -91,14 +120,20 @@ const ProfileDropdown = () => {
               style={{
                 cursor: "pointer",
                 textAlign: "center",
+
                 marginLeft: "6px",
+
               }}
             />
           )}
         </div>
       </div>
 
+
       <ul className={click ? "prof_toggle active" : "prof_toggle"}>
+
+      <ol ref={dropDownRef['first']} className={click ? "prof_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[9%] " : "prof_toggle "}>
+
         {isAuthenticated ? (
           <h1 id="customerName">
             Hii,{firstname} {lastname}
@@ -153,6 +188,49 @@ const ProfileDropdown = () => {
       </ul>
     </nav>
   );
+
+        <li className="prof_tog">
+          <Link to="/profile" className="rm">
+            My profile {<CgProfile size={20} />}
+          </Link>
+        </li>
+
+        <li className="prof_tog">
+          <Link to="/orders" className="rm">
+            Orders {<MdOutlineFavoriteBorder size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/savedItems" className="rm">
+            Saved Items
+            {<MdOutlineFavoriteBorder size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/inbox" className="rm">
+            Inbox {<MdOutlineForwardToInbox size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/track" className="rm">
+            Track My Order {<MdOutlineTrackChanges size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/paymentWallet" className="rm">
+            Payment/Wallet Setting {<RiSecurePaymentLine size={20} />}
+          </Link>
+        </li>
+        <li className="prof_tog">
+          <Link to="/logOut" className="rm">
+            Log Out {<IoMdLogOut size={20} />}
+          </Link>
+        </li>
+      </ol>
+    </nav>
+
+  )
+
 };
 
 export default ProfileDropdown;
