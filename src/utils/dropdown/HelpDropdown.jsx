@@ -1,26 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowUp } from "react-icons/io";
+import { FiHelpCircle } from "react-icons/fi";
+import { IoIosArrowDown } from "react-icons/io";
 import "./dropdown.css";
 
 const HelpDropdown = () => {
   const [click, setClick] = useState(false);
+  const dropDownRef=useRef(null)
 
   const handleClick = () => {
     setClick(!click);
   };
+  useEffect(()=>{
+    function handleOutsideClick(e){
+      if(dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)){
+        setClick(false)
+      }
+    }
+    document.addEventListener('mousedown',handleOutsideClick)
+    return ()=>{document.removeEventListener('mousedown',handleOutsideClick)}
+  },[])
+
   return (
-    <nav className="HelpDropDown">
+    <nav className="HelpDropDown p-2">
       <div className="tog">
-        <div className="help-icon" onClick={handleClick}>
-          <Link id="tog_help">Help</Link>
+        <div className="help-icon flex items-center gap-2" onClick={handleClick}>
+          <FiHelpCircle size={20} />
+          <span >Help</span>
           {click ? (
-            <SlArrowDown
+            <IoIosArrowDown
               style={{
                 cursor: "pointer",
-                marginLeft: "5px",
                 textAlign: "center",
               }}
             />
@@ -28,39 +41,35 @@ const HelpDropdown = () => {
             <IoIosArrowUp
               style={{
                 cursor: "pointer",
-                marginLeft: "5px",
                 textAlign: "center",
               }}
             />
           )}
         </div>
       </div>
-      <ul className={click ? "help_toggle active" : "help_toggle"}>
+      <ol ref={dropDownRef} className={click ? "help_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[2%] " : "help_toggle"}>
         <li className="help_tog">
           <Link to="/contact" className="rm">
             Contact us {<LiaGreaterThanSolid />}
           </Link>
         </li>
-        <hr />
+
         <li className="help_tog">
           <Link to="/track" className="rm">
             Track My Orders {<LiaGreaterThanSolid />}
           </Link>
         </li>
-        <hr />
         <li className="help_tog">
           <Link to="/policy" className="rm">
             Return policy {<LiaGreaterThanSolid />}
           </Link>
         </li>
-        <hr />
         <li className="help_tog">
           <Link to="/faq" className="rm">
             FAQ's {<LiaGreaterThanSolid />}
           </Link>
         </li>
-        <hr />
-      </ul>
+      </ol>
     </nav>
   );
 };
