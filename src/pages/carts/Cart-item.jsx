@@ -3,12 +3,11 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/Shop-context";
 
 const CartItem = (props) => {
-
   const { id, productImage, img, name, price, productName } = props.data;
-  const { cartItems, setCart } = useContext(ShopContext);
-  // updateCartItemCount, addToCart, removeFromCart
+  const { cartItems } = useContext(ShopContext);
   const quantity = cartItems[id]?.quantity || 0;
-  console.log(quantity);
+  // console.log(quantity);
+  console.log(cartItems, "Yesssss");
 
   const handleIncrease = () => {
     updateCartItemCount(id, quantity + 1);
