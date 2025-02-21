@@ -8,9 +8,10 @@ export const ShopContext = createContext();
 
 const getDefaultCart = () => {
   let cart = {};
-//   for (let i = 1; i < Goods.length; i++) {
-//     cart[i] = 0;
-//   }
+  for (let i = 1; i < Goods.length; i++) {
+    cart[i] = 0;
+  }
+  console.log(cart)
   return cart;
 };
 

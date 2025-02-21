@@ -29,6 +29,7 @@ const ProfileDropdown = () => {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const dropDownRef = useRef(null)
+  const dropRef2=useRef(null)
 
   const navigate = useNavigate();
 
@@ -75,12 +76,13 @@ const ProfileDropdown = () => {
     fetchUserDetail();
   }, [navigate]);
 
- 
+  console.log(dropDownRef)
 
   useEffect(() => {
     function handleOutsideClick(e) {
-      if (dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)) {
+      if (dropDownRef.current && !dropDownRef.current.contains(e.target)&&dropRef2.current && !dropRef2.current.contains(e.target)) {
         setClick(false)
+    
       }
     }
     document.addEventListener('mousedown', handleOutsideClick)
@@ -90,7 +92,7 @@ const ProfileDropdown = () => {
   return (
     <nav className="relative p-2">
       <div className="tog">
-        <div ref={dropDownRef['second']} className="flex items-center gap-2" onClick={handleClick}>
+        <div ref={dropRef2} className="flex items-center gap-2" onClick={handleClick}>
           <span id="tog_prof" className="relative flex items-center gap-2">
           {<CgProfile size={20} />} Profile
           </span>
@@ -111,7 +113,7 @@ const ProfileDropdown = () => {
           )}
         </div>
       </div>
-      <ol ref={dropDownRef['first']} className={click ? "prof_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[9%] " : "prof_toggle "}>
+      <ol ref={dropDownRef} className={click ? "prof_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[9%] " : "prof_toggle "}>
         {isAuthenticated ? (
           <h1 id="customerName">
             Hii,{firstname} {lastname}
