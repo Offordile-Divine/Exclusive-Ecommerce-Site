@@ -10,13 +10,14 @@ import "./dropdown.css";
 const HelpDropdown = () => {
   const [click, setClick] = useState(false);
   const dropDownRef=useRef(null)
+  const dropRef2=useRef(null)
 
   const handleClick = () => {
     setClick(!click);
   };
   useEffect(()=>{
     function handleOutsideClick(e){
-      if(dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)){
+      if(dropDownRef.current && !dropDownRef.current.contains(e.target)&&dropRef2&& !dropRef2.current.contains(e.target)){
         setClick(false)
       }
     }
@@ -27,7 +28,7 @@ const HelpDropdown = () => {
   return (
     <nav className="HelpDropDown p-2">
       <div className="tog">
-        <div className="help-icon flex items-center gap-2" onClick={handleClick}>
+        <div ref={dropRef2} className="help-icon flex items-center gap-2" onClick={handleClick}>
           <FiHelpCircle size={20} />
           <span >Help</span>
           {click ? (

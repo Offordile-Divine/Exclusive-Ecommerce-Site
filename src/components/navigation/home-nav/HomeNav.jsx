@@ -92,8 +92,8 @@ const HomeNav = () => {
     fetchUserDetail();
   }, [navigate]);
   return (
-    <div className="pb-20">
-      <header className="h-[65px]  z-[10001] top-0 left-0 right-0 fixed bg-white shadow-[0px_3px_2px_rgba(0,0,0,0.3)]">
+    <div className="">
+      <header className="h-[65px]  z-[10001] top-0 left-0 right-0  bg-white shadow-[0px_3px_2px_rgba(0,0,0,0.3)]">
         <nav className=" w-full h-full flex px-8">
           <div className=" flex w-full ">
             <li className="text-3xl font-bold text-[#161c2d] ">
