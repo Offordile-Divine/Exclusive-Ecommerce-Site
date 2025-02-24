@@ -95,7 +95,8 @@ const ProfileDropdown = () => {
       <div className="tog">
         <div ref={dropRef2} className="flex items-center gap-2" onClick={handleClick}>
           <span id="tog_prof" className="relative flex items-center gap-2">
-          {<CgProfile size={20} />} Profile
+          {<CgProfile size={20} />} 
+          <p className="max-lg:hidden">Profile</p>
           </span>
           {click ? (
             <IoIosArrowDown
@@ -114,7 +115,7 @@ const ProfileDropdown = () => {
           )}
         </div>
       </div>
-      <ol ref={dropDownRef} className={click ? "prof_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[9%] " : "prof_toggle "}>
+      <ol ref={dropDownRef} className={click ? "prof_toggle active bg-[#fdfbfb] fixed  top-20 w-[250px] rounded-[7px] right-[9%] shadow-[0px_4px_10px_rgba(0,0,0,0.3)] " : "prof_toggle "}>
         {isAuthenticated ? (
           <h1 id="customerName">
             Hii,{firstname} {lastname}

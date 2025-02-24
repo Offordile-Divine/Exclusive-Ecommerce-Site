@@ -30,7 +30,7 @@ const HelpDropdown = () => {
       <div className="tog">
         <div ref={dropRef2} className="help-icon flex items-center gap-2" onClick={handleClick}>
           <FiHelpCircle size={20} />
-          <span >Help</span>
+          <span className="max-lg:hidden" >Help</span>
           {click ? (
             <IoIosArrowDown
               style={{
@@ -48,7 +48,7 @@ const HelpDropdown = () => {
           )}
         </div>
       </div>
-      <ol ref={dropDownRef} className={click ? "help_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[2%] " : "help_toggle"}>
+      <ol ref={dropDownRef} className={click ? "help_toggle active bg-[#fdfbfb] fixed  top-20 w-[250px] rounded-[7px] right-[2%] shadow-[0px_4px_10px_rgba(0,0,0,0.3)] " : "help_toggle"}>
         <li className="help_tog">
           <Link to="/contact" className="rm">
             Contact us {<LiaGreaterThanSolid />}
