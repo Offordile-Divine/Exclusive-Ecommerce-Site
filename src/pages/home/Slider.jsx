@@ -119,7 +119,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="pt-15">
+    <div className="">
       <Carousel swipeable={true} draggable={true} responsive={responsive}>
         <SectionA />
         <SectionA />

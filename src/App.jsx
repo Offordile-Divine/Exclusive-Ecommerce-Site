@@ -258,7 +258,7 @@ function App() {
   const [name, setName] = useState("Bruce");
   const [loggedIn, setLoggedIn] = useState("");
   return (
-    <div className="bg-[#f1eded]">
+    <div className="">
       <AppContext.Provider
         value={{
           name,

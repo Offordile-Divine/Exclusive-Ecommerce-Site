@@ -6,6 +6,14 @@ import { Goods } from "../db";
 
 export const ShopContext = createContext();
 
+const getDefaultCart = () => {
+  let cart = {};
+  for (let i = 1; i < Goods.length; i++) {
+    cart[i] = 0;
+  }
+  console.log(cart)
+
+}
 // const getDefaultCart = () => {
 //   let cart = {};
 //   for (let i = 1; i < Goods.length; i++) {
@@ -22,13 +30,7 @@ export const ShopContext = createContext();
 //   return cart;
 // };
 
-const getDefaultCart = () => {
-  let cart = {};
-  for (let index = 0; index < Goods.length + 1; index++) {
-    cart[index] = 0;
-  }
-  return cart;
-};
+
 
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(() => {

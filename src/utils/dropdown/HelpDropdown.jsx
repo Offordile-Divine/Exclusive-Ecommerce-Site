@@ -10,13 +10,14 @@ import "./dropdown.css";
 const HelpDropdown = () => {
   const [click, setClick] = useState(false);
   const dropDownRef=useRef(null)
+  const dropRef2=useRef(null)
 
   const handleClick = () => {
     setClick(!click);
   };
   useEffect(()=>{
     function handleOutsideClick(e){
-      if(dropDownRef.current['first'] && !dropDownRef['first'].current.contains(e.target)&&dropDownRef.current['second'] && !dropDownRef['second'].current.contains(e.target)){
+      if(dropDownRef.current && !dropDownRef.current.contains(e.target)&&dropRef2&& !dropRef2.current.contains(e.target)){
         setClick(false)
       }
     }
@@ -27,9 +28,9 @@ const HelpDropdown = () => {
   return (
     <nav className="HelpDropDown p-2">
       <div className="tog">
-        <div className="help-icon flex items-center gap-2" onClick={handleClick}>
+        <div ref={dropRef2} className="help-icon flex items-center gap-2" onClick={handleClick}>
           <FiHelpCircle size={20} />
-          <span >Help</span>
+          <span className="max-lg:hidden" >Help</span>
           {click ? (
             <IoIosArrowDown
               style={{
@@ -47,7 +48,7 @@ const HelpDropdown = () => {
           )}
         </div>
       </div>
-      <ol ref={dropDownRef} className={click ? "help_toggle active bg-white fixed  top-20 w-[250px] rounded-[7px] right-[2%] " : "help_toggle"}>
+      <ol ref={dropDownRef} className={click ? "help_toggle active bg-[#fdfbfb] fixed  top-20 w-[250px] rounded-[7px] right-[2%] shadow-[0px_4px_10px_rgba(0,0,0,0.3)] " : "help_toggle"}>
         <li className="help_tog">
           <Link to="/contact" className="rm">
             Contact us {<LiaGreaterThanSolid />}
