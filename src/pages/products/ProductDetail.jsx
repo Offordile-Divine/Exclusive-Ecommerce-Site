@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import HomeNav from "../../components/navigation/home-nav/HomeNav";
 import Footer from "../../components/footer/Footer";
 import "./product.css";
 import { PRODUCT } from "../../products";
@@ -8,7 +7,7 @@ import slide1 from "../../assets/images/select1.png";
 import slide2 from "../../assets/images/select2.png";
 import slide3 from "../../assets/images/select3.png";
 import slide4 from "../../assets/images/select4.png";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 import { IoIosStarOutline } from "react-icons/io";
 import { BsSlashLg } from "react-icons/bs";
 import { GrFavorite } from "react-icons/gr";
@@ -25,6 +24,8 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const images = [slide1, slide2, slide3];
+  const location = useLocation();
+  const info = location.state?.product;
 
   const handleSelectedImage = (imagesrc) => {
     setSelectedImage(imagesrc);
@@ -81,8 +82,6 @@ const Products = () => {
 
   return (
     <>
-      <HomeNav />
-
       <div>
         <div className="pd_wrap">
           <div className="pdSelectedImg">
@@ -113,7 +112,7 @@ const Products = () => {
             </div>
           </div>
           <div className="pd_prop">
-            <h2 id="pd_name">{product?.name}</h2>
+            <h2 id="pd_name">{info?.productName}</h2>
             <div className="pd_review">
               <div>
                 <IoIosStarOutline id="pd_itemStar" />
@@ -129,7 +128,7 @@ const Products = () => {
               <p id="pd_available">In stock</p>
             </div>
             <div className="pd_price">
-              <p>${product?.price}</p>
+              <p>${info?.price}</p>
             </div>
             <div className="pd_description">
               <p id="pd_detail">{product?.description}</p>
@@ -160,6 +159,7 @@ const Products = () => {
               <div className="pdBtnIncrDecr">
                 <button
                   id="btnIncreDecrement"
+                  className="decrease"
                   onClick={() => handleDecrease(id)}
                 >
                   -
@@ -173,6 +173,7 @@ const Products = () => {
                 />
                 <button
                   id="btnIncreDecrement"
+                  className="increase"
                   onClick={() => handleIncrease(id)}
                 >
                   +

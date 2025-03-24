@@ -1,5 +1,5 @@
 import product1 from "../src/assets/images/glasses.png"
-export const PRODUCT = [
+export const  PRODUCT = [
 
     {
         id: 1,
@@ -10,15 +10,15 @@ export const PRODUCT = [
     
     {
         id: 2,
-        productName : "Gucii Shades",
-        price : 100,
+        productName : "Dior Shades",
+        price : 250,
         productImage : product1,   
     },
     
     {
         id: 3,
-        productName : "Gucii Shades",
-        price : 100,
+        productName : "Aviator Shades",
+        price : 50,
         productImage : product1,   
 
     },

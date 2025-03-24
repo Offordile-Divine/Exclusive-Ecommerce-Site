@@ -26,6 +26,7 @@ import ProfileEditDelete from "./pages/profile/profileInfo/ProfileEditDelete.jsx
 import ProfileDelete from "./pages/profile/profileInfo/ProfileDelete.jsx";
 import Otp from "./pages/otp/Otp.jsx";
 import Products from "./pages/products/Product.jsx";
+import ProductsLayout from "./pages/products/ProductLayout.jsx"
 import Contact from "./pages/contact/Contact.jsx";
 import ShopContextProvider from "./context/Shop-context.jsx";
 import Shop from "./pages/products/Shop.jsx";
@@ -245,12 +246,16 @@ const router = createBrowserRouter([
  },
  {
  path: "/products",
- element: <Products />,
+ element: <ProductsLayout />,
  children: [
  {
  path: ":id",
  element: <ProductDetail />,
  },
+ {
+    index: true,
+    element: <Products />
+ }
  ],
  },
 ]);

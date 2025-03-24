@@ -71,6 +71,7 @@ const Slider = () => {
  setLoading(false);
  } catch (err) {
  setError(err.response ? err.response.data : "An error occurred");
+ console.log(error)
  setLoading(false);
  }
  };

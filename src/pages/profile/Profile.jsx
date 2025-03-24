@@ -15,28 +15,28 @@ const Profile = () => {
  const [activeProfile, setActiveProfile] = useState(true);
  return (
  <div>
- <HomeNav />
- <div>
- <div className="profile_inactive">
- <div className="pi_nav">
- <Link to="/">Home</Link>
- <BsSlashLg id="pi_icon" />
- <Link className="proof" to="/profile">
- Profile
- </Link>
- <BsSlashLg id="pi_icon" />
- <Link className="pi_focus">Account Information</Link>
- </div>
- <section className="section_inaction">
- <div className="profDrop">
+    <HomeNav />
+    <div>
+        <div className="profile_inactive">
+            <div className="pi_nav">
+                <Link to="/">Home</Link>
+                <BsSlashLg id="pi_icon" />
+                <Link className="proof" to="/profile">
+                    Profile
+                </Link>
+                <BsSlashLg id="pi_icon" />
+                <Link className="pi_focus">Account Information</Link>
+            </div>
+            <section className="section_inaction">
+                <div className="profDrop">
  {/* <ManagementDrop setLayout={(x) => setProfileLayout(x)} /> */}
- <ManagementDrop />
- <OrderProfileDrop />
- <WalletProfileDrop />
- <LogOutDrop />
- </div>
- <div className="wrap-layout">
- <Outlet />
+                    <ManagementDrop />
+                    <OrderProfileDrop />
+                    <WalletProfileDrop />
+                    <LogOutDrop />
+                </div>
+                <div className="wrap-layout">
+                    <Outlet />
  {/* // Inactive */}
  {/* {profileLayout === 0 && <ProfileAccountInfo />} */}
  {/* Profile Delivery Drop */}
