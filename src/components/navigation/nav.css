@@ -4,9 +4,10 @@
   font-family: "montserrat";
 } */
 
-.HomeNav {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 .log_nav {
   /* display: flex;
@@ -20,18 +21,14 @@
   padding: 15px;
 }
 
-.home_nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  position: relative;
+
+.font-Noto{
+  font-family: "Noto Sans", serif;
+ 
 }
 
-.loginRgInput {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px 20px 20px;
+li{
+  list-style: none;
 }
 
 .logReg2 {
@@ -57,10 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0.5px solid rgba(22, 28, 45, 1);
-  border-radius: 7px;
   width: 100%;
-  margin-left: 20px;
+  
 }
 
 #navLogLink2 {
@@ -86,14 +81,10 @@
 .input svg {
   padding: 5px;
   cursor: pointer;
-  color: rgba(22, 28, 45, 1);
+  color: #161c2d;
 }
 
-.nav_dir {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .logInput2 {
   display: flex;
@@ -194,6 +185,9 @@
   text-decoration: none;
 }
 
+.my-2{
+  margin-left: 10px;
+}
 /* HomeNav */
 @media only screen and (max-width: 768px) {
   .HomeNav {

@@ -12,6 +12,7 @@ import "../nav.css";
 import CartItem from "../../../pages/carts/Cart-item";
 import HelpDropdown from "../../../utils/dropdown/HelpDropdown";
 import ProfileDropdown from "../../../utils/dropdown/ProfileDropdown";
+import { BiSearchAlt2 } from "react-icons/bi";
 import { AiOutlineHome } from "react-icons/ai";
 import ManagementDrop from "../../../utils/dropdown/profile-dropdown/ManagementDrop";
 import OrderProfileDrop from "../../../utils/dropdown/profile-dropdown/OrderProfileDrop";
@@ -85,53 +86,84 @@ const HomeNav = () => {
           setEmail(email);
         }
         console.log(response);
-      } catch {}
+      } catch { }
     };
 
     fetchUserDetail();
   }, [navigate]);
   return (
-    <>
-      <div className="HomeNav">
-        <div className="home_nav">
-          <div className="nav_dir">
-            <Link to="/" id="logo" style={{ textDecoration: "none" }}>
-              {<BiLogoApple />} <h1>Company</h1>
-            </Link>
-            <Link to="/">Home</Link>
-            <Link to="/products">Products</Link>
-            <Link to="/about">About</Link>
-            <HelpDropdown />
-          </div>
-        </div>
-        <div className="loginRgInput">
-          <div className="input">
-            <input type="text" placeholder="What are you looking for" />
-            <FaSearch />
-          </div>
-          {isAuthenticated ? (
-            <></>
-          ) : (
-            <div className="logReg2">
-              <Link id="navLogLink2" to="/registration">
-                Login
+    <div className="">
+      <header className=" lg:h-[65px]  z-[10001] top-0 left-0 right-0  bg-white shadow-[0px_3px_2px_rgba(0,0,0,0.3)]">
+        <nav className=" w-full h-full flex max-lg:flex-col max-lg:pt-2  lg:px-8">
+          <div className=" flex w-full ">
+            <li className="text-3xl font-bold text-[#161c2d] ">
+              <Link to="/" id="logo" className="block w-full h-full" style={{ textDecoration: "none" }}>
+                {<BiLogoApple size={35} />}
+                Company
               </Link>
-              <Link id="register2" to="/registration">
-                Register
+            </li>
+
+            <li className="flex flex-grow max-lg:hidden  my-2">
+              <div className=" w-full flex justify-center ">
+                <div className="flex w-full xl:w-[560px] items-center pl-4 gap-2">
+                  <span className="w-full border border-[#808080de] p-2 rounded-[3px] flex items-center">
+                    <BiSearchAlt2 size={20} />
+                    <input type="text" className="w-[100%] pl-2 font-Noto font-normal outline-0" placeholder="What are you looking for" />
+                  </span>
+
+                </div>
+              </div>
+            </li>
+            {/* {isAuthenticated ? (
+              <></>
+            ) : (
+              <div className="logReg2">
+                <Link id="navLogLink2" to="/registration">
+                  Login
+                </Link>
+                <Link id="register2" to="/registration">
+                  Register
+                </Link>
+              </div>
+            )} */}
+            <li className="flex items-center ml-auto  font-Noto font-[600]">
+              {/* <Link to="/products">Products</Link> */}
+              {/* <Link to="/about" >About</Link> */}
+              <ProfileDropdown />
+              <HelpDropdown />
+              <Link to="/cart" className="prof p-2">
+                {<MdAddShoppingCart size={20} />}
+                <p className="max-lg:hidden">
+                  Cart
+                </p>
               </Link>
-            </div>
-          )}
-        </div>
+            </li>
 
-        <div className="profcart">
-          <ProfileDropdown />
-          <Link to="/cart" className="prof">
-            Carts {<MdAddShoppingCart />}
-          </Link>
-        </div>
-      </div>
+          </div>
+          <div className="max-lg:block lg:hidden">
+            <li className="flex flex-grow   my-2">
+              <div className=" w-full flex justify-center ">
+                <div className="flex w-full xl:w-[560px] items-center lg:pl-4 gap-2">
+                  <span className="w-full border border-[#808080de] p-1 rounded-[10px] flex items-center">
+                    <BiSearchAlt2 size={20} />
+                    <input type="text" className="w-[100%] pl-2 font-Noto font-normal outline-0" placeholder="What are you looking for" />
+                  </span>
 
-      <div className="mbHome_nav">
+                </div>
+              </div>
+            </li>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+  );
+};
+
+export default HomeNav;
+{/*<>
+
+<div className="mbHome_nav">
         <div className="mbHome_userNav">
           <span onClick={handleClick2}>
             <RxHamburgerMenu id="UserHomeNavIcon" />
@@ -168,10 +200,10 @@ const HomeNav = () => {
         <WalletProfileDrop />
       </ul>
 
-      <ul
+     <ul
         className={click2 ? "mbHamburger_toggle active" : "mbHamburger_toggle"}
       >
-        {/* !Important */}
+        {/* !Important 
 
         <div className="cancelClick">
           <button onClick={handleClick2}>
@@ -287,8 +319,4 @@ const HomeNav = () => {
           </li>
         </div>
       </ul>
-    </>
-  );
-};
-
-export default HomeNav;
+</>*/}

@@ -23,9 +23,9 @@
 }
 
 .ct_main {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 80px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
     padding-bottom: 50px;
     background-color: #F8F8F8;
 }
@@ -39,10 +39,13 @@
     padding-bottom: 10px;
     color: #000000;
     font-family: Inter;
+    background: #F8F8F8;
+    padding-bottom: 50px;
 }
 
 .hr {
     background-color: #161C2D;
+}
 
 .ct_header h1{
     text-align: center;
@@ -54,11 +57,11 @@
     padding-bottom: 80px;
 }
 
-.ct_main {
+/* .ct_main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .ct_product {
     padding-top: 10px;
@@ -97,12 +100,10 @@
     background: #F8F8F8; 
 }
 
-.ct_general {
+/* .ct_general {
     background: #F8F8F8;
     padding-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+} */
 
 .ct_image {
     padding: 10px;
@@ -273,12 +274,12 @@
     padding-right: 40px;
 }
 
-.ct_discount button{
+/* .ct_discount button{
     width: 30%;
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */
 
 .ct_checkbox {
     display: flex;
@@ -351,6 +352,76 @@
     width: 30px;
     height: 40px;
 }
+
+.ct_head p{
+    border-bottom: 2px;
+    border-color: #000000;
+}
+
+.ct_first {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* .ct_paragrph {
+    padding-bottom: 5px;
+} */
+
+.ct_fbutton {
+    padding: 6px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.ct_fbutton button{
+    background: #161C2D;
+    border: 1px solid #D8D3D3;
+
+}
+
+.ct_discount {
+    padding-top: 5px;
+}
+
+.ct_discount input{
+    padding-right: 80px;
+    padding-left: 20px;
+}
+
+.ct_sbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_sbutton button{
+    padding: 6px;
+    padding-left: 50px;
+    padding-right: 70px;
+    
+}
+
+.ct_tbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_tbutton button{
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 55px;
+}
+
+.ct_lbutton {
+    padding-left: 900px;
+    padding-bottom: 15px;
+}
+
+.ct_lbutton button{
+    padding: 6px;
+    padding-left: 35px;
+    padding-right: 38px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -1022,79 +1093,10 @@
     }
 } 
 
-    flex-direction: row;
+    /* flex-direction: row;
     padding: 10px;
     padding-right: 150px;
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: row; */
 
-.ct_head p{
-    border-bottom: 2px;
-    border-color: #000000;
-}
-
-.ct_first {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-/* .ct_paragrph {
-    padding-bottom: 5px;
-} */
-
-.ct_fbutton {
-    padding: 6px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.ct_fbutton button{
-    background: #161C2D;
-    border: 1px solid #D8D3D3;
-
-}
-
-.ct_discount {
-    padding-top: 5px;
-}
-
-.ct_discount input{
-    padding-right: 80px;
-    padding-left: 20px;
-}
-
-.ct_sbutton {
-    padding-left: 900px;
-    padding-bottom: 15px;
-}
-
-.ct_sbutton button{
-    padding: 6px;
-    padding-left: 50px;
-    padding-right: 70px;
-    
-}
-
-.ct_tbutton {
-    padding-left: 900px;
-    padding-bottom: 15px;
-}
-
-.ct_tbutton button{
-    padding: 6px;
-    padding-left: 30px;
-    padding-right: 55px;
-}
-
-.ct_lbutton {
-    padding-left: 900px;
-    padding-bottom: 15px;
-}
-
-.ct_lbutton button{
-    padding: 6px;
-    padding-left: 35px;
-    padding-right: 38px;
-}
 
