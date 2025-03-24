@@ -150,7 +150,7 @@ const Slider = () => {
 
  <div className="itemDeal">
  <p id="todayOff">##% Off</p>
- <Link id="seeAllItem">See all items</Link>
+ <Link to="/products" id="seeAllItem">See all items</Link>
  </div>
  </div>
  </div>

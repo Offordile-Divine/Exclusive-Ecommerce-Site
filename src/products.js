@@ -23,4 +23,36 @@ export const  PRODUCT = [
 
     },
     
+    {
+        id: 4,
+        productName : "Aviator Shades",
+        price : 50,
+        productImage : product1,   
+
+    },
+    
+    {
+        id: 5,
+        productName : "Aviator Shades",
+        price : 50,
+        productImage : product1,   
+
+    },
+    
+    {
+        id: 6,
+        productName : "Aviator Shades",
+        price : 50,
+        productImage : product1,   
+
+    },
+    
+    {
+        id: 7,
+        productName : "Aviator Shades",
+        price : 50,
+        productImage : product1,   
+
+    },
+    
 ]
